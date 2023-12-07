@@ -33,7 +33,7 @@ function MobileMenu(props) {
           </>
         ) : (
           <Button
-            className=" flex flex-row items-center justify-center text-accent-content font-thin h-10 my-auto px-6 py-1 bg-warning rounded-md"
+            className=" flex flex-row items-center justify-center text-accent-content font-thin h-10 my-auto px-6 py-1 bg-accent rounded-md"
             href={"/"}
             onClick={() => {
               props?.setshowMobileMenu(false);

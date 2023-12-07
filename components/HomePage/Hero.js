@@ -7,7 +7,7 @@ function Hero() {
       <div className=" lg:h-[85%] h-[40vh] bg-primary  flex flex-col justify-start items-center p-1  lg:pt-24 pt-10">
         <div className="flex flex-row justify-center items-center max-w-xl text-center    ">
           <h1 className="mb-5 text-5xl  font-medium text-base-content">
-            Achieve your <span className="text-warning">financial goals</span>{" "}
+            Achieve your <span className="text-accent">financial goals</span>{" "}
             with WealthTrust
           </h1>
         </div>

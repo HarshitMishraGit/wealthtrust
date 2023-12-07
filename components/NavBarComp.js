@@ -40,7 +40,7 @@ function NavBarComp() {
               onClick={() => router.push("/")}
             >
               {/* <SiteLogo /> */}
-              <div className="text-start text-base-content">
+              <div className="text-start text-warningcontent">
                 <p className="text-3xl font-semibold">WEALTHTRUST</p>
               </div>
             </div>
@@ -48,25 +48,25 @@ function NavBarComp() {
           <div className="navbar-center">
             <div className="flex flex-row lg:w-[40rem] md:w-[20rem]">
               <Link
-                className="hover:scale-110 transition-all duration-300 flex flex-row items-center justify-center text-base-content w-full  h-10 my-auto"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-full  h-10 my-auto"
                 href={"/blogs"}
               >
                 Blogs
               </Link>
               <Link
-                className="hover:scale-110 transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
                 href={"/services"}
               >
                 Services
               </Link>
               <Link
-                className="hover:scale-110 transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
                 href={"/pricing"}
               >
                 What we do?
               </Link>
               <Link
-                className="hover:scale-110 transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full h-10 my-auto"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full h-10 my-auto"
                 href={"/aboutus"}
               >
                 About Us
@@ -154,11 +154,11 @@ function NavBarComp() {
               //   id="loginModalbtn"
               //   data-modal-target="loginModal"
               //   data-modal-toggle="loginModal"
-              //   className=" w-20  bg-warning md:p-2 p-1 text-sm text-secondary-content shadow-sm hover:bg-secondary-focus hover:text-white transition-all duration-500 hover:shadow-lg"
+              //   className=" w-20  bg-accent md:p-2 p-1 text-sm text-secondary-content shadow-sm hover:bg-secondary-focus hover:text-white transition-all duration-500 hover:shadow-lg"
               // >
               //   Login
               // </button>
-              <Button className="bg-warning hover:text-base-content">
+              <Button className="bg-accent hover:text-base-content">
                 Login
               </Button>
             )}
