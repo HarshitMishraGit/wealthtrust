@@ -3,23 +3,18 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsArrowBarRight } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { Button } from "@nextui-org/button";
 function MobileMenu(props) {
   const [islogin, setislogin] = useState(false);
   const router = useRouter();
   return (
     <div
-      className={`fixed bg-base-200  h-screen top-0 z-50  transition-all  duration-300 w-[15em] md:w-1/2 backdrop-blur-lg right-0 ${
-        props.show ? "translate-x-0" : `translate-x-full`
+      className={`fixed bg-primary  w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
+        props.show
+          ? "translate-y-12 opacity-100 border-t-2 border-base-content"
+          : `-translate-y-full  opacity-0`
       } `}
     >
-      <div>
-        {" "}
-        <BsArrowBarRight
-          size={32}
-          onClick={() => props.setshowMobileMenu(false)}
-          className="text-base-content  ml-1 rounded-md p-1  mt-10 "
-        />{" "}
-      </div>
       <div className={`flex flex-row justify-center w-full pt-5`}>
         {islogin ? (
           <>
@@ -37,8 +32,8 @@ function MobileMenu(props) {
             </div>
           </>
         ) : (
-          <div
-            className=" flex flex-row items-center justify-center text-accent-content font-thin h-10 my-auto px-6 py-1 bg-secondary rounded-md"
+          <Button
+            className=" flex flex-row items-center justify-center text-accent-content font-thin h-10 my-auto px-6 py-1 bg-warning rounded-md"
             href={"/"}
             onClick={() => {
               props?.setshowMobileMenu(false);
@@ -46,7 +41,7 @@ function MobileMenu(props) {
             }}
           >
             Login
-          </div>
+          </Button>
         )}
       </div>
 

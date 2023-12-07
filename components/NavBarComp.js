@@ -2,9 +2,11 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { BiSearchAlt } from "react-icons/bi";
-import { CgMenuGridO } from "react-icons/cg";
 import MobileMenu from "@/components/MobileMenu";
 import { useRouter } from "next/navigation";
+import { Button } from "@nextui-org/button";
+import { IoMdMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 function NavBarComp() {
   const [isSticky, setSticky] = useState(false);
   const [islogin, setislogin] = useState(false);
@@ -148,14 +150,17 @@ function NavBarComp() {
                 </div>
               </>
             ) : (
-              <button
-                id="loginModalbtn"
-                data-modal-target="loginModal"
-                data-modal-toggle="loginModal"
-                className=" w-20  bg-warning md:p-2 p-1 text-sm text-secondary-content shadow-sm hover:bg-secondary-focus hover:text-white transition-all duration-500 hover:shadow-lg"
-              >
+              // <button
+              //   id="loginModalbtn"
+              //   data-modal-target="loginModal"
+              //   data-modal-toggle="loginModal"
+              //   className=" w-20  bg-warning md:p-2 p-1 text-sm text-secondary-content shadow-sm hover:bg-secondary-focus hover:text-white transition-all duration-500 hover:shadow-lg"
+              // >
+              //   Login
+              // </button>
+              <Button className="bg-warning hover:text-base-content">
                 Login
-              </button>
+              </Button>
             )}
 
             {/* Condition rendering on loggin and logged out */}
@@ -179,7 +184,7 @@ function NavBarComp() {
       <div
         className={`${
           isSticky ? "shadow-lg" : "shadow-none"
-        } lg:hidden flex bg-primary   pt-2 justify-between px-4 items-center pb-1 sticky top-0 z-40`}
+        } lg:hidden flex bg-primary   pt-2 justify-between px-4 items-center pb-1 sticky top-0 z-[60]`}
       >
         <div
           className="flex flex-row space-x-2 items-center cursor-pointer select-none "
@@ -187,16 +192,23 @@ function NavBarComp() {
         >
           {/* <SiteLogo /> */}
           <div className="text-start text-base-content">
-            <p className="text-xl font-semibold">MarketOnEarth</p>
-            <p className="text-sm">Settle your marketing</p>
+            <p className="text-xl font-semibold">WEALTHTRUST</p>
           </div>
         </div>
         <div className="flex flex-row space-x-2 items-center">
-          <CgMenuGridO
-            size={30}
-            className="border rounded-md border-gray-300 focus:border-primary focus:ring-primary focus-visible:ring-primary "
-            onClick={() => setshowMobileMenu(true)}
-          />
+          {showMobileMenu ? (
+            <IoMdClose
+              size={35}
+              className="text-base-content rounded-md  "
+              onClick={() => setshowMobileMenu(false)}
+            />
+          ) : (
+            <IoMdMenu
+              size={35}
+              className="text-base-content rounded-md  "
+              onClick={() => setshowMobileMenu(true)}
+            />
+          )}
         </div>
         <MobileMenu
           setshowMobileMenu={setshowMobileMenu}
