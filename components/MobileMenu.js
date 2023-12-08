@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@nextui-org/button";
 function MobileMenu(props) {
   const [islogin, setislogin] = useState(false);
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   return (
     <div
@@ -46,58 +47,193 @@ function MobileMenu(props) {
       </div>
 
       <div className="flex flex-col space-y-4  pt-20 pl-10 select-none cursor-pointer">
-        {/* after Login account section */}
-        {islogin && (
-          <>
-            <div
-              className="w-full font-thin cursor-pointer text-center flex items-center  hover:decoration-action-900  group "
-              data-dropdown-toggle="dropdownHover"
-              data-dropdown-trigger="hover"
-              onClick={() => setOpen((e) => !e)}
-            >
-              Account Setting
-              <IoIosArrowDown
-                className={`ml-1 ${
-                  open ? "rotate-180" : "rotate-0"
-                } transition-all transform duration-300`}
-              ></IoIosArrowDown>
-            </div>
-            <ul
-              className={`py-2 text-sm text-main ${
-                open ? "block" : "hidden"
-              } transition-all duration-500`}
-            >
-              <li>
-                <div onClick={logout} className="badge badge-secondary ">
-                  Sign Out
-                </div>
-              </li>
-            </ul>
-          </>
-        )}
-        {/* after Login account section */}
-        {/* <div className="flex flex-row justify-start w-full  h-10 items-center">
-        <ThemeTogglerButton />
-      </div> */}
-
         <Link
           className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
-          href={"/blogs"}
+          href={"#"}
           onClick={() => {
             props?.setshowMobileMenu(false);
           }}
         >
           Blogs
         </Link>
-        <Link
-          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
-          href={"/services"}
-          onClick={() => {
-            props?.setshowMobileMenu(false);
-          }}
+        <div
+          className={`cursor-pointer  hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group `}
+          onClick={() => setOpen((e) => !e)}
         >
           Services
-        </Link>
+          <IoIosArrowDown
+            className={`ml-1 ${
+              open ? "rotate-180" : "rotate-0"
+            } transition-all transform duration-300`}
+          ></IoIosArrowDown>
+        </div>
+        <ul
+          className={`py-2 text-sm text-primary-content ${
+            open ? "block" : "hidden"
+          } transition-all duration-500`}
+        >
+          <li>
+            <Link
+              href={"#"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+            >
+              Financial Freedom
+            </Link>
+            <ul className=" pl-6 [&>*]:text-xs">
+              <li>
+                {" "}
+                <Link
+                  href={"#"}
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Invest Early
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={"#"}
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Variety of SIP's
+                </Link>
+              </li>
+            </ul>
+            <Link
+              href={"/web-design-and-development"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+            >
+              Product and Services
+            </Link>
+            <ul className=" pl-6 [&>*]:text-xs">
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Mutual Fund
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Fixed Income Products
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Real Estate Products Services
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Portfolio Management
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Insurance
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Loans
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Private Equity Solutions
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Alternative Investments
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  Tax Planning
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link
+                  href={
+                    "/web-design-and-development/e-commerce-website-development"
+                  }
+                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+                >
+                  National Pension Scheme
+                </Link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
         <Link
           className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
           href={"/pricing"}

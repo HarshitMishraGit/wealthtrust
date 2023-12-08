@@ -5,7 +5,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import MobileMenu from "@/components/MobileMenu";
 import { useRouter } from "next/navigation";
 import { Button } from "@nextui-org/button";
-import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu, IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
 function NavBarComp() {
   const [isSticky, setSticky] = useState(false);
@@ -48,25 +48,191 @@ function NavBarComp() {
           <div className="navbar-center">
             <div className="flex flex-row lg:w-[40rem] md:w-[20rem]">
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-full  h-10 my-auto"
-                href={"/blogs"}
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto"
+                href={"#"}
               >
                 Blogs
               </Link>
-              <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
-                href={"/services"}
+              <div
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group w-1/4`}
               >
                 Services
-              </Link>
+                <IoIosArrowDown className="ml-1"></IoIosArrowDown>
+                <div
+                  id="dropdownHover1"
+                  className="w-full h-fit -z-10 !absolute right-0 pt-72 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-base-100 divide-y sm:px-10 lg:px-48 mx-auto shadow "
+                >
+                  <div className="w-full h-full grid grid-cols-3  mt-14">
+                    <ul className="list-disc text-start col-start-1 col-span-1">
+                      <li>
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900 "
+                        >
+                          Financial Freedom
+                        </Link>
+                        <ul className="list-decimal pl-6">
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Invest Early
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Variety of SIP's
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="list-disc text-start col-start-2 col-span-1">
+                      <li>
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          Products ans Services
+                        </Link>
+                        <ul className="list-decimal pl-6">
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Mutual Fund
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Fixed Income Products
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Real Estate Products Services
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Portfolio Management
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Insurance
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul className="list-disc text-start col-start-3 col-span-1">
+                      <li>
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          Products ans Services
+                        </Link>
+                        <ul className="list-decimal pl-6">
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Loans
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Private Equity Solutions
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Alternative Investments
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Tax Planning
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              National Pension Scheme
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full  h-10 my-auto"
-                href={"/pricing"}
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto"
+                href={"#"}
               >
-                What we do?
+                Be A Associate
               </Link>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-full h-10 my-auto"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4 h-10 my-auto"
                 href={"/aboutus"}
               >
                 About Us
