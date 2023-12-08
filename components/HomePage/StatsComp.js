@@ -1,5 +1,12 @@
 import React from "react";
-import AnimatedNumbers from "react-animated-numbers";
+import dynamic from 'next/dynamic';
+
+const AnimatedNumbers = dynamic(
+  () => import('react-animated-numbers'),
+  { ssr: false }  // This will load the component client side only
+);
+
+// rest of your code
 function StatsComp() {
   return (
     <section className="stats flex flex-col space-y-4 justify-center items-center sm:pt-[17rem] lg:pt-10 pt-[12rem]">
