@@ -1,4 +1,5 @@
 "use client";
+import CarouselComp from "@/components/HomePage/CarouselComp";
 import ContentComp from "@/components/HomePage/ContentComp";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 import ContentComp2 from "@/components/HomePage/ContentComp2";
@@ -10,7 +11,7 @@ export default function Home() {
       <Hero />
       <StatsComp />
       <ContentComp />
-      <ContentComp2 />
+      {/* <ContentComp2 /> */}
     </>
   );
 }

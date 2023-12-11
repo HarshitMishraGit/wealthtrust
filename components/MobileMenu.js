@@ -10,7 +10,7 @@ function MobileMenu(props) {
   const router = useRouter();
   return (
     <div
-      className={`fixed bg-primary  w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
+      className={`fixed bg-base-100 py-10 w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
         props.show
           ? "translate-y-12 opacity-100 border-t-2 border-base-content"
           : `-translate-y-full  opacity-0`
@@ -33,8 +33,8 @@ function MobileMenu(props) {
             </div>
           </>
         ) : (
-          <Button
-            className=" flex flex-row items-center justify-center text-accent-content font-thin h-10 my-auto px-6 py-1 bg-accent rounded-md"
+          <Link
+            className=" btn btn-primary"
             href={"/"}
             onClick={() => {
               props?.setshowMobileMenu(false);
@@ -42,7 +42,7 @@ function MobileMenu(props) {
             }}
           >
             Login
-          </Button>
+          </Link>
         )}
       </div>
 
@@ -57,7 +57,7 @@ function MobileMenu(props) {
           Blogs
         </Link>
         <div
-          className={`cursor-pointer  hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group `}
+          className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
           onClick={() => setOpen((e) => !e)}
         >
           Services
@@ -68,7 +68,7 @@ function MobileMenu(props) {
           ></IoIosArrowDown>
         </div>
         <ul
-          className={`py-2 text-sm text-primary-content ${
+          className={`py-2 text-sm text-base-content ${
             open ? "block" : "hidden"
           } transition-all duration-500`}
         >
@@ -76,7 +76,7 @@ function MobileMenu(props) {
             <Link
               href={"#"}
               className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+hover:scale-110 "
             >
               Financial Freedom
             </Link>
@@ -85,7 +85,7 @@ hover:scale-110"
                 {" "}
                 <Link
                   href={"#"}
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Invest Early
@@ -95,7 +95,7 @@ hover:scale-110"
                 {" "}
                 <Link
                   href={"#"}
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Variety of SIP's
@@ -116,7 +116,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Mutual Fund
@@ -128,7 +128,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Fixed Income Products
@@ -140,7 +140,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Real Estate Products Services
@@ -152,7 +152,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Portfolio Management
@@ -164,7 +164,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Insurance
@@ -176,7 +176,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Loans
@@ -188,7 +188,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Private Equity Solutions
@@ -200,7 +200,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Alternative Investments
@@ -212,7 +212,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   Tax Planning
@@ -224,7 +224,7 @@ hover:scale-110"
                   href={
                     "/web-design-and-development/e-commerce-website-development"
                   }
-                  className="block px-4 py-2 text-primary-content cursor-pointer hover:underline hover:underline-offset-8
+                  className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
                   National Pension Scheme

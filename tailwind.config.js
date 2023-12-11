@@ -30,7 +30,16 @@ module.exports = {
       //     "base-content": "#ffffff",
       //   },
       // },
-      "lemonade",
+      // "lemonade",
+      // "business",
+      // "corporate",
+      // "autumn",
+      {
+        myTheme: {
+          ...require("daisyui/src/theming/themes")["cupcake"],
+          primary: "#488684",
+        },
+      },
     ],
   },
   plugins: [require("daisyui"), nextui()],
