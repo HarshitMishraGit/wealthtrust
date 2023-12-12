@@ -12,7 +12,7 @@ function MobileMenu(props) {
     <div
       className={`fixed bg-base-100 py-10 w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
         props.show
-          ? "translate-y-12 opacity-100 border-t-2 border-base-content"
+          ? "translate-y-12 opacity-100 border-t-2 border-base-content shadow-xl"
           : `-translate-y-full  opacity-0`
       } `}
     >

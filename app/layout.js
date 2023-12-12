@@ -1,9 +1,10 @@
-import { Inter, Lora } from "next/font/google";
+import { Inter, Lora, Poppins } from "next/font/google";
 import "./globals.css";
 import NavBarComp from "@/components/NavBarComp";
 import { Providers } from "./Providers";
 // const inter = Inter({ subsets: ["latin"] });
 const lora = Lora({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: "300" });
 export const metadata = {
   title: "WealthTrust",
   description:
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lora.className} bg-base-100`}>
+      <body className={`${poppins.className} bg-base-100`}>
         <Providers>
           <NavBarComp />
           {children}

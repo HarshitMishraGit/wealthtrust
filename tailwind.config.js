@@ -38,6 +38,8 @@ module.exports = {
         myTheme: {
           ...require("daisyui/src/theming/themes")["cupcake"],
           primary: "#488684",
+          purple: "#bcb7f8",
+          darkPurple: "#488684",
         },
       },
     ],

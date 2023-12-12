@@ -1,28 +1,21 @@
-"use client";
 import React from "react";
 import Link from "next/link";
-function Hero() {
-  // function handleSmoothScroll(e) {
-  //   if (window.location.pathname == "/") {
-  //     e.preventDefault(); // Prevent the default behavior of jumping to the anchor.
-
-  //     const targetId = e.currentTarget.getAttribute("href").split("#")[1]; // Get the target id without the '#'.
-
-  //     const targetElement = document.getElementById(targetId);
-
-  //     if (targetElement) {
-  //       targetElement.scrollIntoView({
-  //         behavior: "smooth", // This triggers smooth scrolling.
-  //         block: "start", // This aligns the top of the target element with the top of the viewport.
-  //       });
-  //     }
-  //   } else {
-  //     return;
-  //   }
-  // }
+function Workshops() {
   return (
-    <section className="lg:h-screen lg:p-12 p-5">
-      <div className="  bg-base-100  flex flex-col lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
+    <section className="lg:h-screen lg:p-12 p-5 bg-green-100">
+      <div className="  flex flex-col lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
+        <div className=" w-full lg:w-1/2 lg:h-full  shadow-lg object-contain ">
+          <video
+            width="750"
+            height="500"
+            controls
+            loop
+            className="object-contain w-full h-full rounded-xl"
+            poster="/poster.jpg"
+          >
+            <source src={"/video.mp4"} type="video/mp4" />
+          </video>
+        </div>
         <div className="flex flex-col w-full lg:w-1/2 gap-4   ">
           <h1 className="mb-5 text-5xl  font-medium text-base-content select-none cursor-pointer text-left">
             Achieve your <span className="text-primary">financial goals</span>{" "}
@@ -54,21 +47,9 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className=" w-full lg:w-1/2 lg:h-full  shadow-lg object-contain ">
-          <video
-            width="750"
-            height="500"
-            controls
-            loop
-            className="object-contain w-full h-full rounded-xl"
-            poster="/poster.jpg"
-          >
-            <source src={"/video.mp4"} type="video/mp4" />
-          </video>
-        </div>
       </div>
     </section>
   );
 }
 
-export default Hero;
+export default Workshops;

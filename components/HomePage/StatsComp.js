@@ -9,30 +9,37 @@ const AnimatedNumbers = dynamic(
 // rest of your code
 function StatsComp() {
   return (
-    <section className="stats flex flex-col space-y-4 justify-center items-center ">
-      <h2 className="text-xl font-semibold">In Numbers</h2>
-      <div className="stats w-full shadow-none border-none flex flex-col md:flex-row ">
+    <section className="stats flex flex-col space-y-7 bg-green-100 rounded-none py-14 p-4 justify-center items-center ">
+      <h2 className="text-md font-semibold bg-green-400  px-5 py-2 rounded-full">
+        In Numbers
+      </h2>
+      <h3 className="text-4xl font-semibold">WealthTrust Capital Services</h3>
+      <div className="stats w-full shadow-none  bg-green-100 border-none flex flex-col md:flex-row ">
         <div className="stat place-items-center">
-          <div className="stat-title">Downloads</div>
-          <div className="stat-value">
+          {/* <div className="stat-title">Assets Under Management</div> */}
+          <div className="stat-value text-green-800 inline-flex">
+            <p>&#8377;</p>
             <AnimatedNumbers
               includeComma
               transitions={(index) => ({
                 type: "spring",
                 duration: index + 0.3,
               })}
-              animateToNumber={31000}
+              animateToNumber={1.04}
               fontStyle={{
                 fontSize: 40,
               }}
             />
+            <p>Cr</p>
           </div>
-          <div className="stat-desc">From January 1st to February 1st</div>
+          <div className="stat-desc font-extralight text-xl mt-3 text-black">
+            Assets Under Management
+          </div>
         </div>
 
         <div className="stat place-items-center">
-          <div className="stat-title">Users</div>
-          <div className="stat-value text-secondary">
+          {/* <div className="stat-title">Users</div> */}
+          <div className="stat-value text-green-800 inline-flex">
             {" "}
             <AnimatedNumbers
               includeComma
@@ -40,18 +47,21 @@ function StatsComp() {
                 type: "spring",
                 duration: index + 0.3,
               })}
-              animateToNumber={4200}
+              animateToNumber={15}
               fontStyle={{
                 fontSize: 40,
               }}
             />
+            <p>+</p>
           </div>
-          <div className="stat-desc text-secondary">↗︎ 40 (2%)</div>
+          <div className="stat-desc font-extralight text-xl mt-3 text-black ">
+            Years of Experience
+          </div>
         </div>
 
         <div className="stat place-items-center">
-          <div className="stat-title">New Registers</div>
-          <div className="stat-value">
+          {/* <div className="stat-title">Years Of Experience</div> */}
+          <div className="stat-value text-green-800 inline-flex">
             {" "}
             <AnimatedNumbers
               includeComma
@@ -59,13 +69,16 @@ function StatsComp() {
                 type: "spring",
                 duration: index + 0.3,
               })}
-              animateToNumber={1200}
+              animateToNumber={22}
               fontStyle={{
                 fontSize: 40,
               }}
             />
+            <p>%</p>
           </div>
-          <div className="stat-desc">↘︎ 90 (14%)</div>
+          <div className="stat-desc font-extralight text-xl mt-3 text-black">
+            Average Returnt
+          </div>
         </div>
       </div>
     </section>
