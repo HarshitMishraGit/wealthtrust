@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 function Workshops() {
   return (
-    <section className="lg:h-screen lg:p-12 p-5 bg-green-100">
+    <section className="lg:h-screen lg:p-12 p-5 bg-lightColor">
       <div className="  flex flex-col lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
         <div className=" w-full lg:w-1/2 lg:h-full  shadow-lg object-contain ">
           <video

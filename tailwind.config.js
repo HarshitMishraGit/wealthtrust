@@ -11,7 +11,15 @@ module.exports = {
     "@components": "./components",
     "@app": "./app",
   },
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        lightColor: "#bcb7f8",
+        darkColor: "#488684",
+        textColor: "#1a202c",
+      },
+    },
+  },
   daisyui: {
     themes: [
       // {
@@ -37,9 +45,7 @@ module.exports = {
       {
         myTheme: {
           ...require("daisyui/src/theming/themes")["cupcake"],
-          primary: "#488684",
-          purple: "#bcb7f8",
-          darkPurple: "#488684",
+          primary: "#4c51d0",
         },
       },
     ],

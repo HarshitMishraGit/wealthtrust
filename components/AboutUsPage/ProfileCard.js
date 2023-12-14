@@ -13,16 +13,18 @@ function ProfileCard(props) {
           className="object-cover sm:rounded-l-lg rounded-t-lg sm:rounded-tr-none object-top w-full h-full"
         />
       </div>
-      <div className="sm:w-2/3 p-2">
+      <div className="sm:w-2/3 sm:p-2 p-6">
         <div className="flex flex-col gap-4 ">
           <p className="font-bold">{name}</p>
-          <p className="">{designation}</p>
-          <p className="text-green-800 text-sm">{description}</p>
+          <p className="text-blue-500">{designation}</p>
+          <p className="text-sm">{description}</p>
         </div>
         <div className="social py-2">
-          <Link href={social.linkedIn}>
-            <ImLinkedin className="text-[#0277b5]" size={25} />
-          </Link>
+          <div className=" w-10">
+            <Link href={social.linkedIn}>
+              <ImLinkedin className="text-[#0277b5] " size={25} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

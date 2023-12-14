@@ -8,9 +8,9 @@ function PortfoliCard() {
     <div className="flex flex-col lg:flex-row justify-center items-center lg:py-20 lg:px-10 px-4 py-4 gap-10 p-5">
       <div className="lg:grid lg:grid-cols-2 gap-5 lg:grid-rows-2 flex flex-wrap lg:w-1/2 w-full">
         <Fade className="w-full">
-          <div className="w-full  cursor-pointer bg-white rounded-lg flex flex-col gap-5  lg:col-start-1 lg:row-start-1 hover:bg-green-400 p-10 hover:text-white group items-start justify-center h-full">
+          <div className="w-full  cursor-pointer bg-white rounded-lg flex flex-col gap-5  lg:col-start-1 lg:row-start-1 hover:bg-primary p-10 hover:text-white group items-start justify-center h-full">
             {/* <HiCurrencyRupee size={30} className="" /> */}
-            <p className="text-4xl font-bold text-green-700 group-hover:text-white">
+            <p className="text-4xl font-bold text-blue-700 group-hover:text-white">
               8%
             </p>
             <p className="text-xl font-semibold">
@@ -19,7 +19,7 @@ function PortfoliCard() {
           </div>
         </Fade>
         <Fade className="w-full">
-          <div className="w-full  bg-green-400 rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1 cursor-pointerhover:bg-green-400 p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
+          <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1 cursor-pointerhover:bg-primary p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
             {" "}
             <p className="text-4xl font-bold">14%</p>
             <p className="text-xl font-semibold">
@@ -29,7 +29,7 @@ function PortfoliCard() {
           </div>
         </Fade>
         <Fade className="w-full">
-          <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-1 lg:row-start-2 cursor-pointer hover:bg-green-400 p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
+          <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-1 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
             {" "}
             {/* <HiCurrencyRupee size={30} className="" /> */}
             <p className="text-xl font-semibold ">
@@ -39,7 +39,7 @@ function PortfoliCard() {
           </div>
         </Fade>
         <Fade className="w-full">
-          <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-2 cursor-pointer hover:bg-green-400 p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
+          <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
             {" "}
             <p className="text-xl font-semibold ">
               Financial markets can seem complicated, so you might delay your
