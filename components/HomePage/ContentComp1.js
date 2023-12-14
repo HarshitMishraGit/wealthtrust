@@ -1,16 +1,16 @@
 "use client";
 import React from "react";
 import { Fade, Bounce, Slide } from "react-awesome-reveal";
-import confetti from "canvas-confetti";
+// import confetti from "canvas-confetti";
 function ContentComp1(props) {
   const { badgeTitle, title, content, imageUrl, reverse } = props;
-  const handleConfetti = () => {
-    confetti({
-      particleCount: 500,
-      spread: 160,
-      origin: { y: 0.6 },
-    });
-  };
+  // const handleConfetti = () => {
+  //   confetti({
+  //     particleCount: 500,
+  //     spread: 160,
+  //     origin: { y: 0.6 },
+  //   });
+  // };
   return (
     <section className="min-h-fit lg:p-12 p-4  hero  bg-base-100 overflow-x-hidden">
       <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-6xl lg:gap-10 flex flex-col space-y-5">
@@ -38,7 +38,7 @@ function ContentComp1(props) {
             ></p>
             <button
               className="btn btn-primary text-white rounded-lg"
-              onClick={handleConfetti}
+              // onClick={handleConfetti}
             >
               Get Started
             </button>
