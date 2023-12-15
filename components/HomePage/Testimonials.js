@@ -30,7 +30,7 @@ function Testimonials() {
   ];
 
   return (
-    <>
+    <div className="py-10">
       <h3 className="text-center font-thin">Don't take our words</h3>
       <h1 className="text-center font-bold text-3xl">
         See what fellow investors & traders have to say
@@ -68,7 +68,7 @@ function Testimonials() {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 
