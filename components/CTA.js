@@ -1,10 +1,13 @@
 "use client";
 import { Button } from "@nextui-org/button";
-import React from "react";
+import React, { useState } from "react";
+import ContactFormModal from "./Modals/ContactFormModal";
 
 function CTA() {
+  const [open, setOpen] = useState(false);
   return (
     <>
+      <ContactFormModal openModal={open} setOpen={setOpen} />
       <section className="bg-lightColor w-full">
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
@@ -13,7 +16,7 @@ function CTA() {
             alt="dashboard image"
           />
           <div className="mt-4 md:mt-0">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-purple-600 ">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black ">
               Let's grow together with WealthTrust.
             </h2>
             <p className="mb-6 font-light md:text-lg text-white">
@@ -23,7 +26,7 @@ function CTA() {
               journey towards financial prosperity.
             </p>
             <Button
-              href="#"
+              onClick={() => setOpen(false)}
               className="inline-flex items-center text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center "
             >
               Get started

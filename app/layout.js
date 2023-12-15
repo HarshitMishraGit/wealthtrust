@@ -3,7 +3,6 @@ import "./globals.css";
 import NavBarComp from "@/components/NavBarComp";
 import { Providers } from "./Providers";
 import FooterComp from "@/components/FooterComp";
-import CTA from "@/components/CTA";
 // const inter = Inter({ subsets: ["latin"] });
 const lora = Lora({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: "300" });
@@ -20,7 +19,6 @@ export default function RootLayout({ children }) {
         <Providers>
           <NavBarComp />
           {children}
-          <CTA />
           <FooterComp />
         </Providers>
       </body>
