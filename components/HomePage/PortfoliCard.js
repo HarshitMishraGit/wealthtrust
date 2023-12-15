@@ -31,7 +31,6 @@ function PortfoliCard() {
         <Fade className="w-full">
           <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-1 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
             {" "}
-            {/* <HiCurrencyRupee size={30} className="" /> */}
             <p className="text-xl font-semibold ">
               Delay and lack of knowledge can cost you <s>thousands</s> crores.
               Start today, safe tomorrow.
