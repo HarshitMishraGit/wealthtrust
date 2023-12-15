@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/react";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { SiSocialblade } from "react-icons/si";
 import Link from "next/link";
 function FooterComp() {
   const openLinkInPopup = (url) => {
@@ -18,8 +19,8 @@ function FooterComp() {
 
   return (
     <>
-      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5 w-full pt-24 px-4 lg:px-10">
-        <div className="flex flex-col gap-5 col-span-2 text-white  col-start-1 lg:w-2/3 sm:px-5">
+      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full pt-24 px-4 lg:px-10">
+        <div className="flex flex-col col-start-4 gap-5 h-fit  col-span-2 text-white bg-black bg-opacity-60 backdrop-blur shadow-xl p-5 rounded-lg   sm:px-5">
           <div className="font-bold text-xl">
             For Equity Newsletter Please Subscribe Here
           </div>
@@ -31,7 +32,7 @@ function FooterComp() {
             </div>
           </form>
         </div>
-        <div className="col-start-3">
+        <div className="col-start-1 row-start-1 ">
           <div className="font-bold text-2xl text-white">Resources</div>
           <div className="flex flex-col gap-5 text-white py-5">
             <div className="cursor-pointer ">Blog</div>
@@ -40,7 +41,7 @@ function FooterComp() {
             <div className="cursor-pointer ">Videos</div>
           </div>
         </div>
-        <div className="col-start-4">
+        <div className="col-start-2 row-start-1 ">
           <div className="font-bold text-2xl text-white">Contact Us</div>
           <div className="flex flex-col gap-5 text-white py-5">
             <section>
@@ -67,9 +68,21 @@ function FooterComp() {
               </div>
               <p className="text-sm">enquiry@wealthtrustcap.com</p>
             </section>
+            <section>
+              <div className=" inline-flex gap-2 items-center">
+                <SiSocialblade size={15} className="text-white" />
+                <p> Follow Us on </p>
+              </div>
+              <div className="flex flex-row gap-5 py-1">
+                <FaYoutube size={25} />
+                <FaFacebook size={25} />
+                <FaLinkedin size={25} />
+                <FaInstagram size={25} />
+              </div>
+            </section>
           </div>
         </div>
-        <div className="col-start-5 col-span-2 justify-center sm:px-4 text-white">
+        <div className="col-start-3 row-start-1 justify-center sm:px-4 text-white">
           <div className="font-bold text-2xl ">Calculators</div>
           <div className="flex flex-col gap-2 py-4 ">
             <div
@@ -125,16 +138,7 @@ function FooterComp() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-5 col-span-2 sm:px-10 text-white  col-start-1 ">
-          <div className="font-bold text-4xl">WealthTrust</div>
-          <div className="flex flex-row gap-5 p-5">
-            <FaYoutube size={25} />
-            <FaFacebook size={25} />
-            <FaLinkedin size={25} />
-            <FaInstagram size={25} />
-          </div>
-        </div>
-        <div className="flex flex-row   items-center gap-3  col-start-5  select-none text-white">
+        {/* <div className="flex flex-row   items-center gap-3  col-start-5  select-none text-white">
           <div className=" cursor-pointer flex flex-col justify-center items-end">
             <IoLogoGooglePlaystore
               // size={60}
@@ -150,7 +154,7 @@ function FooterComp() {
             />
             Media Room
           </div>
-        </div>
+        </div> */}
 
         <div className="col-start-1 col-span-5 items-center justify-center text-white border-t border-b  flex flex-col py-5 gap-2">
           <p className="text-3xl font-semibold">
