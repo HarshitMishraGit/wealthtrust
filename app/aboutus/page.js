@@ -75,13 +75,24 @@ function page() {
   ];
 
   return (
-    <div className="min-h-screen pt-24 p-4">
-      <div className="py-10 border-b border-gray-300 space-y-4">
-        <p className="text-center text-blue-400 font-bold text-3xl">About Us</p>
-        <p className="text-xl text-center ">
-          {" "}
-          Empowering Your Financial Future,One Investment at a Time.
-        </p>
+    <div className="min-h-screen ">
+      <div className="h-[20rem] relative ">
+        <div className="w-full h-full ">
+          <img
+            src="/AboutUsPage/bg.jpg"
+            alt=""
+            className="object-cover w-full h-full absolute top-0 z-10"
+          />
+        </div>
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col gap-3">
+          <p className="text-center text-blue-400 font-bold text-3xl">
+            About Us
+          </p>
+          <p className="text-2xl font-semibold text-center text-white ">
+            {" "}
+            Empowering Your Financial Future,One Investment at a Time.
+          </p>
+        </div>
       </div>
 
       <div className="flex flex-col sm:flex-row w-full  gap-5 lg:px-10 p-4 py-10">

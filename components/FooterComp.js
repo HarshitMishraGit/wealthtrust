@@ -18,7 +18,7 @@ function FooterComp() {
 
   return (
     <>
-      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5 w-full py-24 px-4 lg:px-10">
+      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5 w-full pt-24 px-4 lg:px-10">
         <div className="flex flex-col gap-5 col-span-2 text-white  col-start-1 lg:w-2/3 sm:px-5">
           <div className="font-bold text-xl">
             For Equity Newsletter Please Subscribe Here
@@ -134,13 +134,13 @@ function FooterComp() {
             <FaInstagram size={25} />
           </div>
         </div>
-        <div className="flex flex-row   items-center gap-3  col-start-5 select-none text-white">
-          <div className=" cursor-pointer">
+        <div className="flex flex-row   items-center gap-3  col-start-5  select-none text-white">
+          <div className=" cursor-pointer flex flex-col justify-center items-end">
             <IoLogoGooglePlaystore
               // size={60}
               className="  w-full h-full hover:scale-110 transform transition-all duration-500 ease-in-out"
             />
-            Mobile App
+            <p> Mobile App</p>
           </div>
           <div className="w-32  h-[5rem]  object-contain flex flex-col justify-start items-center cursor-pointer">
             <img

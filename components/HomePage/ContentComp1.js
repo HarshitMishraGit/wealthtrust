@@ -13,7 +13,7 @@ function ContentComp1(props) {
   // };
   return (
     <section className="min-h-fit lg:p-12 p-4  hero  bg-base-100 overflow-x-hidden">
-      <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-6xl lg:gap-10 flex flex-col space-y-5">
+      <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:gap-10 flex flex-col space-y-5">
         <Slide
           className={`${
             reverse ? "lg:col-start-1" : "lg:col-start-2"
@@ -30,7 +30,7 @@ function ContentComp1(props) {
         </Slide>
         <Slide direction={reverse ? "right" : "left"} triggerOnce>
           <div className="space-y-2">
-            <div className="badge badge-accent md:p-3">{badgeTitle}</div>
+            {/* <div className="badge badge-accent md:p-3">{badgeTitle}</div> */}
             <h1 className="text-5xl font-bold text-base-content">{title}</h1>
             <p
               className="py-6 text-base-content "

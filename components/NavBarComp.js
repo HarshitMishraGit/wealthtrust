@@ -29,8 +29,8 @@ function NavBarComp() {
     <>
       <div
         className={`${
-          isSticky ? "sticky bg-base-100  shadow-lg " : "absolute"
-        } top-0 lg:z-50 w-full transition-all duration-500`}
+          isSticky ? "sticky   shadow-lg " : "absolute"
+        } top-0 lg:z-50 w-full transition-all duration-500 bg-base-100`}
         id="navBar"
       >
         <div className="navbar border-b h-11  hidden lg:flex ">
@@ -57,7 +57,7 @@ function NavBarComp() {
               </Link>
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
-                href={"#"}
+                href={"/equity"}
               >
                 Equity
               </Link>
