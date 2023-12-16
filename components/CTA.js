@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import ContactFormModal from "./Modals/ContactFormModal";
 
 function CTA() {
-  const [open, setOpen] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
-      <ContactFormModal openModal={open} setOpen={setOpen} />
+      <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
       <section className="bg-lightColor w-full">
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
@@ -26,7 +26,7 @@ function CTA() {
               journey towards financial prosperity.
             </p>
             <Button
-              onClick={() => setOpen(false)}
+              onClick={() => setOpenModal(true)}
               className="inline-flex items-center text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center "
             >
               Get started

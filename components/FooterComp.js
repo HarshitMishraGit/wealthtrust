@@ -19,7 +19,7 @@ function FooterComp() {
 
   return (
     <>
-      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full pt-24 px-4 lg:px-10">
+      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-3 px-6 lg:px-10">
         <div className="flex flex-col col-start-4 gap-5 h-fit  col-span-2 text-white bg-black bg-opacity-60 backdrop-blur shadow-xl p-5 rounded-lg   sm:px-5">
           <div className="font-bold text-xl">
             For Equity Newsletter Please Subscribe Here
@@ -32,7 +32,7 @@ function FooterComp() {
             </div>
           </form>
         </div>
-        <div className="col-start-1 row-start-1 ">
+        <div className="col-start-1 row-start-1">
           <div className="font-bold text-2xl text-white">Resources</div>
           <div className="flex flex-col gap-5 text-white py-5">
             <div className="cursor-pointer ">Blog</div>
@@ -157,7 +157,7 @@ function FooterComp() {
         </div> */}
 
         <div className="col-start-1 col-span-5 items-center justify-center text-white border-t border-b  flex flex-col py-5 gap-2">
-          <p className="text-3xl font-semibold">
+          <p className="text-3xl font-semibold text-center">
             WealthTrust Capital Services LLP
           </p>
           <p className="text-sm">
