@@ -78,7 +78,7 @@ function StatsComp() {
         <div className="stats w-full shadow-none rounded-none  bg-lightColor py-20 border-none flex flex-col md:flex-row ">
           <div className="stat place-items-center">
             <div className="stat-title py-3">
-              <img src="/Homepage/asset.png" alt="" className="w-20 h-20 " />
+              <img src="/HomePage/asset.png" alt="" className="w-20 h-20 " />
             </div>
             <div className="stat-value text-primary inline-flex">
               <p>&#8377;</p>
@@ -103,7 +103,7 @@ function StatsComp() {
           <div className="stat place-items-center">
             <div className="stat-title py-3">
               <img
-                src="/Homepage/experience.png"
+                src="/HomePage/experience.png"
                 alt=""
                 className="w-20 h-20"
               />
@@ -130,7 +130,7 @@ function StatsComp() {
 
           <div className="stat place-items-center">
             <div className="stat-title py-3">
-              <img src="/Homepage/return.png" alt="" className="w-20 h-20" />
+              <img src="/HomePage/return.png" alt="" className="w-20 h-20" />
             </div>
             <div className="stat-value text-primary inline-flex">
               {" "}

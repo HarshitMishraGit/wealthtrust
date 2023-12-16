@@ -47,7 +47,7 @@ function page() {
   ];
   return (
     <div className="">
-      <div className="h-[20rem] relative ">
+      <div className="h-[30rem] sm:h-[20rem] relative ">
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg.jpg"
@@ -61,7 +61,7 @@ function page() {
             {" "}
             Welcome to Wealth Trust Cap: Your Gateway to Informed Investments
           </p>
-          <p className="text-white w-2/3 text-center mx-auto">
+          <p className="text-sm text-white w-2/3 text-center mx-auto">
             At Wealth Trust Cap, we are committed to empowering your financial
             journey through comprehensive Equity Research services. Our
             expertise lies in unraveling the complexities of the financial

@@ -19,7 +19,7 @@ function CardComp2() {
         <div className="w-full lg:w-2/5 h-48">
           <div className="w-full h-full bg-[#2b2e35] rounded-l-lg">
             <img
-              src="/Homepage/card_img.png"
+              src="/HomePage/card_img.png"
               alt=""
               className="object-contain w-full h-full"
             />

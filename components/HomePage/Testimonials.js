@@ -9,7 +9,7 @@ function Testimonials() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       name: "John Doe",
       designation: "CEO, ABC Company",
-      imageUrl: `/Homepage/user.png`,
+      imageUrl: `/HomePage/user.png`,
     },
     {
       rating: 4,
@@ -17,7 +17,7 @@ function Testimonials() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       name: "John Doe",
       designation: "CEO, ABC Company",
-      imageUrl: `/Homepage/user.png`,
+      imageUrl: `/HomePage/user.png`,
     },
     {
       rating: 4,
@@ -25,7 +25,7 @@ function Testimonials() {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
       name: "John Doe",
       designation: "CEO, ABC Company",
-      imageUrl: `/Homepage/user.png`,
+      imageUrl: `/HomePage/user.png`,
     },
   ];
 
