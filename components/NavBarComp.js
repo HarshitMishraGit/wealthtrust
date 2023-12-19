@@ -243,7 +243,7 @@ hover:decoration-action-900"
               </Link>
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
-                href={"#"}
+                href={"/resources"}
               >
                 Resources
               </Link>
