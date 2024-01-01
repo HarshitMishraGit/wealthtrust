@@ -14,17 +14,17 @@ function ProfileCard(props) {
         />
       </div>
       <div className="sm:w-2/3 sm:p-2 p-6">
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col ">
           <p className="font-bold">{name}</p>
           <p className="text-blue-500">{designation}</p>
-          <p className="text-sm">{description}</p>
-        </div>
-        <div className="social py-2">
-          <div className=" w-10">
-            <Link href={social.linkedIn}>
-              <ImLinkedin className="text-[#0277b5] " size={25} />
-            </Link>
+          <div className="social">
+            <div className=" w-10">
+              <Link href={social.linkedIn}>
+                <ImLinkedin className="text-[#0277b5] " size={25} />
+              </Link>
+            </div>
           </div>
+          <p className="text-sm py-4">{description}</p>
         </div>
       </div>
     </div>
