@@ -31,7 +31,7 @@ function StatsComp() {
           <span className="text-green-300">Start today, safe tomorrow. </span>
         </h3>
       </section>
-      <section className="sm:p-10 p-2 w-full">
+      {/* <section className="sm:p-10 p-2 w-full">
         <div className=" p-6  max-w-3xl mx-auto mb-4">
           <div className="flex flex-col justify-center items-center mb-4">
             <img
@@ -73,7 +73,7 @@ function StatsComp() {
             </h3>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div className="stats w-full shadow-none rounded-none  bg-lightColor py-20 border-none flex flex-col md:flex-row ">
           <div className="stat place-items-center">

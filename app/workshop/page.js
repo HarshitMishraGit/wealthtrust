@@ -1,11 +1,26 @@
 "use client";
 import ProfileCard from "@/components/AboutUsPage/ProfileCard";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { ImLinkedin } from "react-icons/im";
 import CardComp from "@/components/Resources/CardComp";
 import VideoWrapper from "@/components/Resources/VideoWrapper";
+import { Button } from "@nextui-org/button";
+import ContactFormModal from "@/components/Modals/ContactFormModal";
+import GalleryComp from "@/components/Workshop/GalleryComp";
+import { HiLightBulb } from "react-icons/hi";
+import { FaStar } from "react-icons/fa6";
+import { Avatar } from "@nextui-org/react";
 function page() {
+  const avatar = "/AboutUsPage/user.jpg";
+  const username = "John Doe";
+  const description = `Attending the Wealth Trust Cap workshop was a game-changer! The interactive sessions demystified complex financial concepts, and the personalized strategies gave me a clear roadmap for my financial goals. Connecting with like-minded individuals and learning from real success stories made the experience invaluable. Thanks to this workshop, I feel empowered and equipped to take charge of my financial future!`;
+  const rating = 5;
+  const keyPoints = [
+    { label: "Easy to Use", value: "Yes" },
+    { label: "Performance", value: "Excellent" },
+  ];
+
   const research_team = [
     {
       name: "Shubham J, CFP",
@@ -75,10 +90,23 @@ function page() {
       },
     },
   ];
-
+  const why_to_Attend = [
+    { title: "Gain valuable knowledge from industry experts." },
+    { title: "Network with like-minded individuals." },
+    { title: "Receive personalized advice from our team." },
+    { title: "Take the first step towards financial success." },
+  ];
+  const what_to_expect = [
+    { title: "Wealth Management Strategies" },
+    { title: "Investment Planning" },
+    { title: "Retirement Planning" },
+    { title: "Financial Goal Setting" },
+    { title: "Risk Management" },
+  ];
+  const [openModal, setOpenModal] = useState(false);
   return (
     <div className="min-h-screen ">
-      <div className="h-[20rem] relative ">
+      <div className="h-[50rem] py-10 relative ">
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg.jpg"
@@ -86,18 +114,132 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col gap-3">
-          <p className="text-center text-blue-400 font-bold text-3xl">
-            Resources
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col gap-3 justify-center">
+          <h1 className="text-center text-blue-400 font-bold sm:text-7xl text-3xl">
+            Investor Awareness <br />
+            Programs
+          </h1>
+          <p className="sm:text-3xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
+            Welcome to our Investor Awareness Programs, where financial
+            empowerment meets practical knowledge. Our workshops are designed to
+            provide valuable insights into wealth management, investment
+            strategies, and financial planning. We believe in equipping you with
+            the tools and knowledge to make informed decisions about your
+            financial future.
           </p>
-          <p className="text-2xl font-semibold text-center text-white ">
-            {" "}
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-            facilis?
-          </p>
+          <div className="flex flex-row justify-center items-center">
+            <ContactFormModal
+              openModal={openModal}
+              setOpenModal={setOpenModal}
+            />
+            <Button
+              onClick={() => setOpenModal(true)}
+              className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+            >
+              LET'S TALK
+              <svg
+                className="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </Button>
+          </div>
         </div>
       </div>
 
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center items-center bg-primary text-white">
+        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+          How To Participate
+        </h2>
+        <p className="sm:text-2xl text-lg text-center sm:p-16 lg:px-48 p-0">
+          If you're interested in attending our workshops, simply fill out the
+          form below with your details, including your name, email address, and
+          preferred workshop location. Our team will get in touch with you when
+          the workshop is scheduled in your city.
+        </p>
+      </section>
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+          What To Expect
+        </h2>
+        <div className="sm:text-2xl text-lg  p-4">
+          Our workshops cover a range of topics, including:
+          <GalleryComp data={what_to_expect} />
+        </div>
+      </section>
+      <section className="flex flex-col  px-10 py-10 bg-primary rounded-lg justify-center items-center">
+        <HiLightBulb size={50} className="text-yellow-500" />
+        <p className="sm:text-4xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white">
+          Each workshop is led by experienced professionals in the financial
+          industry, ensuring you receive valuable insights and practical advice.
+        </p>
+      </section>
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+          Why To Attend ?
+        </h2>
+        <div className="sm:text-2xl text-lg  p-4">
+          <GalleryComp data={why_to_Attend} />
+        </div>
+      </section>
+      <section className="sm:p-10 p-2 w-full bg-primary text-white">
+        <div className=" p-6  max-w-3xl mx-auto mb-4">
+          <div className="flex flex-col justify-center items-center mb-4">
+            <img
+              src={avatar}
+              alt="User Avatar"
+              className="w-20 h-20 rounded-full mr-4"
+            />
+
+            {/* <p className="">
+              Rating: {rating}{" "}
+              <span className="inline-flex items-center ">
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+                <FaStar className="text-yellow-500" />
+              </span>
+            </p> */}
+            <p className="text-lg font-bold">Exceptional Financial Guidance</p>
+          </div>
+
+          <p className=" mb-4">
+            " Attending the Wealth Trust Cap workshop was a game-changer! The
+            interactive sessions demystified complex financial concepts, and the
+            personalized strategies gave me a clear roadmap for my financial
+            goals. Connecting with like-minded individuals and learning from
+            real success stories made the experience invaluable. Thanks to this
+            workshop, I feel empowered and equipped to take charge of my
+            financial future! "
+          </p>
+
+          {/* <div className="grid grid-cols-2 gap-4">
+            {keyPoints.map((point, index) => (
+              <div key={index}>
+                <span className="font-semibold">{point.label}:</span>{" "}
+                {point.value}
+              </div>
+            ))}
+          </div> */}
+
+          <div className="flex flex-row gap-2 justify-center uppercase py-4 w-full">
+            <h3 className="text-lg sm:text-xl  font-semibold   w-fit">
+              - {username},
+            </h3>
+            <h3 className=" text-lg sm:text-xl  font-semibold  w-fit">
+              MarketOnEarth
+            </h3>
+          </div>
+        </div>
+      </section>
       <section className="research_team">
         <p className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
           Past Webinars

@@ -1,25 +1,14 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import CarouselComp from "./CarouselComp";
 function Hero() {
-  // function handleSmoothScroll(e) {
-  //   if (window.location.pathname == "/") {
-  //     e.preventDefault(); // Prevent the default behavior of jumping to the anchor.
-
-  //     const targetId = e.currentTarget.getAttribute("href").split("#")[1]; // Get the target id without the '#'.
-
-  //     const targetElement = document.getElementById(targetId);
-
-  //     if (targetElement) {
-  //       targetElement.scrollIntoView({
-  //         behavior: "smooth", // This triggers smooth scrolling.
-  //         block: "start", // This aligns the top of the target element with the top of the viewport.
-  //       });
-  //     }
-  //   } else {
-  //     return;
-  //   }
-  // }
+  const OPTIONS = {};
+  const SLIDES = [
+    {
+      src: "/workshop/1.jpg",
+    },
+  ];
   return (
     <section className="lg:h-screen lg:p-12 p-5">
       <div className="  bg-base-100  flex flex-col-reverse lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
@@ -65,6 +54,7 @@ function Hero() {
           >
             <source src={"/video.mp4"} type="video/mp4" />
           </video>
+          {/* <CarouselComp slides={SLIDES} options={OPTIONS} /> */}
         </div>
       </div>
     </section>
