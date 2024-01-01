@@ -48,7 +48,7 @@ function NavBarComp() {
             </div>
           </div>
           <div className="navbar-center">
-            <div className="flex flex-row lg:w-[40rem] md:w-[20rem]">
+            <div className="flex flex-row lg:w-[50rem] md:w-[20rem]">
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
                 href={"#"}
@@ -241,12 +241,12 @@ hover:decoration-action-900"
               >
                 About Us
               </Link>
-              {/* <Link
+              <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
-                href={"/workshop"}
+                href={"/team"}
               >
-                Workshop
-              </Link> */}
+                Team
+              </Link>
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
                 href={"/workshop"}

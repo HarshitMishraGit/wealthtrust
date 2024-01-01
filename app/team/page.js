@@ -3,6 +3,17 @@ import ProfileCard from "@/components/AboutUsPage/ProfileCard";
 import React from "react";
 import Link from "next/link";
 import { ImLinkedin } from "react-icons/im";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+  Input,
+  Textarea,
+} from "@nextui-org/react";
 function page() {
   const research_team = [
     {
@@ -118,7 +129,7 @@ function page() {
             Meet Our Team
           </h1>
           <h2 className="text-4xl p-10 text-center text-white ">
-            The people who work at wealthtrust share the vision and values of
+            The people who work at WealthTrust share the vision and values of
             our community. We are motivated to create an environment of growth
             where we can win at life and business together.
           </h2>
@@ -206,6 +217,113 @@ function page() {
           {operation_team.map((item, index) => {
             return <ProfileCard user={item} key={index} />;
           })}
+        </div>
+      </section>
+      <section>
+        <div className="h-[40rem] relative ">
+          <div className="w-full h-full ">
+            <img
+              src="/AboutUsPage/team.jpg"
+              alt=""
+              className="object-cover w-full h-full absolute top-0 z-10"
+            />
+          </div>
+          <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col justify-center gap-3">
+            <h1 className="text-center text-white font-bold text-5xl">
+              Want To Join Our Team ?
+            </h1>
+            <h2 className="text-4xl p-10 text-center text-white ">
+              At Wealth Trust Capital, we're not just building a company; we're
+              cultivating a community of passionate individuals dedicated to
+              transforming financial landscapes. If you're driven, innovative,
+              and ready to make a lasting impact, consider joining our team.
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+        <div className="flex flex-col gap-4 ">
+          <div className="p-4 flex flex-col gap-4 px-10">
+            <h2 className="sm:text-6xl text-4xl py-10 text-center font-bold">
+              Why Join WealthTrust Capital ?
+            </h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+                <p className="text-6xl">🚀</p>
+                <p className="text-3xl font-semibold">Innovative Environment</p>
+                <p className="text-3xl text-center px-10">
+                  Be part of a dynamic workplace that fosters creativity and
+                  encourages innovative thinking.
+                </p>
+              </div>{" "}
+              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+                <p className="text-6xl">💡</p>
+                <p className="text-3xl font-semibold"> Professional Growth</p>
+                <p className="text-3xl text-center px-10">
+                  We invest in your development, offering opportunities for
+                  skill enhancement and career advancement.
+                </p>
+              </div>{" "}
+              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+                <p className="text-6xl">🤝</p>
+                <p className="text-3xl font-semibold">Collaborative Culture</p>
+                <p className="text-3xl text-center px-10">
+                  Join a team that values collaboration, diversity, and the
+                  collective pursuit of excellence.
+                </p>
+              </div>{" "}
+              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+                <p className="text-6xl">🌍 </p>
+                <p className="text-3xl font-semibold">Meaningful Impact</p>
+                <p className="text-3xl text-center px-10">
+                  Contribute to shaping the future of financial empowerment and
+                  make a meaningful impact on people's lives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-6xl text-4xl text-center py-10 font-bold border-b">
+          How To Join ?
+        </h2>
+
+        <div className="py-10  flex sm:flex-row-reverse flex-col justify-center items-center  ">
+          <form
+            action="#"
+            className="flex flex-col gap-2 max-w-lg rounded-lg bg-base-300 sm:w-1/2 w-full 
+shadow-xl p-4"
+          >
+            <Input type="text" label="Name" placeholder="Enter Your name" />
+            <Input
+              type="text"
+              label="Phone No"
+              placeholder="Enter Your Mobile"
+              pattern="[0-9]{10}"
+            />
+            <Input type="email" label="Email" placeholder="Enter Your email" />
+            <Textarea
+              label="Description"
+              placeholder="Enter your description"
+              className=""
+              // labelPlacement="outside"
+            />
+            <Input type="file" />
+            <Button
+              type="submit"
+              // onClick={() => setOpenModal(true)}
+              className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+            >
+              Submit Now
+            </Button>
+          </form>
+          <p className="text-3xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
+            We're always on the lookout for exceptional talent. Feel free to
+            express your interest in joining our team by filling out the form
+            below, and we'll keep your information on file for future
+            opportunities.
+          </p>
         </div>
       </section>
     </div>
