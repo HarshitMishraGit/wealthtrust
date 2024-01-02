@@ -54,7 +54,16 @@ function MobileMenu(props) {
             props?.setshowMobileMenu(false);
           }}
         >
-          Blogs
+          Be An Associate
+        </Link>
+        <Link
+          className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
+          href={"/equity"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+          }}
+        >
+          Equity
         </Link>
         <div
           className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
@@ -236,21 +245,31 @@ hover:scale-110"
 
         <Link
           className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
-          href={"/pricing"}
-          onClick={() => {
-            props?.setshowMobileMenu(false);
-          }}
-        >
-          Pricing
-        </Link>
-        <Link
-          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
           href={"/aboutus"}
           onClick={() => {
             props?.setshowMobileMenu(false);
           }}
         >
           About Us
+        </Link>
+        <Link
+          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
+          href={"/team"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+          }}
+        >
+          Team
+        </Link>
+
+        <Link
+          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
+          href={"/workshop"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+          }}
+        >
+          Workshop
         </Link>
       </div>
     </div>
