@@ -38,7 +38,7 @@ function CarouselComp(props) {
               </div>
             </div>
             <div className="w-[20rem] embla__slide h-[20rem]">
-              <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1 cursor-pointerhover:bg-primary p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
+              <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1  p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
                 {" "}
                 <p className="text-4xl font-bold">14%</p>
                 <p className="text-xl font-semibold">
@@ -57,7 +57,7 @@ function CarouselComp(props) {
               </div>
             </div>
             <div className="w-[20rem] embla__slide h-[20rem]">
-              <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
+              <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-2 cursor-pointer text-white p-10  transition-all duration-300 group items-start justify-center h-full">
                 {" "}
                 <p className="text-xl font-semibold ">
                   Financial markets can seem complicated, so you might delay
