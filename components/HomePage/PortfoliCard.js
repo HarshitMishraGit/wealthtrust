@@ -6,21 +6,19 @@ import { Fade } from "react-awesome-reveal";
 function PortfoliCard() {
   return (
     <div className="flex flex-col lg:flex-row justify-center items-center lg:py-20 lg:px-10 px-4 py-4 gap-10 p-5">
-      <div className="lg:grid lg:grid-cols-2 gap-5 lg:grid-rows-2 flex flex-wrap lg:w-1/2 w-full">
+      {/* <div className="lg:grid lg:grid-cols-2 gap-5 lg:grid-rows-2 flex flex-wrap lg:w-1/2 w-full">
         <Fade className="w-full">
           <div className="w-full  cursor-pointer bg-white rounded-lg flex flex-col gap-5  lg:col-start-1 lg:row-start-1 hover:bg-primary p-10 hover:text-white group items-start justify-center h-full">
-            {/* <HiCurrencyRupee size={30} className="" /> */}
             <p className="text-4xl font-bold text-blue-700 group-hover:text-white">
               8%
             </p>
             <p className="text-xl font-semibold">
-              Indians invest in the markets.{" "}
+              Indians invest in the markets.
             </p>
           </div>
         </Fade>
         <Fade className="w-full">
           <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1 cursor-pointerhover:bg-primary p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
-            {" "}
             <p className="text-4xl font-bold">14%</p>
             <p className="text-xl font-semibold">
               is what the equity markets returned on average in the past 20
@@ -46,6 +44,14 @@ function PortfoliCard() {
             </p>
           </div>
         </Fade>
+      </div> */}
+
+      <div className="object-cover flex flex-wrap lg:w-1/2 w-full">
+        <img
+          src="/Homepage/trust.jpg"
+          alt="trust"
+          className="object-cover w-full h-full object-center"
+        />
       </div>
       <div className="flex flex-col gap-5 lg:w-1/2 p-4">
         <p>About WealthTrust</p>

@@ -1,7 +1,6 @@
 import React, { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { Fade } from "react-awesome-reveal";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 function CarouselComp(props) {
@@ -27,7 +26,7 @@ function CarouselComp(props) {
       <div className="embla !p-0 w-10/12 ">
         <div className="embla__viewport " ref={emblaRef}>
           <div className="embla__container ">
-            <Fade className="w-[20rem] embla__slide h-[20rem]">
+            <div className="w-[20rem] embla__slide h-[20rem]">
               <div className="w-full  cursor-pointer bg-white rounded-lg flex flex-col gap-5  lg:col-start-1 lg:row-start-1 hover:bg-primary p-10 hover:text-white group items-start justify-center h-full">
                 {/* <HiCurrencyRupee size={30} className="" /> */}
                 <p className="text-4xl font-bold text-blue-700 group-hover:text-white">
@@ -37,8 +36,8 @@ function CarouselComp(props) {
                   Indians invest in the markets.{" "}
                 </p>
               </div>
-            </Fade>
-            <Fade className="w-[20rem] embla__slide h-[20rem]">
+            </div>
+            <div className="w-[20rem] embla__slide h-[20rem]">
               <div className="w-full  bg-primary rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-1 cursor-pointerhover:bg-primary p-10 text-white transition-all duration-300 group items-start justify-center cursor-pointer  h-full">
                 {" "}
                 <p className="text-4xl font-bold">14%</p>
@@ -47,8 +46,8 @@ function CarouselComp(props) {
                   years.
                 </p>
               </div>
-            </Fade>
-            <Fade className="w-[20rem] embla__slide h-[20rem]">
+            </div>
+            <div className="w-[20rem] embla__slide h-[20rem]">
               <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-1 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
                 {" "}
                 <p className="text-xl font-semibold ">
@@ -56,8 +55,8 @@ function CarouselComp(props) {
                   crores. Start today, safe tomorrow.
                 </p>
               </div>
-            </Fade>
-            <Fade className="w-[20rem] embla__slide h-[20rem]">
+            </div>
+            <div className="w-[20rem] embla__slide h-[20rem]">
               <div className="w-full  bg-white rounded-lg flex flex-col gap-5 lg:col-start-2 lg:row-start-2 cursor-pointer hover:bg-primary p-10 hover:text-white transition-all duration-300 group items-start justify-center h-full">
                 {" "}
                 <p className="text-xl font-semibold ">
@@ -65,7 +64,7 @@ function CarouselComp(props) {
                   your purchase and stick to bank savings.
                 </p>
               </div>
-            </Fade>
+            </div>
           </div>
         </div>
       </div>
