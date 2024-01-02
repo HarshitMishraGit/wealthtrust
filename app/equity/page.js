@@ -47,7 +47,7 @@ function page() {
   ];
   return (
     <div className="">
-      <div className="h-[30rem] sm:h-[20rem] relative ">
+      <div className="h-[50rem]  relative ">
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg.jpg"
@@ -55,13 +55,12 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col gap-3 pt-24">
-          <p className="text-center text-blue-400 font-bold text-3xl">Equity</p>
-          <p className="text-2xl font-semibold text-center text-white ">
-            {" "}
-            Welcome to Wealth Trust Cap: Your Gateway to Informed Investments
-          </p>
-          <p className="text-sm text-white w-2/3 text-center mx-auto">
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center gap-3 pt-24">
+          <h1 className="text-center text-blue-400 font-bold sm:text-7xl text-3xl">
+            Equity: Your Gateway to Informed Investments
+          </h1>
+
+          <p className="sm:text-3xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
             At Wealth Trust Cap, we are committed to empowering your financial
             journey through comprehensive Equity Research services. Our
             expertise lies in unraveling the complexities of the financial

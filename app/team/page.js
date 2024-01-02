@@ -116,7 +116,7 @@ function page() {
 
   return (
     <div className="min-h-screen ">
-      <div className="h-[40rem] relative ">
+      <div className="h-[50rem] relative ">
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg2.jpg"
