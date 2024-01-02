@@ -3,12 +3,8 @@ import React from "react";
 import Link from "next/link";
 import CarouselComp from "./CarouselComp";
 function Hero() {
-  const OPTIONS = {};
-  const SLIDES = [
-    {
-      src: "/workshop/1.jpg",
-    },
-  ];
+  const OPTIONS = { loop: true };
+
   return (
     <section className="lg:h-screen lg:p-12 p-5">
       <div className="  bg-base-100  flex flex-col-reverse lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
@@ -43,8 +39,8 @@ function Hero() {
             </Link>
           </div>
         </div>
-        <div className=" w-full lg:w-1/2 lg:h-full  shadow-lg object-contain ">
-          <video
+        <div className=" w-full lg:w-1/2 lg:h-full   ">
+          {/* <video
             width="750"
             height="500"
             controls
@@ -53,8 +49,8 @@ function Hero() {
             poster="/poster.jpg"
           >
             <source src={"/video.mp4"} type="video/mp4" />
-          </video>
-          {/* <CarouselComp slides={SLIDES} options={OPTIONS} /> */}
+          </video> */}
+          <CarouselComp options={OPTIONS} />
         </div>
       </div>
     </section>
