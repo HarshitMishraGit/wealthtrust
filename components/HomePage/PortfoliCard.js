@@ -48,7 +48,7 @@ function PortfoliCard() {
 
       <div className="object-cover flex flex-wrap lg:w-1/2 w-full">
         <img
-          src="/Homepage/trust.jpg"
+          src="/HomePage/trust.jpg"
           alt="trust"
           className="object-cover w-full h-full object-center"
         />
