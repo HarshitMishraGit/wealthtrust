@@ -3,17 +3,13 @@ import React from "react";
 import { Fade, Bounce, Slide } from "react-awesome-reveal";
 // import confetti from "canvas-confetti";
 function ContentComp1(props) {
-  const { badgeTitle, title, content, imageUrl, reverse } = props;
-  // const handleConfetti = () => {
-  //   confetti({
-  //     particleCount: 500,
-  //     spread: 160,
-  //     origin: { y: 0.6 },
-  //   });
-  // };
+  const { badgeTitle, title, content, imageUrl, reverse, blogUrl } = props;
+  const handleRedirect = () => {
+    window.open(blogUrl, "_blank");
+  };
   return (
     <section className="min-h-fit lg:p-12 p-4  hero  bg-base-100 overflow-x-hidden">
-      <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:gap-10 flex flex-col space-y-5">
+      <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:gap-10 flex flex-col space-y-5 items-center justify-center">
         <Slide
           className={`${
             reverse ? "lg:col-start-1" : "lg:col-start-2"
@@ -21,12 +17,14 @@ function ContentComp1(props) {
           direction={reverse ? "left" : "right"}
           triggerOnce
         >
-          <img
-            height={700}
-            width={700}
-            src={imageUrl}
-            className="w-full h-full object-top rounded-lg shadow-2xl object-cover"
-          />
+          <div className="object-contain h-[25rem] w-[25rem] rounded-full bg-gray-300 mx-auto">
+            <img
+              height={700}
+              width={700}
+              src={imageUrl}
+              className="w-full h-full object-center  object-contain"
+            />
+          </div>
         </Slide>
         <Slide direction={reverse ? "right" : "left"} triggerOnce>
           <div className="space-y-2">
@@ -38,9 +36,9 @@ function ContentComp1(props) {
             ></p>
             <button
               className="btn btn-primary text-white rounded-lg"
-              // onClick={handleConfetti}
+              onClick={handleRedirect}
             >
-              Get Started
+              Read More
             </button>
           </div>
         </Slide>

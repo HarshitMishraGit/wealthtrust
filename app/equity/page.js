@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
-import CTA from "@/components/CTA";
+import { Button, Input, Textarea } from "@nextui-org/react";
 function page() {
   const content = [
     {
@@ -9,7 +9,7 @@ function page() {
       title: "Expert Analysis",
       content:
         "Our seasoned team of financial analysts combines industry knowledge, market research, and cutting-edge technology to deliver expert analysis that goes beyond the numbers. We aim to provide you with a clear understanding of market trends, potential risks, and lucrative opportunities.",
-      imageUrl: "/meet1.jpg",
+      imageUrl: "/Equity/expert.png",
       reverse: false,
     },
     {
@@ -17,7 +17,7 @@ function page() {
       title: "In-Depth Research",
       content:
         "Our commitment to in-depth research sets us apart. Whether you're a seasoned investor or just starting, our research covers a spectrum of industries and companies, ensuring you have the information needed to make well-informed investment choices.",
-      imageUrl: "/meet1.jpg",
+      imageUrl: "/Equity/research.png",
       reverse: true,
     },
     {
@@ -25,7 +25,7 @@ function page() {
       title: "Tailored Investment Strategies",
       content:
         "We recognize that every investor is unique. That's why our equity research services extend beyond generic advice. We tailor investment strategies to align with your financial goals, risk tolerance, and market preferences.",
-      imageUrl: "/meet1.jpg",
+      imageUrl: "/Equity/strategy.png",
       reverse: false,
     },
     {
@@ -33,7 +33,7 @@ function page() {
       title: "Timely Market Updates",
       content:
         "In the fast-paced world of finance, staying ahead is key. Our timely market updates keep you informed about significant events, economic indicators, and emerging trends, enabling you to adapt your investment strategy proactively.",
-      imageUrl: "/meet1.jpg",
+      imageUrl: "/Equity/update.png",
       reverse: true,
     },
     {
@@ -41,8 +41,30 @@ function page() {
       title: "Transparent Communication",
       content:
         "Transparent communication is the cornerstone of our client relationships. We provide clear, jargon-free reports and insights, ensuring you understand the rationale behind our recommendations.",
-      imageUrl: "/meet1.jpg",
+      imageUrl: "/Equity/comm.png",
       reverse: false,
+    },
+  ];
+  const data = [
+    {
+      title: "Company Analysis",
+      description:
+        "In-depth evaluations of individual companies, assessing financial health, growth potential, and competitive positioning.",
+    },
+    {
+      title: "Sector Reports",
+      description:
+        "Comprehensive reports on industry sectors, identifying key trends and factors influencing market dynamics.",
+    },
+    {
+      title: "Market Outlook:",
+      description:
+        "Regular insights into the broader market conditions, helping you navigate changing landscapes with confidence.",
+    },
+    {
+      title: "IPO Analysis",
+      description:
+        "Thorough analysis of Initial Public Offerings, providing you with insights to make informed investment decisions in the primary market.",
     },
   ];
   return (
@@ -56,11 +78,11 @@ function page() {
           />
         </div>
         <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center gap-3 pt-24">
-          <h1 className="text-center text-blue-400 font-bold sm:text-7xl text-3xl">
-            Equity: Your Gateway to Informed Investments
+          <h1 className="text-center text-blue-400 font-bold sm:text-6xl text-3xl">
+            Equity
           </h1>
 
-          <p className="sm:text-3xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
+          <p className="sm:text-2xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
             At Wealth Trust Cap, we are committed to empowering your financial
             journey through comprehensive Equity Research services. Our
             expertise lies in unraveling the complexities of the financial
@@ -78,37 +100,82 @@ function page() {
             content={item.content}
             imageUrl={item.imageUrl}
             reverse={item.reverse}
+            blogUrl={item.blogUrl}
           />
         ))}
       </div>
-      <div className="flex flex-col justify-center items-start lg:px-24 p-5">
-        <p className="text-3xl  font-semibold py-5">
-          Our Equity Research Services Include:
-        </p>
-        <div className="flex flex-col gap-3 list-disc py-5">
-          <li className="text-xl ">
-            <span className="font-bold"> Company Analysis: </span>In-depth
-            evaluations of individual companies, assessing financial health,
-            growth potential, and competitive positioning.
-          </li>
-          <li className="text-xl ">
-            <span className="font-bold">Sector Reports: </span>IComprehensive
-            reports on industry sectors, identifying key trends and factors
-            influencing market dynamics.
-          </li>
-          <li className="text-xl ">
-            <span className="font-bold"> Market Outlook: </span>Regular insights
-            into the broader market conditions, helping you navigate changing
-            landscapes with confidence.
-          </li>
-          <li className="text-xl ">
-            <span className="font-bold">IPO Analysis: </span>Thorough analysis
-            of Initial Public Offerings, providing you with insights to make
-            informed investment decisions in the primary market.
-          </li>
+
+      <section>
+        <h2 className="text-3xl  font-semibold py-5 text-center">
+          Our Equity Research Services Include
+        </h2>
+        <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-center justify-center sm:px-10 p-4">
+          {data.map((item, index) => {
+            return (
+              <div className="w-full flex flex-col justify-center items-center">
+                <div className="w-56 h-56 text-xl text-white font-semibold rounded-full bg-primary flex justify-center items-center">
+                  {item.title}
+                </div>
+                <div className="flex flex-col justify-center items-center py-3">
+                  <p className="text-center">{item.description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </div>
-      {/* <CTA /> */}
+      </section>
+      <section className="flex justify-center items-center py-10">
+        <form
+          action="#"
+          className="flex flex-col gap-4 rounded-lg bg-black w-full  lg:w-10/12 
+shadow-xl md:px-24 p-4 "
+        >
+          <h2 className="text-white md:text-5xl text-2xl text-center font-semibold">
+            Get In Touch !
+          </h2>
+          <Input
+            type="text"
+            label="Name"
+            placeholder="Enter Your name"
+            isRequired
+          />
+
+          <Input
+            type="text"
+            label="Phone No"
+            placeholder="Enter Your Mobile"
+            pattern="[0-9]{10}"
+            isRequired
+          />
+          <Input
+            type="email"
+            label="Email"
+            placeholder="Enter Your email"
+            isRequired
+          />
+          <Input
+            type="text"
+            label="Location"
+            placeholder="Enter Your city name"
+            isRequired
+          />
+
+          <Textarea
+            label="Description"
+            placeholder="Enter your description"
+            className=""
+            isRequired
+            // labelPlacement="outside"
+          />
+          <Button
+            type="submit"
+            // onClick={() => setOpenModal(true)}
+            className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+          >
+            Submit Now
+          </Button>
+        </form>
+      </section>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   Modal,
   ModalContent,
@@ -13,12 +13,15 @@ import {
 
 export default function ContactFormModal({ openModal, setOpenModal }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
+  const Submitref = useRef(null);
   useEffect(() => {
     if (openModal) {
       onOpen();
     }
   }, [openModal, onOpen]);
+  const submitForm = () => {
+    Submitref.current.click();
+  };
   return (
     <>
       <Modal
@@ -46,24 +49,35 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
                     type="text"
                     label="Name"
                     placeholder="Enter Your name"
+                    isRequired
                   />
                   <Input
                     type="text"
                     label="Phone No"
                     placeholder="Enter Your Mobile"
                     pattern="[0-9]{10}"
+                    isRequired
                   />
                   <Input
                     type="email"
                     label="Email"
                     placeholder="Enter Your email"
+                    isRequired
+                  />
+                  <Input
+                    type="text"
+                    label="Location"
+                    placeholder="Enter Your city name"
+                    isRequired
                   />
                   <Textarea
                     label="Description"
                     placeholder="Enter your description"
                     className=""
+                    isRequired
                     // labelPlacement="outside"
                   />
+                  <Input type="submit" ref={Submitref} />
                 </form>
               </ModalBody>
               <ModalFooter>
@@ -75,7 +89,7 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
                 >
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
+                <Button color="primary" onPress={submitForm}>
                   Submit
                 </Button>
               </ModalFooter>
