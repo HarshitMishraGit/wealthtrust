@@ -12,7 +12,7 @@ import {
 export default function GalleryComp(props) {
   const { data } = props;
   return (
-    <div className="py-10 gap-6 grid grid-cols-12 grid-rows-2  ">
+    <div className="py-10 gap-6 grid grid-cols-12  ">
       {data.map((item, index) => {
         return (
           <Card

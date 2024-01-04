@@ -5,12 +5,11 @@ import Link from "next/link";
 import { ImLinkedin } from "react-icons/im";
 import CardComp from "@/components/Resources/CardComp";
 import VideoWrapper from "@/components/Resources/VideoWrapper";
-import { Button } from "@nextui-org/button";
+// import { Button } from "@nextui-org/button";
 import ContactFormModal from "@/components/Modals/ContactFormModal";
 import GalleryComp from "@/components/Workshop/GalleryComp";
 import { HiLightBulb } from "react-icons/hi";
-import { FaStar } from "react-icons/fa6";
-import { Avatar } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@nextui-org/react";
 function page() {
   const avatar = "/AboutUsPage/user.jpg";
   const username = "John Doe";
@@ -94,7 +93,7 @@ function page() {
     { title: "Gain valuable knowledge from industry experts." },
     { title: "Network with like-minded individuals." },
     { title: "Receive personalized advice from our team." },
-    { title: "Take the first step towards financial success." },
+    // { title: "Take the first step towards financial success." },
   ];
   const what_to_expect = [
     { title: "Wealth Management Strategies" },
@@ -119,7 +118,7 @@ function page() {
             Investor Awareness <br />
             Programs
           </h1>
-          <p className="sm:text-3xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
+          <p className="sm:text-2xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
             Welcome to our Investor Awareness Programs, where financial
             empowerment meets practical knowledge. Our workshops are designed to
             provide valuable insights into wealth management, investment
@@ -127,50 +126,47 @@ function page() {
             the tools and knowledge to make informed decisions about your
             financial future.
           </p>
-          <div className="flex flex-row justify-center items-center">
-            <ContactFormModal
-              openModal={openModal}
-              setOpenModal={setOpenModal}
-            />
-            <Button
-              onClick={() => setOpenModal(true)}
-              className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
-            >
-              LET'S TALK
-              <svg
-                className="ml-2 -mr-1 w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </Button>
-          </div>
         </div>
       </div>
 
-      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center items-center bg-primary text-white">
+      <section className="sm:p-10 p-4 py-10 h-[32rem] flex flex-col gap-10 justify-center items-center bg-primary text-white">
         <h2 className="sm:text-6xl text-4xl text-center font-bold">
-          How To Participate
+          How To Participate ?
         </h2>
-        <p className="sm:text-2xl text-lg text-center sm:p-16 lg:px-48 p-0">
+        <p className="sm:text-2xl text-lg text-center  lg:px-48 p-0">
           If you're interested in attending our workshops, simply fill out the
           form below with your details, including your name, email address, and
           preferred workshop location. Our team will get in touch with you when
           the workshop is scheduled in your city.
         </p>
+        <div className="flex flex-row justify-center items-center pt-10">
+          <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
+          <Button
+            onClick={() => setOpenModal(true)}
+            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+          >
+            LET'S TALK
+            <svg
+              className="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Button>
+        </div>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
         <h2 className="sm:text-6xl text-4xl text-center font-bold">
           What To Expect
         </h2>
-        <div className="sm:text-2xl text-lg  p-4">
-          Our workshops cover a range of topics, including:
+        <div className="sm:text-2xl text-lg  p-4 text-center">
+          Our workshops cover a range of topics, including
           <GalleryComp data={what_to_expect} />
         </div>
       </section>
@@ -240,6 +236,125 @@ function page() {
           </div>
         </div>
       </section>
+      <section className="sm:p-10 p-4 sm:py-16 pt-5 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-5xl text-4xl text-center  font-bold pb-10">
+          Workshops for Corporates
+        </h2>
+
+        <div className=" flex flex-col gap-5  justify-center items-center  ">
+          <div className=" text-left px-10  w-full flex flex-col gap-5">
+            <p className="text-xl">
+              At Wealth Trust Capital, we understand the pivotal role financial
+              well-being plays in corporate success. Our tailored workshops are
+              designed to empower your team with the knowledge and skills needed
+              to navigate the complex world of finance.
+            </p>
+            <h2 className="sm:text-5xl text-4xl font-semibold text-center py-10">
+              What Sets Us Apart ?
+            </h2>
+
+            <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-center justify-center">
+              <div className="w-full flex flex-col justify-center items-center">
+                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="flex flex-col justify-center items-center py-3">
+                  <p className="text-2xl font-bold">Expert Guidance</p>
+                  <p className="text-center">
+                    Learn from seasoned financial professionals with a wealth of
+                    industry experience.
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col justify-center items-center">
+                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="flex flex-col justify-center items-center py-3">
+                  <p className="text-2xl font-bold">Customized Content</p>
+                  <p className="text-center">
+                    Our workshops are crafted to address the specific financial
+                    challenges faced by your organization.
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col justify-center items-center">
+                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="flex flex-col justify-center items-center py-3">
+                  <p className="text-2xl font-bold">Interactive Sessions</p>
+                  <p className="text-center">
+                    Engage in hands-on activities and discussions to enhance
+                    practical understanding.
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col justify-center items-center">
+                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="flex flex-col justify-center items-center py-3">
+                  <p className="text-2xl font-bold">Timely Updates</p>
+                  <p className="text-center">
+                    Stay informed about the latest market trends, regulations,
+                    and investment strategies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form
+            action="#"
+            className="flex flex-col gap-4 rounded-lg bg-black w-full  lg:w-10/12 
+shadow-xl md:px-24 p-4 sm:pb-24 pt-14 md:mt-24 mt-10 "
+          >
+            <h2 className="text-white md:text-5xl text-2xl text-center font-semibold">
+              Get In Touch !
+            </h2>
+            <Input
+              type="text"
+              label="Name"
+              placeholder="Enter Your name"
+              isRequired
+            />
+
+            <Input
+              type="text"
+              label="Phone No"
+              placeholder="Enter Your Mobile"
+              pattern="[0-9]{10}"
+              isRequired
+            />
+            <Input
+              type="email"
+              label="Email"
+              placeholder="Enter Your email"
+              isRequired
+            />
+
+            <Input
+              type="text"
+              label="Company Name"
+              placeholder="Enter the company name"
+              isRequired
+            />
+            <Input
+              type="number"
+              label="Company Size"
+              placeholder="Enter the company size"
+              min={0}
+              isRequired
+            />
+            <Textarea
+              label="Description"
+              placeholder="Enter your description"
+              className=""
+              isRequired
+              // labelPlacement="outside"
+            />
+            <Button
+              type="submit"
+              // onClick={() => setOpenModal(true)}
+              className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+            >
+              Submit Now
+            </Button>
+          </form>
+        </div>
+      </section>
       <section className="research_team">
         <p className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
           Past Webinars
@@ -252,7 +367,7 @@ function page() {
         </div>
       </section>
 
-      <section className="research_team">
+      {/* <section className="research_team">
         <p className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
           Youtube Videos
         </p>
@@ -262,7 +377,7 @@ function page() {
             return <VideoWrapper user={item} key={index} />;
           })}
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
