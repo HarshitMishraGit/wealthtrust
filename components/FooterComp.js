@@ -19,16 +19,16 @@ function FooterComp() {
 
   return (
     <>
-      <footer className="bg-primary min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-3 px-6 lg:px-10">
+      <footer className="bg-gray-700 min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-3 px-6 lg:px-10">
         <div className="flex flex-col col-start-4 gap-5 h-fit  col-span-2 text-white bg-black bg-opacity-60 backdrop-blur shadow-xl p-5 rounded-lg   sm:px-5">
           <div className="font-bold text-xl">
-            For Equity Newsletter Please Subscribe Here
+            Get Monthly Market Outlook From WTCS
           </div>
 
           <form action="#" className="">
             <div className="flex flex-col gap-4 ">
               <Input type="email" label="Email" />
-              <Button className="w-fit">Submit</Button>
+              <Button className="w-fit">Subscribe</Button>
             </div>
           </form>
         </div>

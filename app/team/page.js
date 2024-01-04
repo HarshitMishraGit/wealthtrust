@@ -46,15 +46,15 @@ function page() {
         linkedIn: "#",
       },
     },
-    {
-      name: "Vedant S",
-      designation: "Equity Associate",
-      imageUrl: "/AboutUsPage/user.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur.`,
-      social: {
-        linkedIn: "#",
-      },
-    },
+    // {
+    //   name: "Vedant S",
+    //   designation: "Equity Associate",
+    //   imageUrl: "/AboutUsPage/user.jpg",
+    //   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur.`,
+    //   social: {
+    //     linkedIn: "#",
+    //   },
+    // },
   ];
   const wealth_management_team = [
     {
@@ -125,10 +125,10 @@ function page() {
           />
         </div>
         <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col justify-center gap-3">
-          <h1 className="text-center text-white font-bold sm:text-5xl text-4xl">
+          <h1 className="text-center text-white font-bold sm:text-6xl text-4xl">
             Meet Our Team
           </h1>
-          <h2 className="sm:text-4xl text-2xl sm:p-10 p-4 text-center text-white ">
+          <h2 className="sm:text-4xl text-xl sm:p-10 p-4 text-center text-white ">
             The people who work at WealthTrust share the vision and values of
             our community. We are motivated to create an environment of growth
             where we can win at life and business together.
@@ -219,8 +219,8 @@ function page() {
           })}
         </div>
       </section>
-      <section>
-        <div className="h-[40rem] relative ">
+      <section className="md:pt-16 pt-5">
+        <div className="h-[50rem] relative ">
           <div className="w-full h-full ">
             <img
               src="/AboutUsPage/team.jpg"
@@ -232,7 +232,7 @@ function page() {
             <h1 className="text-center text-white font-bold sm:text-5xl text-4xl">
               Want To Join Our Team ?
             </h1>
-            <h2 className="sm:text-4xl text-2xl sm:p-10 p-4 text-center text-white ">
+            <h2 className="sm:text-2xl text-xl sm:p-10 p-4 text-center text-white ">
               At Wealth Trust Capital, we're not just building a company; we're
               cultivating a community of passionate individuals dedicated to
               transforming financial landscapes. If you're driven, innovative,
@@ -241,50 +241,50 @@ function page() {
           </div>
         </div>
       </section>
-      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+      <section className="sm:p-10 p-4 py-5 flex flex-col gap-5 justify-center ">
         <div className="flex flex-col gap-4 ">
-          <div className="p-4 flex flex-col gap-4 sm:px-10">
-            <h2 className="sm:text-6xl text-4xl  text-center font-bold">
-              Why Join WealthTrust Capital ?
+          <div className="flex flex-col gap-4 lg:px-10">
+            <h2 className="sm:text-5xl text-4xl  text-center font-bold py-5">
+              Why Join Us?
             </h2>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+            <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 lg:p-10">
+              <div className="flex flex-col gap-5  bg-base-200 p-5  justify-center items-center rounded-lg">
                 <p className="sm:text-6xl text-4xl ">🚀</p>
-                <p className="sm:text-3xl text-2xl font-semibold">
+                <p className="sm:text-2xl text-xl font-semibold text-center">
                   Innovative Environment
                 </p>
-                <p className="sm:text-3xl text-xl text-center sm:px-10">
+                <p className="sm:text-xl text-lg text-center lg:px-10">
                   Be part of a dynamic workplace that fosters creativity and
                   encourages innovative thinking.
                 </p>
               </div>{" "}
-              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+              <div className="flex flex-col gap-5  bg-base-200 p-5  justify-center items-center rounded-lg">
                 <p className="sm:text-6xl text-4xl ">💡</p>
-                <p className="sm:text-3xl text-2xl font-semibold">
+                <p className="sm:text-2xl text-xl font-semibold text-center">
                   {" "}
                   Professional Growth
                 </p>
-                <p className="sm:text-3xl text-xl text-center sm:px-10">
+                <p className="sm:text-xl text-lg text-center lg:px-10">
                   We invest in your development, offering opportunities for
                   skill enhancement and career advancement.
                 </p>
               </div>{" "}
-              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+              <div className="flex flex-col gap-5  bg-base-200 p-5  justify-center items-center rounded-lg">
                 <p className="sm:text-6xl text-4xl ">🤝</p>
-                <p className="sm:text-3xl text-2xl font-semibold">
+                <p className="sm:text-2xl text-xl font-semibold text-center">
                   Collaborative Culture
                 </p>
-                <p className="sm:text-3xl text-xl text-center sm:px-10">
+                <p className="sm:text-xl text-lg text-center lg:px-10">
                   Join a team that values collaboration, diversity, and the
                   collective pursuit of excellence.
                 </p>
               </div>{" "}
-              <div className="flex flex-col gap-5 bg-primary  text-white p-5  justify-center items-center">
+              <div className="flex flex-col gap-5  bg-base-200 p-5  justify-center items-center rounded-lg">
                 <p className="sm:text-6xl text-4xl ">🌍 </p>
-                <p className="sm:text-3xl text-2xl font-semibold">
+                <p className="sm:text-2xl text-xl font-semibold text-center">
                   Meaningful Impact
                 </p>
-                <p className="sm:text-3xl text-xl text-center sm:px-10">
+                <p className="sm:text-xl text-lg text-center lg:px-10">
                   Contribute to shaping the future of financial empowerment and
                   make a meaningful impact on people's lives.
                 </p>
@@ -293,12 +293,12 @@ function page() {
           </div>
         </div>
       </section>
-      <section className="sm:p-10 p-4 sm:py-10 py-5 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-6xl text-4xl text-center py-10 font-bold border-b">
+      <section className="sm:p-10 p-4 sm:py-5 pt-5 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-5xl text-4xl text-center  font-bold pb-10">
           How To Join ?
         </h2>
 
-        <div className="py-10  flex sm:flex-row-reverse gap-5 flex-col-reverse justify-center items-center  ">
+        <div className=" flex sm:flex-row-reverse gap-5 flex-col-reverse justify-center items-center  ">
           <form
             action="#"
             className="flex flex-col gap-2 max-w-lg rounded-lg bg-base-300 sm:w-1/2 w-full 
@@ -327,7 +327,7 @@ shadow-xl p-4"
               Submit Now
             </Button>
           </form>
-          <p className="text-3xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
+          <p className="sm:text-3xl text-2xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
             We're always on the lookout for exceptional talent. Feel free to
             express your interest in joining our team by filling out the form
             below, and we'll keep your information on file for future
