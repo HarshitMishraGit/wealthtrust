@@ -186,6 +186,7 @@ function page() {
         <p className="text-3xl font-semibold lg:px-10 pt-10 p-4">
           Research Team |{" "}
           <span className="text-gray-400">
+            
             People who enable informed decision making.
           </span>
         </p>
