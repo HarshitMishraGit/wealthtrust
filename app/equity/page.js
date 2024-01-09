@@ -2,6 +2,7 @@
 import React from "react";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 import { Button, Input, Textarea } from "@nextui-org/react";
+import Link from "next/link";
 function page() {
   const content = [
     {
@@ -175,6 +176,31 @@ shadow-xl md:px-24 p-4 "
             Submit Now
           </Button>
         </form>
+      </section>
+      <section className="sm:py-10 p-4 sm:px-24 bg-lightGreen">
+        <div className="flex sm:flex-row flex-col justify-center items-center ">
+          <div className="sm:w-1/2 w-full">
+            <p className="text-2xl font-bold">WealthTrust Capital Services</p>
+            {/* <p>
+              213,2ND FLOOR, Truf Estate, Shakti Mill Lane, Mahalaxmi, 400011,
+              Mumbai, Maharashtra, 400011
+            </p> */}
+          </div>
+          <div className="flex flex-row gap-10 justify-end sm:w-1/2 w-full ">
+            <Link
+              href="https://pickright-server.s3.amazonaws.com/prod/disclosure//1703053105471_disclosure.pdf"
+              className="text-xl font-bold text-primary"
+            >
+              Disclosures
+            </Link>
+            <Link
+              href="https://pickright-server.s3.amazonaws.com/prod/disclosure//1695207184046_investorCharter.pdf"
+              className="text-xl font-bold text-primary"
+            >
+              Investor Charter
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
