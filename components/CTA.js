@@ -8,18 +8,18 @@ function CTA() {
   return (
     <>
       <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
-      <section className="bg-lightColor w-full">
+      <section className="bg-lightGreen w-full">
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
             className="w-full hidden dark:block"
-            src="/CTA_image.png"
+            src="/CTA_image2.png"
             alt="dashboard image"
           />
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black ">
               Let's grow together with WealthTrust.
             </h2>
-            <p className="mb-6 font-light md:text-lg text-white">
+            <p className="mb-6 font-light md:text-lg text-black">
               At Wealth Trust Cap, we don't just provide data; we deliver
               strategic insights that empower you to make informed investment
               decisions. Explore our Equity Research services and embark on a
