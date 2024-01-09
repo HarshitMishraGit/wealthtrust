@@ -14,7 +14,7 @@ function Testimonials() {
     {
       rating: 3,
       review:
-        "I will always maintain that one can simply entrust Wealth Trust Capital to empower you and enrich you financially. They are the very definition of wealth creators. They leave no stones unturned to achieve what the client aspires from their investment. There are fewer teams who can build financial security and boost financial profitability the way Wealth Trust Capital does. It is because of the prowess that comes from months of research. I believe and bank on them totally and they have always lived and delivered beyond my expectations.",
+        "I will always maintain that one can simply entrust Wealth Trust Capital to empower you and enrich you financially. They are the very definition of wealth creators. They leave no stones unturned to achieve what the client aspires from their investment. There are fewer teams who can build financial security and boost financial profitability the way Wealth Trust Capital does. It is because of the prowess that comes from months of research. They have always lived and delivered beyond my expectations.",
       name: "Mr. Rahul Bhalekar",
       // designation: "CEO, ABC Company",
       imageUrl: `/HomePage/user2.png`,
@@ -22,7 +22,7 @@ function Testimonials() {
     {
       rating: 3,
       review:
-        "I have been very vocal in my acknowledgment and appreciation for Ms. Sneha, CEO at Wealth Trust Capital for her professionalism, prowess, promptness, proficiency and personal interventions while dealing with clients. That's a massive differentiator and also the deciding factor behind the stupendous success of the firm. Personally, I have seen immense appreciation of my investments across diversified sectors and timelines. I haven't come across a more knowledgeable person than Ms. Sneha who leads from the front.",
+        "I have been very vocal in my acknowledgment and appreciation for Ms. Sneha, CEO at Wealth Trust Capital for her professionalism, prowess, promptness, proficiency and personal interventions while dealing with clients. Personally, I have seen immense appreciation of my investments across diversified sectors and timelines. I haven't come across a more knowledgeable person than Ms. Sneha who leads from the front.",
       name: "Mr. Pranav Jhaveri",
       // designation: "CEO, ABC Company",
       imageUrl: `/HomePage/user3.png`,
