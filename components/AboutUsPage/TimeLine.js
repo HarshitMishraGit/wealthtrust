@@ -9,20 +9,29 @@ import Fade from "react-awesome-reveal";
 function TimeLine() {
   const data = [
     {
-      year: "2019",
+      year: "2015",
       title: "Wealth Trust Cap founded",
     },
     {
-      year: "2019",
-      title: "Wealth Trust Cap founded",
+      year: "2016",
+      title: "Developed proprietary financial planning model",
     },
     {
-      year: "2019",
-      title: "Wealth Trust Cap founded",
+      year: "2017",
+      title: "Recognized as most asset classes boutique wealth management firm",
     },
     {
-      year: "2019",
-      title: "Wealth Trust Cap founded",
+      year: "2020",
+      title: "Organized more than 80 workshops and going stronger",
+    },
+    {
+      year: "2021",
+      title: "Got SEBI Research analyst license",
+    },
+    {
+      year: "2023",
+      title:
+        "Managing more than 500 families and managing more than 200+crore in assets",
     },
   ];
 

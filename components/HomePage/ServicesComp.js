@@ -21,7 +21,7 @@ function ServicesComp(props) {
     [
       {
         title: "title",
-        description: `3rd Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quo.`,
+        description: `Explore the power of wealth creation with Mutual Funds at Wealth Trust. Our expertly curated investment solutions offer a gateway to a diversified portfolio, aligning with your financial aspirations. Discover the simplicity and effectiveness of Mutual Funds, where every investment is a step towards your financial success`,
       },
     ],
     [
