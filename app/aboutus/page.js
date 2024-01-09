@@ -60,7 +60,7 @@ function page() {
       <section className="py-5">
         <TimeLine />
       </section>
-      <section className="py-5 sm:py-10">
+      {/* <section className="py-5 sm:py-10">
         <h2 className="sm:text-5xl texxt-2xl text-center">Our Experties</h2>
         <div className="flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-2 lg:p-10">
           <div className="flex flex-col gap-5  bg-base-200 p-5  justify-center items-center rounded-lg">
@@ -105,7 +105,7 @@ function page() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="pt-5 sm:pt-10">
         <div className="h-[30rem] relative">
           <div className="w-full h-full ">

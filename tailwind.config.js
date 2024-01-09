@@ -17,6 +17,7 @@ module.exports = {
         lightColor: "#bcb7f8",
         darkColor: "#488684",
         textColor: "#1a202c",
+        lightGreen: "#bbf7d0",
       },
     },
   },
@@ -45,7 +46,8 @@ module.exports = {
       {
         myTheme: {
           ...require("daisyui/src/theming/themes")["cupcake"],
-          primary: "#4c51d0",
+          primary: "#2e7f7c",
+          secondary: "#374151",
         },
       },
     ],

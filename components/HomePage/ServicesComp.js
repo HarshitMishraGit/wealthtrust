@@ -37,7 +37,7 @@ function ServicesComp(props) {
         {data[itemNumber].map((item, index) => {
           return (
             <Fade key={index} spy={itemNumber + 1} appear={true}>
-              <div className="bg-lightColor px-3 py-7 shadow-lg relative ">
+              <div className="bg-lightGreen px-3 py-7 shadow-lg relative ">
                 <div className="w-full h-full relative overflow-hidden">
                   <p
                     className="text-black  pl-5 text-left"

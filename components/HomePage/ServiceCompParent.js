@@ -24,14 +24,14 @@ function ServiceCompParent() {
             <div
               className={`menuItems select-none   cursor-pointer flex justify-between ${
                 itemNumber === 0
-                  ? "border-b-2 border-white bg-secondary text-white"
+                  ? "     bg-secondary text-white"
                   : " text-white "
               } p-5 hover:bg-secondary hover:text-white`}
               onClick={() => {
                 setItemNumber(0);
               }}
             >
-              <div className="flex gap-2">Equity Investment</div>
+              <div className="flex gap-2">Equity Research</div>
               <span
                 onClick={() =>
                   setShowMobileMenu((prevState) => (prevState === 0 ? 1 : 0))
@@ -53,14 +53,14 @@ function ServiceCompParent() {
             <div
               className={`menuItems select-none   cursor-pointer flex justify-between ${
                 itemNumber === 1
-                  ? "border-b-2 border-white bg-secondary text-white"
+                  ? "     bg-secondary text-white"
                   : " text-white "
               } p-5 hover:bg-secondary hover:text-white`}
               onClick={() => {
                 setItemNumber(1);
               }}
             >
-              <div className="flex gap-2">Variety Of SIPs</div>
+              <div className="flex gap-2">Portfolio Management</div>
               <span
                 onClick={() =>
                   setShowMobileMenu((prevState) => (prevState === 0 ? 2 : 0))
@@ -82,14 +82,14 @@ function ServiceCompParent() {
             <div
               className={`menuItems select-none   cursor-pointer flex justify-between  ${
                 itemNumber === 2
-                  ? "border-b-2 border-white bg-secondary text-white"
+                  ? "     bg-secondary text-white"
                   : " text-white "
               } p-5 hover:bg-secondary hover:text-white`}
               onClick={() => {
                 setItemNumber(2);
               }}
             >
-              <div className="flex gap-2">Portfolio</div>
+              <div className="flex gap-2">Mutual Funds</div>
               <span
                 onClick={() =>
                   setShowMobileMenu((prevState) => (prevState === 0 ? 3 : 0))
@@ -111,14 +111,16 @@ function ServiceCompParent() {
             <div
               className={`menuItems select-none   cursor-pointer flex justify-between  ${
                 itemNumber === 3
-                  ? "border-b-2 border-white bg-secondary text-white"
+                  ? "     bg-secondary text-white"
                   : " text-white "
               } p-5 hover:bg-secondary hover:text-white`}
               onClick={() => {
                 setItemNumber(3);
               }}
             >
-              <div className="flex gap-2">Healthy Research</div>
+              <div className="flex gap-2">
+                Tax planning / insurance planning
+              </div>
               <span
                 onClick={() =>
                   setShowMobileMenu((prevState) => (prevState === 0 ? 4 : 0))

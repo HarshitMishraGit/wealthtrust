@@ -88,7 +88,7 @@ function StatsComp() {
                   type: "spring",
                   duration: index + 0.3,
                 })}
-                animateToNumber={1.04}
+                animateToNumber={200}
                 fontStyle={{
                   fontSize: 40,
                 }}
@@ -130,25 +130,17 @@ function StatsComp() {
 
           <div className="stat place-items-center">
             <div className="stat-title py-3">
-              <img src="/HomePage/return.png" alt="" className="w-20 h-20" />
+              <img
+                src="/HomePage/certificate.webp"
+                alt=""
+                className="w-20 h-20"
+              />
             </div>
             <div className="stat-value text-primary inline-flex">
-              {" "}
-              <AnimatedNumbers
-                includeComma
-                transitions={(index) => ({
-                  type: "spring",
-                  duration: index + 0.3,
-                })}
-                animateToNumber={22}
-                fontStyle={{
-                  fontSize: 40,
-                }}
-              />
-              <p>%</p>
+              SEBI certified
             </div>
             <div className="stat-desc font-extralight text-xl mt-3 text-black">
-              Average Returnt
+              Certification
             </div>
           </div>
         </div>

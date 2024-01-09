@@ -29,7 +29,7 @@ function CarouselComp(props) {
             <div className="w-[20rem] embla__slide h-[20rem]">
               <div className="w-full  cursor-pointer bg-white rounded-lg flex flex-col gap-5  lg:col-start-1 lg:row-start-1 hover:bg-primary p-10 hover:text-white group items-start justify-center h-full">
                 {/* <HiCurrencyRupee size={30} className="" /> */}
-                <p className="text-4xl font-bold text-blue-700 group-hover:text-white">
+                <p className="text-4xl font-bold text-primary group-hover:text-white">
                   8%
                 </p>
                 <p className="text-xl font-semibold">
