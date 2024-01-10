@@ -9,25 +9,28 @@ function ServicesComp(props) {
     [
       {
         title: "title",
-        description: `1st Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quo.`,
+        description: `Equity research is the systematic analysis of stocks and financial instruments to provide valuable insights for investment decisions. At Wealth Trust Capital, our experienced team conducts thorough equity research, offering in-depth analyses and recommendations to empower you with the knowledge needed to make informed investment choices and navigate the dynamic stock market landscape effectively.`,
       },
     ],
     [
       {
         title: "title",
-        description: `2nd Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quo.`,
+        description: `Portfolio management involves expertly managing a collection of investments to achieve specific financial objectives. At Wealth Trust Capital, we help optimize your portfolio, offering personalized strategies and guidance to enhance returns, minimize risks, and navigate the complexities of the financial markets for sustained wealth growth.`,
       },
     ],
     [
       {
         title: "title",
-        description: `Explore the power of wealth creation with Mutual Funds at Wealth Trust. Our expertly curated investment solutions offer a gateway to a diversified portfolio, aligning with your financial aspirations. Discover the simplicity and effectiveness of Mutual Funds, where every investment is a step towards your financial success`,
+        description: `Mutual funds are diversified investment vehicles pooling money from various investors to collectively invest in a portfolio of stocks, bonds, or other securities. At Wealth Trust Capital, we guide you through the diverse world of mutual funds, helping you select and manage a portfolio that aligns with your financial goals, providing a pathway to long-term wealth creation.s`,
       },
     ],
     [
       {
         title: "title",
-        description: `4th Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quo.`,
+        description: `
+        Tax planning involves strategic financial management to minimize your tax liabilities while ensuring compliance with relevant regulations. At Wealth Trust Capital, our experts employ innovative tax planning strategies tailored to your unique circumstances, helping you optimize your financial position and retain more of your hard-earned wealth.
+        
+        Insurance planning is a crucial component of a comprehensive financial strategy, providing protection and security for you and your loved ones. Wealth Trust Capital specializes in personalized insurance planning, guiding you to select the right coverage to safeguard against life's uncertainties and build a robust financial foundation for the future.`,
       },
     ],
   ];
