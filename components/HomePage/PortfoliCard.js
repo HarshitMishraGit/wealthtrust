@@ -60,16 +60,23 @@ function PortfoliCard() {
           Institution{" "}
         </p>
         <p>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean.
+          At Wealth Trust Capital, our commitment to excellence has earned the
+          trust of over 500 families who rely on our services for their
+          financial well-being. We take immense pride in being the trusted
+          partner on the financial journey for a diverse community of
+          individuals and families. Our holistic approach to wealth management,
+          personalized strategies, and unwavering dedication to our clients'
+          success have solidified our reputation as a reliable and transparent
+          financial partner. Join the growing number of families who have
+          entrusted their financial futures to us, and experience the difference
+          that a dedicated and trustworthy financial ally can make in achieving
+          your long-term goals.
         </p>
-        <p>
+        {/* <p>
           A small river named Duden flows by their place and supplies it with
           the necessary regelialia. It is a paradisematic country, in which
           roasted parts of sentences fly into your mouth.
-        </p>
+        </p> */}
         <Button className="w-fit bg-primary text-white">LEARN MORE</Button>
       </div>
     </div>
