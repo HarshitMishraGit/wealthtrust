@@ -9,14 +9,18 @@ function ServiceCompParent() {
   return (
     <div className=" py-10 relative bg-primary px-3 " id="Services">
       <div className="Content mx-auto overflow-x-hidden lg:px-36  lg:py-0">
-        <div className="max-w-screen-md mb-8 lg:mb-16">
+        <div className="max-w-screen-xl mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold  text-white">
             What We Offer:
           </h2>
           <p className="text-gray-200 sm:text-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            ullam dolorum non libero eius, molestias accusantium alias dicta
-            veniam delectus?
+            At Wealth Trust Capital, we provide a comprehensive suite of
+            financial services tailored to meet your unique needs. From
+            strategic investment planning and portfolio management to wealth
+            preservation strategies, our experienced team is dedicated to
+            optimizing your financial success. Explore a partnership with us for
+            personalized solutions that pave the way for your financial growth
+            and security.
           </p>
         </div>
         <div className="flex flex-row gap-4 ">
