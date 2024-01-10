@@ -4,7 +4,9 @@ import Link from "next/link";
 import CarouselComp from "./CarouselComp";
 function Hero() {
   const OPTIONS = { loop: true };
-
+  const handleScroll = () => {
+    document.getElementById("Services").scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section className="lg:h-screen lg:p-12 p-5">
       <div className="  bg-base-100  flex flex-col-reverse lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
@@ -28,14 +30,15 @@ function Hero() {
             strategic growth in the financial sector.
           </p>
           <div className="flex flex-row items-center gap-4">
-            <Link
-              href="/aboutus"
+            <p
+              // href="/aboutus"
+              onClick={handleScroll}
               className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
             >
               Explore More
-            </Link>
+            </p>
             <Link href="#" className={`btn btn-primary text-white`}>
-              Invest Now!
+              Schedule a Call
             </Link>
           </div>
         </div>
