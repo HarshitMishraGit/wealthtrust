@@ -28,24 +28,28 @@ function ServicesComp(props) {
       {
         title: "title",
         description: `
-        Tax planning involves strategic financial management to minimize your tax liabilities while ensuring compliance with relevant regulations. At Wealth Trust Capital, our experts employ innovative tax planning strategies tailored to your unique circumstances, helping you optimize your financial position and retain more of your hard-earned wealth.
-        
-        Insurance planning is a crucial component of a comprehensive financial strategy, providing protection and security for you and your loved ones. Wealth Trust Capital specializes in personalized insurance planning, guiding you to select the right coverage to safeguard against life's uncertainties and build a robust financial foundation for the future.`,
+        <p>
+       <span style="font-weight:bold;"> Tax planning </span> involves strategic financial management to minimize your tax liabilities while ensuring compliance with relevant regulations. At Wealth Trust Capital, our experts employ innovative tax planning strategies tailored to your unique circumstances, helping you optimize your financial position and retain more of your hard-earned wealth.
+        </p>
+        <p>
+        <span style="font-weight:bold;"> Insurance planning </span>is a crucial component of a comprehensive financial strategy, providing protection and security for you and your loved ones. Wealth Trust Capital specializes in personalized insurance planning, guiding you to select the right coverage to safeguard against life's uncertainties and build a robust financial foundation for the future.
+        </p>
+        `,
       },
     ],
   ];
   return (
     <div>
-      <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-0">
+      <div className="space-y-8 md:grid md:grid-cols-1 lg:grid-cols-1 md:gap-12 md:space-y-0">
         {data[itemNumber].map((item, index) => {
           return (
             <Fade key={index} spy={itemNumber + 1} appear={true}>
               <div className="bg-lightGreen px-3 py-7 shadow-lg relative ">
                 <div className="w-full h-full relative overflow-hidden">
-                  <p
+                  <div
                     className="text-black  pl-5 text-left"
                     dangerouslySetInnerHTML={{ __html: item.description }}
-                  ></p>
+                  ></div>
                 </div>
               </div>
             </Fade>
