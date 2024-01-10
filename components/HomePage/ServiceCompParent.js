@@ -35,7 +35,7 @@ function ServiceCompParent() {
                 setItemNumber(0);
               }}
             >
-              <div className="flex gap-2">Equity Research</div>
+              <div className="flex gap-2">Investment Research</div>
               <span
                 onClick={() =>
                   setShowMobileMenu((prevState) => (prevState === 0 ? 1 : 0))

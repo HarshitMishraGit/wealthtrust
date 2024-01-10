@@ -1,6 +1,8 @@
 import React from "react";
 import { IoIosStar } from "react-icons/io";
-
+import Carousel from "react-multi-carousel";
+import { isMobile, isTablet, isBrowser } from "react-device-detect";
+import "react-multi-carousel/lib/styles.css";
 function Testimonials() {
   const testimonials = [
     {
@@ -28,14 +30,59 @@ function Testimonials() {
       imageUrl: `/HomePage/user3.png`,
     },
   ];
-
+  let deviceType;
+  if (isMobile) {
+    deviceType = "mobile";
+  } else if (isTablet) {
+    deviceType = "tablet";
+  } else if (isBrowser) {
+    deviceType = "desktop";
+  }
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+      partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1, // optional, default to 1.
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+  };
   return (
     <div className="py-10">
       <h3 className="text-center font-thin">Don't take our words</h3>
       <h1 className="text-center font-bold text-3xl">
         See what fellow investors & traders have to say
       </h1>
-      <div className="lg:px-32 px-4 py-20 grid grid-cols-3 gap-10 justify-center items-center">
+      <Carousel
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        responsive={responsive}
+        ssr={true} // means to render carousel on server-side.
+        infinite={true}
+        // autoPlay={this.props.deviceType !== "mobile" ? true : false}
+        autoPlay={true}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={1000}
+        containerClass="carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        deviceType={deviceType}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px flex flex-row justify-center py-5"
+      >
         {testimonials.map((item, index) => {
           return (
             <div
@@ -76,7 +123,7 @@ function Testimonials() {
             </div>
           );
         })}
-      </div>
+      </Carousel>
     </div>
   );
 }
