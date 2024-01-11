@@ -27,7 +27,7 @@ function CarouselComp2() {
     <div className="flex flex-row justify-center items-center relative">
       <button
         onClick={scrollPrev}
-        className="absolute z-10 left-5 transition-all duration-300 hover:bg-gray-300 rounded-full"
+        className="absolute z-10 left-5 transition-all duration-300 hover:bg-gray-300 bg-gray-100 bg-opacity-25 hover:bg-opacity-100 rounded-full"
       >
         <IoIosArrowBack size={25} className="m-2 text-gray-600" />
       </button>
@@ -36,9 +36,16 @@ function CarouselComp2() {
           <div className="embla__container ">
             {data.map((item, index) => {
               return (
-                <div className="w-[20rem] embla__slide h-[100vh]" key={index}>
-                  <div className="w-full  cursor-pointer  items-start justify-center h-full">
-                    <img src={item.imageUrl} alt="img" />
+                <div
+                  className="w-[20rem] embla__slide h-auto md:h-[100vh]"
+                  key={index}
+                >
+                  <div className="w-full  cursor-pointer  items-start justify-center h-full object-cover">
+                    <img
+                      src={item.imageUrl}
+                      alt="img"
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                 </div>
               );
@@ -48,7 +55,8 @@ function CarouselComp2() {
       </div>
       <button
         onClick={scrollNext}
-        className="absolute z-10 right-5 transition-all duration-300 hover:bg-gray-300 rounded-full"
+        className="absolute z-10 right-5 transition-all duration-300 hover:bg-gray-300 bg-gray-100 bg-opacity-25 hover:bg-opacity-100 
+        rounded-full"
       >
         <IoIosArrowForward size={25} className="m-2 text-gray-600" />
       </button>

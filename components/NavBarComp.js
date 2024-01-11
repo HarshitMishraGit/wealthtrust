@@ -48,20 +48,13 @@ function NavBarComp() {
             </div>
           </div>
           <div className="navbar-center">
-            <div className="flex flex-row lg:w-[50rem] md:w-[20rem]">
+            <div className="flex flex-row lg:w-[60rem] md:w-[20rem]">
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
-                href={"#"}
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4 h-10 my-auto font-semibold"
+                href={"/aboutus"}
               >
-                Be An Associate
+                About Us
               </Link>
-              <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
-                href={"/equity"}
-              >
-                Equity
-              </Link>
-
               <div
                 className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group w-1/4 font-semibold [&>*]:text-base-content text-base-content`}
               >
@@ -71,16 +64,12 @@ function NavBarComp() {
                   id="dropdownHover1"
                   className="w-full h-fit -z-10 !absolute right-0 pt-72 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-base-100 divide-y sm:px-10 lg:px-48 mx-auto shadow "
                 >
-                  <div className="w-full h-full grid grid-cols-3  mt-14">
-                    <ul className=" text-start col-start-1 col-span-1">
+                  <div className="w-full h-full grid grid-cols-3  mt-14 divide-x-4">
+                    <ul className=" text-start col-start-1 col-span-1 ">
                       <li>
-                        <Link
-                          href={"#"}
-                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900 "
-                        >
+                        <p className=" text-xl font-bold block px-4 py-2 text-main cursor-pointer ">
                           Financial Freedom
-                        </Link>
+                        </p>
                         <ul className=" pl-6">
                           <li>
                             {" "}
@@ -107,13 +96,9 @@ hover:decoration-action-900"
                     </ul>
                     <ul className=" text-start col-start-2 col-span-1">
                       <li>
-                        <Link
-                          href={"#"}
-                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900"
-                        >
+                        <p className=" text-xl font-bold block px-4 py-2 text-main cursor-pointer ">
                           Products and Services
-                        </Link>
+                        </p>
                         <ul className=" pl-6">
                           <li>
                             {" "}
@@ -169,6 +154,175 @@ hover:decoration-action-900"
                       </li>
                     </ul>
                     <ul className=" text-start col-start-3 col-span-1">
+                      <li>
+                        <p className=" text-xl font-bold block px-4 py-2 text-main cursor-pointer ">
+                          Products and Services
+                        </p>
+                        <ul className=" pl-6">
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Loans
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Private Equity Solutions
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Alternative Investments
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Tax Planning
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              National Pension Scheme
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <Link
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
+                href={"/team"}
+              >
+                Team
+              </Link>
+              <Link
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
+                href={"/equity"}
+              >
+                Investment Research
+              </Link>
+              <Link
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
+                href={"/workshop"}
+              >
+                Workshop
+              </Link>
+              <div
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group w-1/4 font-semibold [&>*]:text-base-content text-base-content`}
+              >
+                Resources
+                <IoIosArrowDown className="ml-1"></IoIosArrowDown>
+                <div
+                  id="dropdownHover1"
+                  className="w-full h-fit -z-10 !absolute right-0 pt-72 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-base-100 divide-y sm:px-10 lg:px-48 mx-auto shadow "
+                >
+                  <div className="w-full h-full grid grid-cols-3  mt-14 divide-x-3">
+                    {/* <ul className=" text-start col-start-1 col-span-1">
+                      <li>
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900 "
+                        >
+                          Financial Freedom
+                        </Link>
+                        <ul className=" pl-6">
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Invest Early
+                            </Link>
+                          </li>
+                          <li>
+                            {" "}
+                            <Link
+                              href={"#"}
+                              className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                            >
+                              Variety of SIP's
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul> */}
+                    <div className="flex flex-row justify-center items-center text-2xl font-bold">
+                      Resources {">"}
+                    </div>
+
+                    <ul className=" pl-6">
+                      <li>
+                        {" "}
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          Blog
+                        </Link>
+                      </li>
+                      <li>
+                        {" "}
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          Case Studies
+                        </Link>
+                      </li>
+                      <li>
+                        {" "}
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          News
+                        </Link>
+                      </li>
+                      <li>
+                        {" "}
+                        <Link
+                          href={"#"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          Videos
+                        </Link>
+                      </li>
+                    </ul>
+                    {/* <ul className=" text-start col-start-3 col-span-1">
                       <li>
                         <Link
                           href={"#"}
@@ -230,28 +384,15 @@ hover:decoration-action-900"
                           </li>
                         </ul>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>
-
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4 h-10 my-auto font-semibold"
-                href={"/aboutus"}
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
+                href={"#"}
               >
-                About Us
-              </Link>
-              <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
-                href={"/team"}
-              >
-                Team
-              </Link>
-              <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold"
-                href={"/workshop"}
-              >
-                Workshop
+                Be An Associate
               </Link>
             </div>
           </div>
