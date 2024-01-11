@@ -4,24 +4,30 @@ import Link from "next/link";
 import { Fade } from "react-awesome-reveal";
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 function ServicesComp(props) {
-  const { className, itemNumber } = props;
+  const { itemNumber } = props;
   const data = [
     [
       {
         title: "title",
-        description: `Equity research is the systematic analysis of stocks and financial instruments to provide valuable insights for investment decisions. At Wealth Trust Capital, our experienced team conducts thorough equity research, offering in-depth analyses and recommendations to empower you with the knowledge needed to make informed investment choices and navigate the dynamic stock market landscape effectively.`,
+        description: `<p>Investment research is the systematic analysis of stocks and financial instruments to provide valuable insights for investment decisions. At Wealth Trust Capital, our experienced team conducts thorough equity research, offering in-depth analyses and recommendations to empower you with the knowledge needed to make informed investment choices and navigate the dynamic stock market landscape effectively.</p>
+        <a href="https://www.wealthtrustcap.com/equity.php" target="_blank" style="color:blue;">Read more...</a>
+        `,
       },
     ],
     [
       {
         title: "title",
-        description: `Portfolio management involves expertly managing a collection of investments to achieve specific financial objectives. At Wealth Trust Capital, we help optimize your portfolio, offering personalized strategies and guidance to enhance returns, minimize risks, and navigate the complexities of the financial markets for sustained wealth growth.`,
+        description: `<p>Portfolio management involves expertly managing a collection of investments to achieve specific financial objectives. At Wealth Trust Capital, we help optimize your portfolio, offering personalized strategies and guidance to enhance returns, minimize risks, and navigate the complexities of the financial markets for sustained wealth growth.</p>
+        <a href="https://www.wealthtrustcap.com/portfolio.php" target="_blank" style="color:blue;">Read more...</a>
+        `,
       },
     ],
     [
       {
         title: "title",
-        description: `Mutual funds are diversified investment vehicles pooling money from various investors to collectively invest in a portfolio of stocks, bonds, or other securities. At Wealth Trust Capital, we guide you through the diverse world of mutual funds, helping you select and manage a portfolio that aligns with your financial goals, providing a pathway to long-term wealth creation.s`,
+        description: `<p>Mutual funds are diversified investment vehicles pooling money from various investors to collectively invest in a portfolio of stocks, bonds, or other securities. At Wealth Trust Capital, we guide you through the diverse world of mutual funds, helping you select and manage a portfolio that aligns with your financial goals, providing a pathway to long-term wealth creation.</p>
+        
+        <a href="https://www.wealthtrustcap.com/mutualfund.php" target="_blank" style="color:blue;">Read more...</a>`,
       },
     ],
     [
@@ -34,6 +40,9 @@ function ServicesComp(props) {
         <p>
         <span style="font-weight:bold;"> Insurance planning </span>is a crucial component of a comprehensive financial strategy, providing protection and security for you and your loved ones. Wealth Trust Capital specializes in personalized insurance planning, guiding you to select the right coverage to safeguard against life's uncertainties and build a robust financial foundation for the future.
         </p>
+
+        <a href="https://www.wealthtrustcap.com/taxplan.php" target="_blank" style="color:blue;">Read more...</a>
+        
         `,
       },
     ],

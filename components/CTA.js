@@ -17,13 +17,13 @@ function CTA() {
           />
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black ">
-              Let's grow together with WealthTrust.
+              Let's grow together with WealthTrust Capital Services .
             </h2>
             <p className="mb-6 font-light md:text-lg text-black">
-              At Wealth Trust Cap, we don't just provide data; we deliver
-              strategic insights that empower you to make informed investment
-              decisions. Explore our Equity Research services and embark on a
-              journey towards financial prosperity.
+              At WealthTrust Capital Services, we don't just provide data; we
+              deliver strategic insights that empower you to make informed
+              investment decisions. Explore our Equity Research services and
+              embark on a journey towards financial prosperity.
             </p>
             <Button
               onClick={() => setOpenModal(true)}

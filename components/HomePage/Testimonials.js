@@ -16,6 +16,22 @@ function Testimonials() {
     {
       rating: 3,
       review:
+        "I am pleased to offer my endorsement for Sneha, a proficient wealth manager. She took the time to understand my long and short-term financial goals, crafting a tailored portfolio accordingly. From that point onward, she and her team have capably overseen all aspects. As a newcomer to investments, I greatly appreciated Sneha's expertise. Trusting someone with your finances can be a challenge, but having attended her workshops as a leap.club member, I already had a foundation of trust in place. I have confidence in Sneha's capabilities and look forward to continued growth with her guidance.",
+      name: "Ankita Arora",
+      // designation: "CEO, ABC Company",
+      imageUrl: `/HomePage/user4.png`,
+    },
+    {
+      rating: 3,
+      review: `I am incredibly grateful to have had Sneha Jain as my trusted financial advisor. Her expertise, dedication, and personalized guidance has been invaluable on my journey towards financial security. There are plethora of financial advisors, however, the reason I chose to go with her is because she is authentic, honest and resilient not only as a person but also with her work.
+        I highly recommend Sneha to anyone seeking a reliable partner in managing their financial future.`,
+      name: "Yashvi Vira",
+      // designation: "CEO, ABC Company",
+      imageUrl: `/HomePage/user5.png`,
+    },
+    {
+      rating: 3,
+      review:
         "I will always maintain that one can simply entrust Wealth Trust Capital to empower you and enrich you financially. They are the very definition of wealth creators. They leave no stones unturned to achieve what the client aspires from their investment. There are fewer teams who can build financial security and boost financial profitability the way Wealth Trust Capital does. It is because of the prowess that comes from months of research. They have always lived and delivered beyond my expectations.",
       name: "Mr. Rahul Bhalekar",
       // designation: "CEO, ABC Company",

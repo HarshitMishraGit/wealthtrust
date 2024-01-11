@@ -93,7 +93,7 @@ function StatsComp() {
                   fontSize: 40,
                 }}
               />
-              <p>Cr</p>
+              <p>Cr+</p>
             </div>
             <div className="stat-desc font-extralight text-xl mt-3 text-black">
               Assets Under Management
@@ -116,7 +116,7 @@ function StatsComp() {
                   type: "spring",
                   duration: index + 0.3,
                 })}
-                animateToNumber={15}
+                animateToNumber={16}
                 fontStyle={{
                   fontSize: 40,
                 }}

@@ -54,15 +54,15 @@ function PortfoliCard() {
         />
       </div>
       <div className="flex flex-col gap-5 lg:w-1/2 p-4">
-        <p>About WealthTrust</p>
+        <p>About WealthTrust Capital Services</p>
         <p className="text-4xl font-bold">
           More than 500+ families Trusted Our Financial & Consultation
           Institution{" "}
         </p>
         <p>
-          At Wealth Trust Capital, our commitment to excellence has earned the
-          trust of over 500 families who rely on our services for their
-          financial well-being. We take immense pride in being the trusted
+          At WealthTrust Capital Services, our commitment to excellence has
+          earned the trust of over 500 families who rely on our services for
+          their financial well-being. We take immense pride in being the trusted
           partner on the financial journey for a diverse community of
           individuals and families. Our holistic approach to wealth management,
           personalized strategies, and unwavering dedication to our clients'
@@ -77,7 +77,13 @@ function PortfoliCard() {
           the necessary regelialia. It is a paradisematic country, in which
           roasted parts of sentences fly into your mouth.
         </p> */}
-        <Button className="w-fit bg-primary text-white">LEARN MORE</Button>
+        <Button
+          as={"a"}
+          className="w-fit bg-primary text-white"
+          href="/aboutus"
+        >
+          LEARN MORE
+        </Button>
       </div>
     </div>
   );

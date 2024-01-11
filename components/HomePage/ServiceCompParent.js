@@ -14,7 +14,7 @@ function ServiceCompParent() {
             What We Offer:
           </h2>
           <p className="text-gray-200 sm:text-md">
-            At Wealth Trust Capital, we provide a comprehensive suite of
+            At WealthTrust Capital Services, we provide a comprehensive suite of
             financial services tailored to meet your unique needs. From
             strategic investment planning and portfolio management to wealth
             preservation strategies, our experienced team is dedicated to
@@ -144,7 +144,7 @@ function ServiceCompParent() {
               )}
             </div>
           </div>
-          <div className="w-2/3 text-center lg:block hidden overflow-hidden p-6">
+          <div className="w-2/3 text-center lg:block hidden overflow-hidden ">
             <ServicesComp itemNumber={itemNumber} />
           </div>
         </div>

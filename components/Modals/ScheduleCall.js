@@ -9,9 +9,11 @@ import {
   useDisclosure,
   Input,
   Textarea,
+  Select,
+  SelectItem,
 } from "@nextui-org/react";
 
-export default function ContactFormModal({ openModal, setOpenModal }) {
+export default function ScheduleCall({ openModal, setOpenModal }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const Submitref = useRef(null);
   useEffect(() => {
@@ -22,6 +24,20 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
   const submitForm = () => {
     Submitref.current.click();
   };
+  const Options = [
+    {
+      value: "Tomorrow - 8 AM - 12 PM",
+      label: "Tomorrow - 8 AM - 12 PM",
+    },
+    {
+      value: "Tomorrow - 12 PM - 4 PM",
+      label: "Tomorrow - 12 PM - 4 PM",
+    },
+    {
+      value: "Tomorrow - 4 PM - 8 PM",
+      label: "Tomorrow - 4 PM - 8 PM",
+    },
+  ];
   return (
     <>
       <Modal
@@ -32,16 +48,16 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
         }}
         isDismissable={false}
       >
-        <ModalContent className="max-w-[70rem] rounded-none bg-black">
+        <ModalContent className="max-w-lg rounded-none bg-black">
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1 text-white">
-                <h3 className="text-2xl font-bold">
-                  Get more from your financial budget .
+                <h3 className="text-2xl font-bold p-3">
+                  Schedule A Call With Our Experts
                 </h3>
-                <p className="text-sm font-light">
+                {/* <p className="text-sm font-light">
                   We will get back to you as soon as possible
-                </p>
+                </p> */}
               </ModalHeader>
               <ModalBody>
                 <form action="#" className="flex flex-col gap-2">
@@ -70,27 +86,40 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
                     placeholder="Enter Your city name"
                     isRequired
                   />
-                  <Textarea
-                    label="Description"
-                    placeholder="Enter your description"
+                  <Select
+                    label="When Can We Reach You ?"
+                    placeholder="When Can We Reach You ?"
                     className=""
                     isRequired
-                    // labelPlacement="outside"
-                  />
+                  >
+                    {Options.map((option) => (
+                      <SelectItem key={option.value} value={option.value}>
+                        {option.label}
+                      </SelectItem>
+                    ))}
+                  </Select>
                   <Input type="submit" ref={Submitref} className="hidden" />
                 </form>
+                <div>
+                  <p className="text-xs text-gray-400">
+                    or Call Us On
+                    <a href="tel:+919819039345" className="text-blue-500 px-2">
+                      +91 9819039345
+                    </a>
+                  </p>
+                </div>
               </ModalBody>
               <ModalFooter>
-                <Button
+                {/* <Button
                   color="danger"
                   variant="light"
                   className="border border-red-500"
                   onPress={onClose}
                 >
                   Close
-                </Button>
+                </Button> */}
                 <Button color="primary" onPress={submitForm}>
-                  Submit
+                  Schedule
                 </Button>
               </ModalFooter>
             </>

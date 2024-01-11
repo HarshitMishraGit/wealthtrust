@@ -2,6 +2,7 @@
 import CTA from "@/components/CTA";
 import CardComp2 from "@/components/HomePage/CardComp2";
 import CarouselComp from "@/components/HomePage/CarouselComp";
+import CarouselComp2 from "@/components/HomePage/CarouselComp2";
 import ContentComp from "@/components/HomePage/ContentComp";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 import ContentComp2 from "@/components/HomePage/ContentComp2";
@@ -24,6 +25,7 @@ export default function Home() {
       {/* <Workshops /> */}
 
       <ServiceCompParent />
+      <CarouselComp2 />
       <Testimonials />
       {/* <ContentComp /> */}
       {/* <ContentComp2 /> */}
