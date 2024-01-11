@@ -219,29 +219,18 @@ function page() {
           })}
         </div>
       </section>
-      <section className="md:pt-16 pt-5">
-        <div className="h-[50rem] relative ">
-          <div className="w-full h-full ">
-            <img
-              src="/AboutUsPage/team.jpg"
-              alt=""
-              className="object-cover w-full h-full absolute top-0 z-10"
-            />
-          </div>
-          <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col justify-center gap-3">
-            <h1 className="text-center text-white font-bold sm:text-5xl text-4xl">
-              Want To Join Our Team ?
-            </h1>
-            <h2 className="sm:text-2xl text-xl sm:p-10 p-4 text-center text-white ">
-              At Wealth Trust Capital, we're not just building a company; we're
-              cultivating a community of passionate individuals dedicated to
-              transforming financial landscapes. If you're driven, innovative,
-              and ready to make a lasting impact, consider joining our team.
-            </h2>
-          </div>
-        </div>
+      <section className="md:pt-10 pt-5 h-[20rem]  bg-primary w-full   flex flex-col justify-center gap-3">
+        <h1 className="text-center text-white font-bold sm:text-5xl text-4xl">
+          Want To Join Our Team ?
+        </h1>
+        <h2 className="sm:text-2xl text-xl sm:p-10 p-4 text-center text-white ">
+          At WealthTrust Capital Services, we're not just building a company,
+          we're cultivating a community of passionate individuals dedicated to
+          transforming financial landscapes. If you're driven, innovative, and
+          ready to make a lasting impact, consider joining our team.
+        </h2>
       </section>
-      <section className="sm:p-10 p-4 py-5 flex flex-col gap-5 justify-center ">
+      {/* <section className="sm:p-10 p-4 py-5 flex flex-col gap-5 justify-center ">
         <div className="flex flex-col gap-4 ">
           <div className="flex flex-col gap-4 lg:px-10">
             <h2 className="sm:text-5xl text-4xl  text-center font-bold py-5">
@@ -292,8 +281,8 @@ function page() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="sm:p-10 p-4 sm:py-5 pt-5 flex flex-col gap-5 justify-center ">
+      </section> */}
+      <section className="sm:p-10 p-4 sm:py-10 pt-5 flex flex-col gap-5 justify-center ">
         <h2 className="sm:text-5xl text-4xl text-center  font-bold pb-10">
           How To Join ?
         </h2>
