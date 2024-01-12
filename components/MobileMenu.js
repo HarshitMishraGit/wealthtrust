@@ -7,6 +7,7 @@ import { Button } from "@nextui-org/button";
 function MobileMenu(props) {
   const [islogin, setislogin] = useState(false);
   const [open, setOpen] = useState(false);
+  const [open2, setopen2] = useState(false);
   const router = useRouter();
   return (
     <div
@@ -48,22 +49,13 @@ function MobileMenu(props) {
 
       <div className="flex flex-col space-y-4  pt-20 pl-10 select-none cursor-pointer">
         <Link
-          className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
-          href={"#"}
+          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
+          href={"/aboutus"}
           onClick={() => {
             props?.setshowMobileMenu(false);
           }}
         >
-          Be An Associate
-        </Link>
-        <Link
-          className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
-          href={"/equity"}
-          onClick={() => {
-            props?.setshowMobileMenu(false);
-          }}
-        >
-          Equity
+          About Us
         </Link>
         <div
           className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
@@ -82,13 +74,9 @@ function MobileMenu(props) {
           } transition-all duration-500`}
         >
           <li>
-            <Link
-              href={"#"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110 "
-            >
+            <p className="block px-4 py-2 text-sm cursor-pointer ">
               Financial Freedom
-            </Link>
+            </p>
             <ul className=" pl-6 [&>*]:text-xs">
               <li>
                 {" "}
@@ -245,15 +233,6 @@ hover:scale-110"
 
         <Link
           className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
-          href={"/aboutus"}
-          onClick={() => {
-            props?.setshowMobileMenu(false);
-          }}
-        >
-          About Us
-        </Link>
-        <Link
-          className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
           href={"/team"}
           onClick={() => {
             props?.setshowMobileMenu(false);
@@ -261,7 +240,15 @@ hover:scale-110"
         >
           Team
         </Link>
-
+        <Link
+          className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
+          href={"/equity"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+          }}
+        >
+          Investment Research
+        </Link>
         <Link
           className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
           href={"/workshop"}
@@ -270,6 +257,63 @@ hover:scale-110"
           }}
         >
           Workshop
+        </Link>
+        <div
+          className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
+          onClick={() => setopen2((e) => !e)}
+        >
+          Resources
+          <IoIosArrowDown
+            className={`ml-1 ${
+              open2 ? "rotate-180" : "rotate-0"
+            } transition-all transform duration-300`}
+          ></IoIosArrowDown>
+        </div>
+        <ul
+          className={`py-2 text-sm text-base-content ${
+            open2 ? "block" : "hidden"
+          } transition-all duration-500`}
+        >
+          <li>
+            <Link
+              href={"#"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110 "
+            >
+              Blog
+            </Link>
+
+            <Link
+              href={"#"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+            >
+              Case Studies
+            </Link>
+            <Link
+              href={"#"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+            >
+              News
+            </Link>
+            <Link
+              href={"#"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110"
+            >
+              Videos
+            </Link>
+          </li>
+        </ul>
+        <Link
+          className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
+          href={"#"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+          }}
+        >
+          Be An Associate
         </Link>
       </div>
     </div>
