@@ -118,7 +118,7 @@ function page() {
             Investor Awareness <br />
             Programs
           </h1>
-          <p className="sm:text-2xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
+          <p className="sm:text-2xl text-lg text-white  sm:px-24 pt-10 p-4 text-center">
             Welcome to our Investor Awareness Programs, where financial
             empowerment meets practical knowledge. Our workshops are designed to
             provide valuable insights into wealth management, investment
@@ -129,17 +129,17 @@ function page() {
         </div>
       </div>
 
-      <section className="sm:p-10 p-4 py-10 h-[32rem] flex flex-col gap-10 justify-center items-center bg-primary text-white">
+      <section className="sm:p-10 p-4  h-[24rem] flex flex-col gap-10 justify-center items-center bg-primary text-white">
         <h2 className="sm:text-6xl text-4xl text-center font-bold">
           How To Participate ?
         </h2>
-        <p className="sm:text-2xl text-lg text-center  lg:px-48 p-0">
+        <p className="sm:text-2xl text-lg text-center lg:px-48">
           If you're interested in attending our workshops, simply fill out the
           form below with your details, including your name, email address, and
           preferred workshop location. Our team will get in touch with you when
           the workshop is scheduled in your city.
         </p>
-        <div className="flex flex-row justify-center items-center pt-10">
+        <div className="flex flex-row justify-center items-center">
           <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
           <Button
             onClick={() => setOpenModal(true)}

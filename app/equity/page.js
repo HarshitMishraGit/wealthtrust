@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 function page() {
   const content = [
@@ -48,24 +48,62 @@ function page() {
   ];
   const data = [
     {
-      title: "Company Analysis",
-      description:
-        "In-depth evaluations of individual companies, assessing financial health, growth potential, and competitive positioning.",
+      title: "Sustainability",
+      description: `We're not just building for today; we're
+        crafting a future that stands the test of
+        time.`,
+      imageUrl: "/Equity/sustainability.png",
     },
     {
-      title: "Sector Reports",
-      description:
-        "Comprehensive reports on industry sectors, identifying key trends and factors influencing market dynamics.",
+      title: "Profitability",
+      description: `Turning a profit is great but doing it with a meaningful impact is even better. We
+       believe in investments that make both
+       cents and sense.`,
+      imageUrl: "/Equity/profitability.png",
     },
     {
-      title: "Market Outlook:",
-      description:
-        "Regular insights into the broader market conditions, helping you navigate changing landscapes with confidence.",
+      title: "Crystal Clear Finances",
+      description: `No muddy waters here. We navigate the markets with a keen eye on clean accounts,
+        ensuring transparency every step of the way`,
+      imageUrl: "/Equity/clear.png",
     },
     {
-      title: "IPO Analysis",
-      description:
-        "Thorough analysis of Initial Public Offerings, providing you with insights to make informed investment decisions in the primary market.",
+      title: "Leadership is our MOAT",
+      description: `In the world of investments, investing in a
+        fortress of business is the single best thing
+        any investor can do. We enable our
+        investors to do just that.`,
+      imageUrl: "/Equity/leadership.png",
+    },
+  ];
+  const research_articles = [
+    {
+      title: `Wealth Management &
+      Market Outlook 2024
+      `,
+      link: "#",
+      imageUrl: "/Equity/fin.png",
+    },
+    {
+      title: `Wealth Management &
+      Market Outlook 2024
+      `,
+      link: "#",
+      imageUrl: "/Equity/fin.png",
+    },
+    {
+      title: `Wealth Management &
+      Market Outlook 2024
+      `,
+      link: "#",
+      imageUrl: "/Equity/fin.png",
+    },
+    {
+      title: `Wealth Management &
+      Market Outlook 2024
+      `,
+      link: "#",
+      imageUrl: "/Equity/fin.png",
     },
   ];
   return (
@@ -79,42 +117,53 @@ function page() {
           />
         </div>
         <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center gap-3 pt-24">
-          <h1 className="text-center text-blue-400 font-bold sm:text-6xl text-3xl">
-            Equity
-          </h1>
+          {/* <h1 className="text-center text-blue-400 font-bold sm:text-6xl text-3xl">
+            Investment Research
+          </h1> */}
 
-          <p className="sm:text-2xl text-white text-lg sm:px-24 pt-10 p-4 text-center">
-            At Wealth Trust Cap, we are committed to empowering your financial
-            journey through comprehensive Equity Research services. Our
-            expertise lies in unraveling the complexities of the financial
-            markets, providing you with actionable insights, and guiding you
-            towards sound investment decisions.
+          <p className="sm:text-5xl text-xl text-white  sm:px-24 pt-10 p-4 text-left">
+            If we buy the business as a business and not as a stock speculation,
+            then it becomes personal. We want it to be personal.
           </p>
         </div>
       </div>
-      <div>
-        {content.map((item, index) => (
-          <ContentComp1
-            key={index}
-            badgeTitle={item.badgeTitle}
-            title={item.title}
-            content={item.content}
-            imageUrl={item.imageUrl}
-            reverse={item.reverse}
-            blogUrl={item.blogUrl}
-          />
-        ))}
-      </div>
-
       <section>
-        <h2 className="text-3xl  font-semibold py-5 text-center">
-          Our Equity Research Services Include
+        <div className="flex flex-row divide-x-4 justify-center items-center gap-4 p-4">
+          <div className="flex flex-col justify-center items-center p-4">
+            <h3 className="text-xl font-bold">WEALTHTRUST</h3>
+            <p className="text-center">Capital Services</p>
+          </div>
+          <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
+            <h3>Investment</h3>
+            <h3>Research</h3>
+          </div>
+        </div>
+        <div className="lg:px-72 text-xl p-4 text-center">
+          Our investment research team brings to you un-biased, in-depth
+          analysis on structural trends, macro-economics, sectoral trends and
+          funamental research on securities ranging from equities, currencies to
+          fixed income.
+        </div>
+      </section>
+      <section className="sm:px-24 p-4">
+        <h2 className="text-3xl  font-semibold py-5 ">
+          Our Research Philosopy Rests On 4 Pillars
         </h2>
-        <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-center justify-center sm:px-10 p-4">
+        <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-center justify-center  py-4">
           {data.map((item, index) => {
             return (
-              <div className="w-full flex flex-col justify-center items-center">
-                <div className="w-56 h-56 text-xl text-white font-semibold rounded-full bg-primary flex justify-center items-center">
+              <div
+                className="w-full flex flex-col justify-center items-center"
+                key={index}
+              >
+                <div className="w-56 h-56 object-cover overflow-hidden rounded-full bg-white my-3 shadow-xl hover:scale-105 cursor-pointer">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <div className=" text-xl font-semibold  flex justify-center items-center">
                   {item.title}
                 </div>
                 <div className="flex flex-col justify-center items-center py-3">
@@ -125,7 +174,213 @@ function page() {
           })}
         </div>
       </section>
-      <section className="flex justify-center items-center py-10">
+      <section className="sm:px-24 p-4 bg-black text-white py-10">
+        <h2 className="sm:text-4xl text-2xl font-bold py-10 ">
+          Our Approach To Idea Generation
+        </h2>
+        <div className="lg:grid lg:grid-cols-7 flex flex-col gap-3 py-10">
+          <div className="flex flex-col gap-5 w-25 ">
+            <h3 className="sm:text-2xl text-xl font-bold text-center">
+              Sectoral Trends
+            </h3>
+            <p className="text-center">
+              We look out for macro trends in the markets in terms of sector
+              rotation and flow of money
+            </p>
+          </div>
+          <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
+            <img
+              src="/Equity/grid.png"
+              alt=""
+              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+            />
+          </div>
+          <div className="flex flex-col gap-5 w-25">
+            <h3 className="sm:text-2xl text-xl font-bold text-center">
+              Business Quality
+            </h3>
+            <p className="text-center">
+              Quality matters and it acts as our downside protection. We gauge
+              businesses on efficiency ratios and other qualitative factors.
+            </p>
+          </div>
+          <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
+            <img
+              src="/Equity/grid.png"
+              alt=""
+              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+            />
+          </div>
+          <div className="flex flex-col gap-5 w-25">
+            <h3 className="sm:text-2xl text-xl font-bold text-center">
+              Market Trends
+            </h3>
+            <p className="text-center">
+              Enables us to learn about prevailing market conditions and make
+              calls accordingly.
+            </p>
+          </div>
+          <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
+            <img
+              src="/Equity/grid.png"
+              alt=""
+              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+            />
+          </div>
+
+          <div className="flex flex-col gap-6">
+            <h3 className="sm:text-2xl text-xl font-bold text-center">
+              Portfolio Construction
+            </h3>
+
+            <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
+              <img
+                src="/Equity/fin.png"
+                alt=""
+                className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="sm:px-24 p-4  py-10">
+        <h2 className="text-4xl  font-semibold pb-10 ">
+          Our Research Includes
+        </h2>
+        <div className=" flex flex-row lg:gap-10">
+          <div className="lg:w-1/2 w-full flex flex-col gap-5">
+            <div className="flex flex-col justify-center items-start">
+              <h3 className="lg:text-xl text-lg font-bold ">
+                India Equity Research
+              </h3>
+              <p>
+                ndia Equity Research, includes fundamental research on listed
+                Indian equities. The research team covers 5+ sectors and 250+
+                equities.
+              </p>
+            </div>
+            <div className="flex flex-col justify-center items-start">
+              <h3 className="lg:text-xl text-lg font-bold ">
+                Global Macro-Economic Research
+              </h3>
+              <p>
+                Gain insights into the dynamics shaping global markets and the
+                impact of interest rates on worldwide equities. Explore whether
+                U.S. fixed income presents a superior investment option or
+                Indian fixed income. Find comprehensive answers to such
+                inquiries through our global macro-economic research.
+              </p>
+            </div>
+          </div>
+          <div className="lg:w-1/2 w-full flex flex-col">
+            <div className="flex flex-col justify-center items-start ">
+              <h3 className="lg:text-xl text-lg font-bold ">
+                Global Macro-Economic Research
+              </h3>
+              <p>
+                Gain insights into the dynamics shaping global markets and the
+                impact of interest rates on worldwide equities. Explore whether
+                U.S. fixed income presents a superior investment option or
+                Indian fixed income. Find comprehensive answers to such
+                inquiries through our global macro-economic research.
+              </p>
+            </div>
+            <div className="grid grid-cols-3 gap-5 py-5">
+              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+                <h3 className=" text-lg font-semibold ">Balance 25</h3>
+                <p className="text-center">
+                  A sector leader approach to diversified investing
+                </p>
+              </div>
+              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+                <h3 className=" text-lg font-semibold ">Value Multi-Cap</h3>
+                <p className="text-center">
+                  A sector leader approach to diversified investing
+                </p>
+              </div>
+              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+                <h3 className=" text-lg font-semibold ">Perpetuus</h3>
+                <p className="text-center">
+                  A sector leader approach to diversified investing
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="sm:px-24 p-4  py-10">
+        <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research</h2>
+        <div className="lg:grid lg:grid-cols-4 sm:grid-cols-2 flex flex-col gap-5 py-5">
+          {research_articles.map((item, index) => {
+            return (
+              <div className="p-4" key={index}>
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full"
+                    src="https://dummyimage.com/1203x503"
+                  />
+                </div>
+                <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
+                  {item.title}
+                </h2>
+                {/* <p className="text-base leading-relaxed mt-2">
+                      Swag shoivdigoitch literally meditation subway tile tumblr
+                      cold-pressed. Gastropub street art beard dreamcatcher
+                      neutra, ethical XOXO lumbersexual.
+                    </p> */}
+                <Link
+                  className="text-indigo-500 inline-flex items-center mt-3 cursor-pointer"
+                  href={item.link}
+                >
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+      <section className="sm:px-24 p-4  py-10 flex lg:flex-row flex-col">
+        <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center p-10">
+          <img src="/Equity/gen1.png" alt="" />
+          <img src="/Equity/gen2.png" alt="" />
+          <img src="/Equity/gen3.png" alt="" />
+        </div>
+        <div className="lg:w-1/3 w-full flex flex-col justify-center items-center">
+          <h2 className="lg:text-xl text-lg font-bold">
+            For Complete Access To Our Investment Research
+          </h2>
+          <div className="flex flex-row justify-start items-center gap-4">
+            <p
+              // href="/aboutus"
+              // onClick={handleScroll}
+              className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
+            >
+              Contact Us
+            </p>
+            <Link
+              href="https://calendly.com/wealthtrustcapitalservices/30min"
+              target="_blank"
+              className={`btn btn-primary text-white`}
+              // onClick={() => setOpenModal(true)}
+            >
+              Join our workshop
+            </Link>
+          </div>
+        </div>
+      </section>
+      {/* <section className="flex justify-center items-center py-10">
         <form
           action="#"
           className="flex flex-col gap-4 rounded-lg bg-black w-full  lg:w-10/12 
@@ -176,7 +431,7 @@ shadow-xl md:px-24 p-4 "
             Submit Now
           </Button>
         </form>
-      </section>
+      </section> */}
       <section className="sm:py-10 p-4 sm:px-24 bg-lightGreen">
         <div className="flex sm:flex-row flex-col justify-center items-center ">
           <div className="sm:w-1/2 w-full">
