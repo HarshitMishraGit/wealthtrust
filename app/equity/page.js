@@ -1,8 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
+import ContactFormModal from "@/components/Modals/ContactFormModal";
+
 function page() {
   const content = [
     {
@@ -106,8 +108,11 @@ function page() {
       imageUrl: "/Equity/fin.png",
     },
   ];
+  const [openModal, setOpenModal] = useState(false);
+
   return (
-    <div className="">
+    <div>
+      <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
       <div className="h-[50rem]  relative ">
         <div className="w-full h-full ">
           <img
@@ -247,7 +252,7 @@ function page() {
         <h2 className="text-4xl  font-semibold pb-10 ">
           Our Research Includes
         </h2>
-        <div className=" flex flex-row lg:gap-10">
+        <div className=" flex lg:flex-row flex-col gap-5">
           <div className="lg:w-1/2 w-full flex flex-col gap-5">
             <div className="flex flex-col justify-center items-start">
               <h3 className="lg:text-xl text-lg font-bold ">
@@ -285,7 +290,7 @@ function page() {
                 inquiries through our global macro-economic research.
               </p>
             </div>
-            <div className="grid grid-cols-3 gap-5 py-5">
+            <div className="sm:grid sm:grid-cols-3 flex flex-col  gap-5 py-5">
               <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
                 <h3 className=" text-lg font-semibold ">Balance 25</h3>
                 <p className="text-center">
@@ -351,20 +356,20 @@ function page() {
           })}
         </div>
       </section>
-      <section className="sm:px-24 p-4  py-10 flex lg:flex-row flex-col">
+      <section className="sm:px-24 p-4  sm:py-10 flex lg:flex-row flex-col">
         <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center p-10">
           <img src="/Equity/gen1.png" alt="" />
           <img src="/Equity/gen2.png" alt="" />
           <img src="/Equity/gen3.png" alt="" />
         </div>
-        <div className="lg:w-1/3 w-full flex flex-col justify-center items-center">
+        <div className="lg:w-1/3 w-full flex flex-col justify-start items-start gap-5 px-5">
           <h2 className="lg:text-xl text-lg font-bold">
             For Complete Access To Our Investment Research
           </h2>
           <div className="flex flex-row justify-start items-center gap-4">
             <p
               // href="/aboutus"
-              // onClick={handleScroll}
+              onClick={() => setOpenModal(true)}
               className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
             >
               Contact Us
@@ -380,6 +385,30 @@ function page() {
           </div>
         </div>
       </section>
+      <section>
+        <div className="flex flex-row divide-x-4 justify-center items-center gap-4 p-4">
+          <div className="flex flex-col justify-center items-center p-4">
+            <h3 className="text-xl font-bold">WEALTHTRUST</h3>
+            <p className="text-center">Capital Services</p>
+          </div>
+          <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
+            <h3>Mutual Funds</h3>
+            <h3>Research</h3>
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
+          <h3>
+            We look <span className="text-green-600">Forward</span>
+          </h3>
+        </div>
+        <div className="lg:px-72 text-xl p-4 text-center">
+          Our investment research team brings to you un-biased, in-depth
+          analysis on structural trends, macro-economics, sectoral trends and
+          funamental research on securities ranging from equities, currencies to
+          fixed income.
+        </div>
+      </section>
+      <section className="sm:px-24 p-4  py-10 flex lg:flex-row flex-col"></section>
       {/* <section className="flex justify-center items-center py-10">
         <form
           action="#"
