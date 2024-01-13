@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${Playfair.className} bg-base-100`}>
+      <body className={` bg-base-100`}>
         <Providers>
           <NavBarComp />
           {children}

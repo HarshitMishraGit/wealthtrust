@@ -60,4 +60,20 @@
     right: 0;
     bottom: 0;
   }
-  
+
+@font-face {
+  font-family: 'Barlow';
+  src: url('/Barlow-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+  @font-face {
+    font-family: 'Playfair Display';
+    src: url('/PlayfairDisplay-Regular.ttf') format('truetype');
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
