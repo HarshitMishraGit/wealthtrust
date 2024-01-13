@@ -293,21 +293,33 @@ function page() {
             className="flex flex-col gap-2 max-w-lg rounded-lg bg-base-300 sm:w-1/2 w-full 
 shadow-xl p-4"
           >
-            <Input type="text" label="Name" placeholder="Enter Your name" />
+            <Input
+              type="text"
+              label="Name"
+              placeholder="Enter Your name"
+              isRequired
+            />
             <Input
               type="text"
               label="Phone No"
               placeholder="Enter Your Mobile"
               pattern="[0-9]{10}"
+              isRequired
             />
-            <Input type="email" label="Email" placeholder="Enter Your email" />
+            <Input
+              type="email"
+              label="Email"
+              placeholder="Enter Your email"
+              isRequired
+            />
             <Textarea
               label="Description"
               placeholder="Enter your description"
               className=""
+              isRequired
               // labelPlacement="outside"
             />
-            <Input type="file" />
+            <Input type="file" isRequired />
             <Button
               type="submit"
               // onClick={() => setOpenModal(true)}

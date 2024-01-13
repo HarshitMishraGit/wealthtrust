@@ -10,6 +10,7 @@ import ContactFormModal from "@/components/Modals/ContactFormModal";
 import GalleryComp from "@/components/Workshop/GalleryComp";
 import { HiLightBulb } from "react-icons/hi";
 import { Button, Input, Textarea } from "@nextui-org/react";
+import CompanyContactForm from "@/components/Modals/CompanyContactForm";
 function page() {
   const avatar = "/AboutUsPage/user.jpg";
   const username = "John Doe";
@@ -103,6 +104,7 @@ function page() {
     { title: "Risk Management" },
   ];
   const [openModal, setOpenModal] = useState(false);
+  const [openModal2, setOpenModal2] = useState(false);
   return (
     <div className="min-h-screen ">
       <div className="h-[50rem] py-10 relative ">
@@ -130,10 +132,10 @@ function page() {
       </div>
 
       <section className="sm:p-10 p-4  h-[24rem] flex flex-col gap-10 justify-center items-center bg-primary text-white">
-        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+        <h2 className="sm:text-4xl text-2xl text-center font-bold">
           How To Participate ?
         </h2>
-        <p className="sm:text-2xl text-lg text-center lg:px-48">
+        <p className="sm:text-xl text-lg text-center lg:px-48">
           If you're interested in attending our workshops, simply fill out the
           form below with your details, including your name, email address, and
           preferred workshop location. Our team will get in touch with you when
@@ -143,7 +145,7 @@ function page() {
           <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
           <Button
             onClick={() => setOpenModal(true)}
-            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg  text-lg px-10 py-7 text-center "
+            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg   px-4 py-2 text-center "
           >
             LET'S TALK
             <svg
@@ -162,7 +164,7 @@ function page() {
         </div>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+        <h2 className="sm:text-4xl text-2xl text-center font-bold">
           What To Expect
         </h2>
         <div className="sm:text-2xl text-lg  p-4 text-center">
@@ -172,13 +174,13 @@ function page() {
       </section>
       <section className="flex flex-col  px-10 py-10 bg-primary rounded-lg justify-center items-center">
         <HiLightBulb size={50} className="text-yellow-500" />
-        <p className="sm:text-4xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white">
+        <p className="sm:text-3xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white">
           Each workshop is led by experienced professionals in the financial
           industry, ensuring you receive valuable insights and practical advice.
         </p>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-6xl text-4xl text-center font-bold">
+        <h2 className="sm:text-4xl text-2xl text-center font-bold">
           Why To Attend ?
         </h2>
         <div className="sm:text-2xl text-lg  p-4">
@@ -249,15 +251,42 @@ function page() {
               designed to empower your team with the knowledge and skills needed
               to navigate the complex world of finance.
             </p>
+            <div className="flex flex-row justify-center items-center">
+              <CompanyContactForm
+                openModal={openModal2}
+                setOpenModal={setOpenModal2}
+              />
+              <Button
+                onClick={() => setOpenModal2(true)}
+                className="inline-flex items-center text-white bg-primary font-semibold rounded-lg   px-4 py-2 text-center "
+              >
+                Contact us
+                <svg
+                  className="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </Button>
+            </div>
             <h2 className="sm:text-5xl text-4xl font-semibold text-center py-10">
               What Sets Us Apart ?
             </h2>
 
             <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-center justify-center">
               <div className="w-full flex flex-col justify-center items-center">
-                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
+                  <p className="text-2xl font-bold text-center p5">
+                    Expert Guidance
+                  </p>
+                </div>
                 <div className="flex flex-col justify-center items-center py-3">
-                  <p className="text-2xl font-bold">Expert Guidance</p>
                   <p className="text-center">
                     Learn from seasoned financial professionals with a wealth of
                     industry experience.
@@ -265,9 +294,12 @@ function page() {
                 </div>
               </div>
               <div className="w-full flex flex-col justify-center items-center">
-                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
+                  <p className="text-2xl font-bold text-center p5">
+                    Customized Content
+                  </p>
+                </div>
                 <div className="flex flex-col justify-center items-center py-3">
-                  <p className="text-2xl font-bold">Customized Content</p>
                   <p className="text-center">
                     Our workshops are crafted to address the specific financial
                     challenges faced by your organization.
@@ -275,9 +307,13 @@ function page() {
                 </div>
               </div>
               <div className="w-full flex flex-col justify-center items-center">
-                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
+                  {" "}
+                  <p className="text-2xl font-bold text-center p-5">
+                    Interactive Sessions
+                  </p>
+                </div>
                 <div className="flex flex-col justify-center items-center py-3">
-                  <p className="text-2xl font-bold">Interactive Sessions</p>
                   <p className="text-center">
                     Engage in hands-on activities and discussions to enhance
                     practical understanding.
@@ -285,9 +321,12 @@ function page() {
                 </div>
               </div>
               <div className="w-full flex flex-col justify-center items-center">
-                <div className="w-56 h-56 rounded-full bg-primary"></div>
+                <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
+                  <p className="text-2xl font-bold text-center p5">
+                    Timely Updates
+                  </p>
+                </div>
                 <div className="flex flex-col justify-center items-center py-3">
-                  <p className="text-2xl font-bold">Timely Updates</p>
                   <p className="text-center">
                     Stay informed about the latest market trends, regulations,
                     and investment strategies.
@@ -296,7 +335,7 @@ function page() {
               </div>
             </div>
           </div>
-          <form
+          {/* <form
             action="#"
             className="flex flex-col gap-4 rounded-lg bg-black w-full  lg:w-10/12 
 shadow-xl md:px-24 p-4 sm:pb-24 pt-14 md:mt-24 mt-10 "
@@ -352,9 +391,10 @@ shadow-xl md:px-24 p-4 sm:pb-24 pt-14 md:mt-24 mt-10 "
             >
               Submit Now
             </Button>
-          </form>
+          </form> */}
         </div>
       </section>
+
       <section className="research_team">
         <p className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
           Past Webinars
