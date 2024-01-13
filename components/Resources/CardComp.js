@@ -3,17 +3,7 @@ import { Button } from "@nextui-org/button";
 import { IoIosStar } from "react-icons/io";
 import { image } from "@nextui-org/react";
 function CardComp(props) {
-  const {
-    badgeTitle,
-    badgeType,
-    title,
-    desc,
-    cagr,
-    Min_investment,
-    Ratings,
-    Rating_count,
-    imageUrl,
-  } = props.user;
+  const { title, description, link, vidUrl } = props.data;
   const data = [
     {
       badgeTitle: "Popular",
@@ -96,23 +86,23 @@ function CardComp(props) {
   ];
   return (
     <>
-      <div className="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img
-            className="rounded-t-lg"
-            src={imageUrl ? imageUrl : "/HomePage/invest_1.webp"}
-            alt=""
-          />
-        </a>
+      <div className="mx-auto h-full max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700">
+        <div>
+          <video controls muted autoPlay className="object-cover w-full h-full">
+            <source src="/Workshop/vid2.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            {"  Your browser does not support the video tag."}
+          </video>
+        </div>
+
         <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+          <a href={link} target="_blank">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight hover:underline  text-gray-900 dark:text-white">
+              {title}
             </h5>
           </a>
           <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Here are the biggest enterprise technology acquisitions of 2021 so
-            far, in reverse chronological order.
+            {description}
           </p>
           {/* <a
             href="#"

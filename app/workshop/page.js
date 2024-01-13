@@ -23,31 +23,24 @@ function page() {
 
   const research_team = [
     {
-      name: "Shubham J, CFP",
-      designation: "Senior Research Analyst",
-      imageUrl: "/Resources/webinar.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cupiditate?`,
-      social: {
-        linkedIn: "#",
-      },
+      title: "Pickright Technologies",
+      description: `In the journey to build WealthTrust Capital Services, we have always strived towards investor education initiatives, by conducting workshops, training sessions, one to one discussions to enlighten and drive how one manages their finances.`,
+      link: "https://www.linkedin.com/posts/sneha-jain-59a3bb23_equities-stocktrading-investments-activity-7105777931926331392-f45W?utm_source=share&utm_medium=member_desktop",
+      vidUrl: "/Workshop/vid3.mp4",
     },
     {
-      name: "Aman V",
-      designation: "Equity & Product Research Analyst",
-      imageUrl: "/Resources/webinar.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur.`,
-      social: {
-        linkedIn: "#",
-      },
+      title: " Ladies Who Lead!",
+      description: ` The dependence of having a male counterpart either deciding for you or doing it for you! However i have started to see that change and how!
+
+      Doing the workshop for women led communities, some of the key challenges that the audience pointed out which were a hurdle in truly being independent in terms of money.`,
+      link: "https://www.linkedin.com/posts/sneha-jain-59a3bb23_womeninvesting-financialplanning-wealthmanagement-activity-7067186607694508033-8wyX?utm_source=share&utm_medium=member_desktop",
+      vidUrl: "/Workshop/vid2.mp4",
     },
     {
-      name: "Vedant S",
-      designation: "Equity Associate",
-      imageUrl: "/Resources/webinar.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, pariatur.`,
-      social: {
-        linkedIn: "#",
-      },
+      title: "Financial planning for Samsung Electronics employees",
+      description: `The session, mainly attended by women under their She-com initiative was an incredibly insightful and interactive one, with a lot of valuable takeaways. It was heartening to see the level of engagement and enthusiasm from our audience, as we discussed the importance of financial planning and the impact it can have on our lives. `,
+      link: "https://www.linkedin.com/posts/sneha-jain-59a3bb23_financialplanning-investments-personalfinanceworkshops-activity-7040225013207023616-ikTW?utm_source=share&utm_medium=member_desktop",
+      vidUrl: "/Workshop/vid3.mp4",
     },
   ];
   const wealth_management_team = [
@@ -172,12 +165,38 @@ function page() {
           <GalleryComp data={what_to_expect} />
         </div>
       </section>
-      <section className="flex flex-col  px-10 py-10 bg-primary rounded-lg justify-center items-center">
-        <HiLightBulb size={50} className="text-yellow-500" />
-        <p className="sm:text-3xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white">
-          Each workshop is led by experienced professionals in the financial
-          industry, ensuring you receive valuable insights and practical advice.
-        </p>
+      <section className="flex flex-col  px-10 py-10 bg-primary  justify-center items-center">
+        <figure className="max-w-screen-md mx-auto text-center">
+          <svg
+            className="w-10 h-10 mx-auto mb-3 text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 18 14"
+          >
+            <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+          </svg>
+          <blockquote>
+            <p className="text-2xl italic font-medium text-gray-900 dark:text-white">
+              "An investment in knowledge pays the best interest."
+            </p>
+          </blockquote>
+          <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+            <img
+              className="w-6 h-6 rounded-full"
+              src="/Workshop/benj.jpg"
+              alt="profile picture"
+            />
+            <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+              <cite className="pe-3 font-medium text-gray-900 dark:text-white">
+                Benjamin Franklin
+              </cite>
+              <cite className="ps-3 text-sm text-gray-300">
+                Founding Fathers of the United States
+              </cite>
+            </div>
+          </figcaption>
+        </figure>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
         <h2 className="sm:text-4xl text-2xl text-center font-bold">
@@ -335,63 +354,6 @@ function page() {
               </div>
             </div>
           </div>
-          {/* <form
-            action="#"
-            className="flex flex-col gap-4 rounded-lg bg-black w-full  lg:w-10/12 
-shadow-xl md:px-24 p-4 sm:pb-24 pt-14 md:mt-24 mt-10 "
-          >
-            <h2 className="text-white md:text-5xl text-2xl text-center font-semibold">
-              Get In Touch !
-            </h2>
-            <Input
-              type="text"
-              label="Name"
-              placeholder="Enter Your name"
-              isRequired
-            />
-
-            <Input
-              type="text"
-              label="Phone No"
-              placeholder="Enter Your Mobile"
-              pattern="[0-9]{10}"
-              isRequired
-            />
-            <Input
-              type="email"
-              label="Email"
-              placeholder="Enter Your email"
-              isRequired
-            />
-
-            <Input
-              type="text"
-              label="Company Name"
-              placeholder="Enter the company name"
-              isRequired
-            />
-            <Input
-              type="number"
-              label="Company Size"
-              placeholder="Enter the company size"
-              min={0}
-              isRequired
-            />
-            <Textarea
-              label="Description"
-              placeholder="Enter your description"
-              className=""
-              isRequired
-              // labelPlacement="outside"
-            />
-            <Button
-              type="submit"
-              // onClick={() => setOpenModal(true)}
-              className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
-            >
-              Submit Now
-            </Button>
-          </form> */}
         </div>
       </section>
 
@@ -402,7 +364,7 @@ shadow-xl md:px-24 p-4 sm:pb-24 pt-14 md:mt-24 mt-10 "
         <hr />
         <div className="lg:grid lg:grid-cols-3 gap-3 sm:grid-cols-2 flex flex-col items-center lg:px-10 p-4 w-full">
           {research_team.map((item, index) => {
-            return <CardComp user={item} key={index} />;
+            return <CardComp data={item} key={index} />;
           })}
         </div>
       </section>
