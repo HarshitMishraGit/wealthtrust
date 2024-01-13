@@ -43,7 +43,7 @@ function TimeLine() {
       <div className="sm:grid sm:grid-cols-7 gap-6 flex flex-col items-center justify-center px-4">
         {data.map((item, index) => {
           return (
-            <>
+            <div key={index}>
               {index !== 0 && (
                 <Fade
                   direction="right"
@@ -71,7 +71,7 @@ function TimeLine() {
                   </div>
                 </div>
               </Fade>
-            </>
+            </div>
           );
         })}
       </div>

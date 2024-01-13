@@ -38,7 +38,7 @@ function page() {
         </div>
       </div>
 
-      <section className="sm:p-10 p-4 py-5  min-h-[32rem] overflow-hidden flex flex-col gap-10 justify-center items-center ">
+      <section className="sm:p-10 p-4 py-5  min-h-[24rem] overflow-hidden flex flex-col gap-10 justify-center items-center ">
         <Fade direction="up" triggerOnce>
           {/* <p className="font-semibold text-3xl text-center">Our Values</p> */}
           <h2 className="sm:text-6xl text-4xl text-center font-bold">
@@ -54,7 +54,7 @@ function page() {
           </p>
         </Fade>
       </section>
-      <section className="sm:p-10 p-4 py-5 bg-lightGreen  overflow-hidden min-h-[32rem] flex flex-col gap-10 justify-center items-center ">
+      <section className="sm:p-10 p-4 py-5 bg-lightGreen  overflow-hidden min-h-[24rem] flex flex-col gap-10 justify-center items-center ">
         <Fade direction="up" triggerOnce>
           {/* <p className="font-semibold text-3xl text-center">Our Values</p> */}
           <h2 className="sm:text-6xl text-4xl text-center font-bold">VISION</h2>
@@ -124,7 +124,7 @@ function page() {
         </Fade>
       </section>
 
-      <section className="flex flex-col  px-10 py-10 bg-primary sm:min-h-[32rem] rounded-lg justify-center items-center">
+      <section className="flex flex-col  px-10 py-10 bg-primary sm:min-h-[24rem] rounded-lg justify-center items-center">
         <HiLightBulb size={50} className="text-yellow-500" />
         <p className="sm:text-4xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white inline-flex">
           <FaQuoteLeft />
@@ -200,9 +200,10 @@ function page() {
                 Meet Our Experts
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
-                eveniet ratione eos consequuntur non tempora saepe architecto
-                explicabo qui ex ullam nobis, perspiciatis nesciunt?
+                Get in touch with any one of empanelled experts to onboard you
+                in the journey towards financial empowerment. The cruise will be
+                exciting for sure and the destination will be as per your
+                expectations or book a call back right away!
               </p>
               <Button
                 className="w-fit px-5 py-2 mx-auto bg-primary text-white"
@@ -221,7 +222,7 @@ function page() {
         <h3 className="sm:text-4xl text-xl text-center font-semibold">
           Our Offices
         </h3>
-        <div className="flex flex-row-reverse divide-y-1 gap-10 sm:p-10">
+        <div className="flex flex-col lg:flex-row-reverse divide-y-1 gap-10 sm:p-10">
           <div className="sm:w-1/2 w-full shadow-xl rounded-lg  p-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2365004956473!2d72.81131627710994!3d18.965159909614236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf465d27a889%3A0x567c17b69e7d49f!2sWealthtrust%20Capital%20Services!5e0!3m2!1sen!2sin!4v1704831149772!5m2!1sen!2sin"
