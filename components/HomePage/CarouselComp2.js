@@ -14,9 +14,9 @@ function CarouselComp2() {
   }, [emblaApi]);
   const data = [
     { imageUrl: "/HomePage/Carousel/1.jpg" },
-    { imageUrl: "/HomePage/Carousel/1.jpg" },
-    { imageUrl: "/HomePage/Carousel/1.jpg" },
-    { imageUrl: "/HomePage/Carousel/1.jpg" },
+    { imageUrl: "/HomePage/Carousel/2.jpg" },
+    // { imageUrl: "/HomePage/Carousel/1.jpg" },
+    // { imageUrl: "/HomePage/Carousel/1.jpg" },
   ];
   const scrollNext = useCallback(() => {
     if (emblaApi) {
