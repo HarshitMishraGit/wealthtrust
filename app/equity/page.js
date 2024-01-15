@@ -197,7 +197,7 @@ function page() {
             <img
               src="/Equity/grid.png"
               alt=""
-              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+              className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full"
             />
           </div>
           <div className="flex flex-col gap-5 w-25">
@@ -213,7 +213,7 @@ function page() {
             <img
               src="/Equity/grid.png"
               alt=""
-              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+              className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full"
             />
           </div>
           <div className="flex flex-col gap-5 w-25">
@@ -291,19 +291,19 @@ function page() {
               </p>
             </div>
             <div className="sm:grid sm:grid-cols-3 flex flex-col  gap-5 py-5">
-              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
                 <h3 className=" text-lg font-semibold ">Balance 25</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing
                 </p>
               </div>
-              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
                 <h3 className=" text-lg font-semibold ">Value Multi-Cap</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing
                 </p>
               </div>
-              <div className="bg-lightGreen rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
                 <h3 className=" text-lg font-semibold ">Perpetuus</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing

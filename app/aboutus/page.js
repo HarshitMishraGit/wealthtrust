@@ -38,13 +38,10 @@ function page() {
         </div>
       </div>
 
-      <section className="sm:p-10 p-4 py-5  min-h-[24rem] overflow-hidden flex flex-col gap-10 justify-center items-center ">
+      <section className="p-2 py-10   overflow-hidden flex flex-col gap-5 justify-center items-center ">
         <Fade direction="up" triggerOnce>
-          {/* <p className="font-semibold text-3xl text-center">Our Values</p> */}
-          <h2 className="sm:text-6xl text-4xl text-center font-bold">
-            Mission
-          </h2>
-          <p className="sm:text-2xl text-lg text-center  lg:px-48 p-0">
+          <h2 className="text-4xl  text-center font-bold">Mission</h2>
+          <p className="text-xl  text-center  lg:px-48 p-0 ">
             To be the leading financial consulting firm that's synonymous with
             precision, profit and progress. To be hailed as the most reliant and
             realistic advisors providing pragmatic insights based on extensive
@@ -54,11 +51,10 @@ function page() {
           </p>
         </Fade>
       </section>
-      <section className="sm:p-10 p-4 py-5 bg-lightGreen  overflow-hidden min-h-[24rem] flex flex-col gap-10 justify-center items-center ">
+      <section className="p-2 py-10 bg-lightGreen   overflow-hidden  flex flex-col gap-5 justify-center items-center ">
         <Fade direction="up" triggerOnce>
-          {/* <p className="font-semibold text-3xl text-center">Our Values</p> */}
-          <h2 className="sm:text-6xl text-4xl text-center font-bold">VISION</h2>
-          <p className="sm:text-2xl text-lg text-center  lg:px-48 p-0">
+          <h2 className="text-4xl text-center font-bold">Vision</h2>
+          <p className="text-xl  text-center  lg:px-48 p-0">
             To map, manage and multiply client's investment by providing
             adequate information, appropriate advice and excellent service. To
             be the hallmark of brilliance with distinctive traits and tactics in
@@ -66,9 +62,9 @@ function page() {
           </p>
         </Fade>
       </section>
-      <section className="sm:p-10 p-4 py-12 sm:min-h-[38rem] flex flex-col gap-10 justify-center items-center overflow-hidden">
+      <section className="sm:p-5 p-4 py-12 sm:min-h-[24rem] flex flex-col gap-5 justify-center items-center overflow-hidden">
         <Fade direction="up" triggerOnce>
-          <h2 className="sm:text-6xl text-4xl sm:py-5 py-2 text-center font-bold">
+          <h2 className=" text-4xl sm:py-5 py-2 text-center font-bold">
             Our Values
           </h2>
 
@@ -124,7 +120,7 @@ function page() {
         </Fade>
       </section>
 
-      <section className="flex flex-col  px-10 py-10 bg-primary sm:min-h-[24rem] rounded-lg justify-center items-center">
+      {/* <section className="flex flex-col  px-10 py-10 bg-primary sm:min-h-[24rem] rounded-lg justify-center items-center">
         <HiLightBulb size={50} className="text-yellow-500" />
         <p className="sm:text-4xl text-lg text-center sm:p-16 lg:px-48 p-0 text-white inline-flex">
           <FaQuoteLeft />
@@ -135,7 +131,7 @@ function page() {
         <p className="sm:text-4xl text-lg text-right  text-white">
           - Howard Marks
         </p>
-      </section>
+      </section> */}
       <section className="py-5">
         <TimeLine />
       </section>

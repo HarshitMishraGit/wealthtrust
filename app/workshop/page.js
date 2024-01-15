@@ -130,9 +130,8 @@ function page() {
         </h2>
         <p className="sm:text-xl text-lg text-center lg:px-48">
           If you're interested in attending our workshops, simply fill out the
-          form below with your details, including your name, email address, and
-          preferred workshop location. Our team will get in touch with you when
-          the workshop is scheduled in your city.
+          form below. Our team will get in touch with you when the workshop is
+          scheduled in your city.
         </p>
         <div className="flex flex-row justify-center items-center">
           <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
