@@ -11,15 +11,32 @@ import { Button } from "@nextui-org/button";
 import { Input } from "@nextui-org/react";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { SiSocialblade } from "react-icons/si";
+import Footercard from "./Footercard";
 import Link from "next/link";
 function FooterComp() {
   const openLinkInPopup = (url) => {
     window.open(url, "_blank", "width=700,height=500");
   };
-
+  const certifications = [
+    {
+      imageUrl: "/cert1.jpg",
+      title:
+        "CIN- AAF-3245 | GSTIN -27AACFW1937A1ZG | ARN No.-109017 (AMFI Registered Mutual Fund Distributor)",
+    },
+    {
+      imageUrl: "/cert3.jpg",
+      title:
+        "WealthTrust Capital Services (Proprietorship) - Bank and Financial Institution DSA",
+    },
+    {
+      imageUrl: "/cert2.png",
+      title:
+        "WealthTrust Capital Services (Partnership Firm) - SEBI Registered Research Analyst - INH000011149 - GSTIN - 27AADFW8285G1Z0",
+    },
+  ];
   return (
     <>
-      <footer className="bg-gray-700 min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-10 px-6 lg:px-10">
+      <footer className="bg-gray-900 min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-10 px-6 lg:px-10">
         <div className="flex flex-col col-start-4 gap-5 h-fit  col-span-2 text-white bg-black bg-opacity-60 backdrop-blur shadow-xl p-5 rounded-lg   sm:px-5">
           <div className="font-bold text-xl">
             Get Monthly Market Outlook From WTCS
@@ -160,23 +177,39 @@ function FooterComp() {
           <p className="text-3xl font-semibold text-center">
             WealthTrust Capital Services LLP
           </p>
-          <p className="text-sm">
+          <div className="flex flex-row justify-start w-full">
+            <p className="text-sm ">we are well certified -</p>
+          </div>
+          <div className="lg:grid py-5 lg:grid-cols-3 flex flex-col gap-4 justify-center items-center">
+            {certifications.map((item, index) => {
+              return (
+                <>
+                  <Footercard
+                    title={item.title}
+                    key={index}
+                    imageUrl={item.imageUrl}
+                  />
+                </>
+              );
+            })}
+          </div>
+          {/* <p className="text-sm">
             CIN- AAF-3245 | GSTIN -27AACFW1937A1ZG | ARN No.-109017 (AMFI
             Registered Mutual Fund Distributor)
-          </p>
+          </p> */}
           <p className="text-sm">
             Mutual fund investments are subject to market risks. Therefore, read
             the scheme information and other related documents carefully, before
             investing. Past performance is not indicative of future returns.
           </p>
-          <p className="text-sm">
+          {/* <p className="text-sm">
             WealthTrust Capital Services (Proprietorship) – Bank and Financial
             Institution DSA
           </p>
           <p className="text-sm">
             WealthTrust Capital Services (Partnership Firm) - SEBI Registered
             Research Analyst - INH000011149 - GSTIN - 27AADFW8285G1Z0
-          </p>
+          </p> */}
         </div>
         <div className="col-start-1 col-span-5 items-center justify-center text-white text-center py-2">
           © 2022 WealthTrustCap. All Rights Reserved | Design by{" "}
