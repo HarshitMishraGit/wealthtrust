@@ -10,7 +10,7 @@ function Hero() {
     document.getElementById("Services").scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="lg:h-screen lg:p-12 p-5">
+    <section className=" lg:p-12 p-5 ">
       <ScheduleCall openModal={openModal} setOpenModal={setOpenModal} />
       <div className="  bg-base-100  flex flex-col-reverse lg:flex-row gap-10  items-center lg:p-6  lg:pt-24 pt-10 ">
         <div className="flex flex-col w-full lg:w-1/2 gap-4   ">

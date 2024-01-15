@@ -126,21 +126,21 @@ function page() {
             Investment Research
           </h1> */}
 
-          <p className="sm:text-5xl text-xl text-white  sm:px-24 pt-10 p-4 text-left">
+          <h1 className="sm:text-5xl font-semibold text-2xl text-white  sm:px-24 pt-10 p-4 text-left">
             If we buy the business as a business and not as a stock speculation,
             then it becomes personal. We want it to be personal.
-          </p>
+          </h1>
         </div>
       </div>
       <section>
         <div className="flex flex-row divide-x-4 justify-center items-center gap-4 p-4">
           <div className="flex flex-col justify-center items-center p-4">
-            <h3 className="text-xl font-bold">WEALTHTRUST</h3>
-            <p className="text-center">Capital Services</p>
+            <p className="text-xl font-bold tracking-widest">WEALTHTRUST</p>
+            <p className="text-center tracking-widest">Capital Services</p>
           </div>
           <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
-            <h3>Investment</h3>
-            <h3>Research</h3>
+            <h2>Investment</h2>
+            <h2>Research</h2>
           </div>
         </div>
         <div className="lg:px-72 text-xl p-4 text-center">
@@ -154,7 +154,7 @@ function page() {
         <h2 className="text-3xl  font-semibold py-5 ">
           Our Research Philosopy Rests On 4 Pillars
         </h2>
-        <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-center justify-center  py-4">
+        <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-start justify-center  py-4">
           {data.map((item, index) => {
             return (
               <div
@@ -168,10 +168,11 @@ function page() {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className=" text-xl font-semibold  flex justify-center items-center">
-                  {item.title}
-                </div>
-                <div className="flex flex-col justify-center items-center py-3">
+
+                <div className="flex flex-col justify-center gap-5 items-center py-3">
+                  <h2 className=" text-xl font-semibold  flex justify-center items-center">
+                    {item.title}
+                  </h2>
                   <p className="text-center">{item.description}</p>
                 </div>
               </div>
@@ -280,14 +281,13 @@ function page() {
           <div className="lg:w-1/2 w-full flex flex-col">
             <div className="flex flex-col justify-center items-start ">
               <h3 className="lg:text-xl text-lg font-bold ">
-                Global Macro-Economic Research
+                Equity Solutions
               </h3>
               <p>
-                Gain insights into the dynamics shaping global markets and the
-                impact of interest rates on worldwide equities. Explore whether
-                U.S. fixed income presents a superior investment option or
-                Indian fixed income. Find comprehensive answers to such
-                inquiries through our global macro-economic research.
+                Browse our Equity Model Portfolios featuring top stock picks.
+                Tailor your portfolio by selecting, mixing, and matching
+                according to your preferences, or simply replicate our
+                recommended portfolio for a straightforward approach.
               </p>
             </div>
             <div className="sm:grid sm:grid-cols-3 flex flex-col  gap-5 py-5">
@@ -388,24 +388,24 @@ function page() {
       <section>
         <div className="flex flex-row divide-x-4 justify-center items-center gap-4 p-4">
           <div className="flex flex-col justify-center items-center p-4">
-            <h3 className="text-xl font-bold">WEALTHTRUST</h3>
-            <p className="text-center">Capital Services</p>
+            <h3 className="text-xl font-bold tracking-widest">WEALTHTRUST</h3>
+            <p className="text-center tracking-widest">Capital Services</p>
           </div>
-          <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
+          <div className="flex flex-col justify-center items-center p-4 text-xl ">
             <h3>Mutual Funds</h3>
-            <h3>Research</h3>
+            <h2 className="font-bold">Research</h2>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center p-4 text-xl font-bold">
-          <h3>
+          <h2>
             We look <span className="text-green-600">Forward</span>
-          </h3>
+          </h2>
         </div>
         <div className="lg:px-72 text-xl p-4 text-center">
-          Our investment research team brings to you un-biased, in-depth
-          analysis on structural trends, macro-economics, sectoral trends and
-          funamental research on securities ranging from equities, currencies to
-          fixed income.
+          Unlock the Exclusive World of Unparalleled Mutual Fund Research -
+          Where We Stand Alone. Access multifaceted analysis of various aspects
+          of these investment vehicles, including their historical performance,
+          investment objectives, risk parameters, management teams, and fees.
         </div>
       </section>
       <section className="sm:px-24 p-4  py-10 flex lg:flex-row flex-col"></section>

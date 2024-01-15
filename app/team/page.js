@@ -124,15 +124,17 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col justify-center gap-3">
-          <h1 className="text-center text-white font-bold sm:text-6xl text-4xl">
-            Meet Our Team
-          </h1>
-          <h2 className="sm:text-4xl text-xl sm:p-10 p-4 text-center text-white ">
-            The people who work at WealthTrust share the vision and values of
-            our community. We are motivated to create an environment of growth
-            where we can win at life and business together.
-          </h2>
+        <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-row items-center justify-center gap-3">
+          <div className="lg:w-2/3 w-full p-4">
+            <h1 className="text-center text-white font-bold text-5xl ">
+              Meet Our Team
+            </h1>
+            <p className=" sm:text-xl text-lg  sm:p-10 p-4 text-center text-white ">
+              The people who work at WealthTrust share the vision and values of
+              our community. We are motivated to create an environment of growth
+              where we can win at life and business together.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -197,7 +199,7 @@ function page() {
       </section>
       <section className="wealth_management_team">
         <p className="text-3xl font-semibold lg:px-10 pt-10 p-4">
-          Wealth Management Team|{" "}
+          Wealth Management Team |{" "}
           <span className="text-gray-400">
             People who plan your goals and take decisions.
           </span>
@@ -256,10 +258,14 @@ function page() {
             </div>
           </figcaption>
         </figure>
+        <h3 className="text-2xl  text-center font-medium text-gray-900 dark:text-white pt-4">
+          And, we have built it over the years, and would like to keep building
+          upon.
+        </h3>
       </section>
 
       <section className="sm:p-10 p-4 sm:py-10 pt-5 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-5xl text-4xl text-center  font-bold pb-10">
+        <h2 className="text-4xl  text-center  font-bold pb-10">
           How To Join ?
         </h2>
 
@@ -304,7 +310,7 @@ shadow-xl p-4"
               Submit Now
             </Button>
           </form>
-          <p className="sm:text-3xl text-2xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
+          <p className="text-2xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
             We're always on the lookout for exceptional talent. Feel free to
             express your interest in joining our team by filling out the form
             below, and we'll keep your information on file for future

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "@nextui-org/button";
 import { IoIosStar } from "react-icons/io";
@@ -87,11 +88,14 @@ function CardComp(props) {
   return (
     <>
       <div className="mx-auto h-full max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700">
-        <div>
-          <video controls muted autoPlay className="object-cover w-full h-full">
-            <source src="/Workshop/vid2.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-            {"  Your browser does not support the video tag."}
+        <div className="object-cover h-[15rem]">
+          <video
+            controls
+            muted
+            playsInline
+            className="object-cover w-full h-full"
+          >
+            <source src={vidUrl} type="video/mp4" />
           </video>
         </div>
 

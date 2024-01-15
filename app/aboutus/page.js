@@ -25,16 +25,18 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col gap-3 justify-center">
-          <h1 className="text-center text-blue-400 font-bold sm:text-7xl text-3xl">
-            About Us
-          </h1>
-          <p className="sm:text-2xl text-white text-lg sm:px-32 pt-10 p-4 text-center">
-            At WealthTrust Capital Services, we are more than financial
-            advisors. We are your partners in prosperity with a commitment to
-            transparency, expertise, and personalized solutions, we guide you on
-            a journey of financial growth and success.
-          </p>
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-row items-center gap-3 justify-center">
+          <div className="lg:w-2/3 w-full p-4">
+            <h1 className="text-center text-white font-bold text-5xl ">
+              About Us
+            </h1>
+            <p className="sm:text-xl text-lg text-white sm:px-32 pt-10 p-4 text-center">
+              At WealthTrust Capital Services, we are more than financial
+              advisors. We are your partners in prosperity with a commitment to
+              transparency, expertise, and personalized solutions, we guide you
+              on a journey of financial growth and success.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -64,11 +66,11 @@ function page() {
       </section>
       <section className="sm:p-5 p-4 py-12 sm:min-h-[24rem] flex flex-col gap-5 justify-center items-center overflow-hidden">
         <Fade direction="up" triggerOnce>
-          <h2 className=" text-4xl sm:py-5 py-2 text-center font-bold">
+          <h2 className=" text-4xl  sm:py-5 py-2 text-center font-bold">
             Our Values
           </h2>
 
-          <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-start justify-center">
+          <div className="lg:grid lg:grid-cols-4 gap-6 flex flex-col items-start justify-center">
             <div className="w-full flex flex-col justify-center items-center">
               <div className="w-56 h-56 rounded-full bg-primary flex justify-center items-center text-white">
                 <p className="text-2xl font-bold text-center">Integrity </p>
@@ -190,9 +192,9 @@ function page() {
               className="object-cover w-full h-full absolute top-0 z-10"
             />
           </div>
-          <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex  gap-3 justify-center items-center">
-            <div className="sm:w-[32rem]  w-full bg-white p-5 flex flex-col gap-5 items-center">
-              <h3 className="sm:text-4xl text-xl text-center font-semibold">
+          <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex  gap-3 justify-center items-center p-3">
+            <div className="sm:w-[32rem]  w-full bg-white p-5 flex flex-col gap-5 items-center shadow-lg">
+              <h3 className="text-4xl  text-center font-semibold">
                 Meet Our Experts
               </h3>
               <p>
@@ -215,11 +217,9 @@ function page() {
         </div>
       </section>
       <section className="pt-5 sm:py-10">
-        <h3 className="sm:text-4xl text-xl text-center font-semibold">
-          Our Offices
-        </h3>
+        <h3 className="text-4xl  text-center font-semibold">Our Offices</h3>
         <div className="flex flex-col lg:flex-row-reverse divide-y-1 gap-10 sm:p-10">
-          <div className="sm:w-1/2 w-full shadow-xl rounded-lg  p-5">
+          <div className="lg:w-1/2 w-full shadow-xl rounded-lg  p-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2365004956473!2d72.81131627710994!3d18.965159909614236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf465d27a889%3A0x567c17b69e7d49f!2sWealthtrust%20Capital%20Services!5e0!3m2!1sen!2sin!4v1704831149772!5m2!1sen!2sin"
               width="600"
@@ -230,8 +230,8 @@ function page() {
               className="w-full"
             ></iframe>
           </div>
-          <div className="sm:w-1/2 w-full shadow-xl rounded-lg p-5">
-            <div className="w-full h-[15rem] object-contain ">
+          <div className="lg:w-1/2 w-full shadow-xl rounded-lg p-5">
+            <div className="w-full h-[20rem] object-contain ">
               <img
                 src="/AboutUsPage/building.png"
                 alt=""

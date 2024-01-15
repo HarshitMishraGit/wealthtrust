@@ -23,9 +23,9 @@ function page() {
 
   const research_team = [
     {
-      title: "Pickright Technologies",
-      description: `In the journey to build WealthTrust Capital Services, we have always strived towards investor education initiatives, by conducting workshops, training sessions, one to one discussions to enlighten and drive how one manages their finances.`,
-      link: "https://www.linkedin.com/posts/sneha-jain-59a3bb23_equities-stocktrading-investments-activity-7105777931926331392-f45W?utm_source=share&utm_medium=member_desktop",
+      title: "Spread Financial Awareness",
+      description: `Conducted a series of workshops for leap.club members online, but now driving offline workshops to ensure a lot of intimate chats, more in-person candid conversations and taking back a lot of learnings and actionables for attendees has been a pleasure to host at Awfis Space Solutions Limited`,
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7056599967213195264/?originTrackingId=fkQNG%2F1bTTGolB8m28QFmw%3D%3D",
       vidUrl: "/Workshop/vid3.mp4",
     },
     {
@@ -40,7 +40,7 @@ function page() {
       title: "Financial planning for Samsung Electronics employees",
       description: `The session, mainly attended by women under their She-com initiative was an incredibly insightful and interactive one, with a lot of valuable takeaways. It was heartening to see the level of engagement and enthusiasm from our audience, as we discussed the importance of financial planning and the impact it can have on our lives. `,
       link: "https://www.linkedin.com/posts/sneha-jain-59a3bb23_financialplanning-investments-personalfinanceworkshops-activity-7040225013207023616-ikTW?utm_source=share&utm_medium=member_desktop",
-      vidUrl: "/Workshop/vid3.mp4",
+      vidUrl: "/Workshop/vid1.mp4",
     },
   ];
   const wealth_management_team = [
@@ -108,24 +108,26 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-col gap-3 justify-center">
-          <h1 className="text-center text-blue-400 font-bold sm:text-7xl text-3xl">
-            Investor Awareness <br />
-            Programs
-          </h1>
-          <p className="sm:text-2xl text-lg text-white  sm:px-24 pt-10 p-4 text-center">
-            Welcome to our Investor Awareness Programs, where financial
-            empowerment meets practical knowledge. Our workshops are designed to
-            provide valuable insights into wealth management, investment
-            strategies, and financial planning. We believe in equipping you with
-            the tools and knowledge to make informed decisions about your
-            financial future.
-          </p>
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-row items-center gap-3 justify-center">
+          <div className="lg:w-2/3 w-full p-4">
+            <h1 className="text-center text-white font-bold text-5xl ">
+              Investor Awareness <br />
+              Programs
+            </h1>
+            <p className="sm:text-xl text-lg text-white  sm:px-24 pt-10 p-4 text-center">
+              Welcome to our Investor Awareness Programs, where financial
+              empowerment meets practical knowledge. Our workshops are designed
+              to provide valuable insights into wealth management, investment
+              strategies, and financial planning. We believe in equipping you
+              with the tools and knowledge to make informed decisions about your
+              financial future.
+            </p>
+          </div>
         </div>
       </div>
 
-      <section className="sm:p-10 p-4  h-[24rem] flex flex-col gap-10 justify-center items-center bg-primary text-white">
-        <h2 className="sm:text-4xl text-2xl text-center font-bold">
+      <section className="sm:p-10 p-4 flex flex-col gap-10 justify-center items-center bg-primary text-white">
+        <h2 className="text-4xl  text-center font-bold">
           How To Participate ?
         </h2>
         <p className="sm:text-xl text-lg text-center lg:px-48">
@@ -156,10 +158,8 @@ function page() {
         </div>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-4xl text-2xl text-center font-bold">
-          What To Expect
-        </h2>
-        <div className="sm:text-2xl text-lg  p-4 text-center">
+        <h2 className="text-4xl  text-center font-bold">What To Expect</h2>
+        <div className="sm:text-xl text-lg  p-4 text-center">
           Our workshops cover a range of topics, including
           <GalleryComp data={what_to_expect} />
         </div>
@@ -198,15 +198,13 @@ function page() {
         </figure>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-4xl text-2xl text-center font-bold">
-          Why To Attend ?
-        </h2>
+        <h2 className="text-4xl  text-center font-bold">Why To Attend ?</h2>
         <div className="sm:text-2xl text-lg  p-4">
           <GalleryComp data={why_to_Attend} />
         </div>
       </section>
-      <section className="sm:p-10 p-2 w-full bg-primary text-white">
-        <div className=" p-6  max-w-3xl mx-auto mb-4">
+      <section className=" p-2 w-full bg-primary text-white">
+        <div className=" p-6  max-w-3xl mx-auto ">
           <div className="flex flex-col justify-center items-center mb-4">
             <img
               src={avatar}
@@ -224,7 +222,9 @@ function page() {
                 <FaStar className="text-yellow-500" />
               </span>
             </p> */}
-            <p className="text-lg font-bold">Exceptional Financial Guidance</p>
+            <h3 className="text-lg font-bold">
+              Exceptional Financial Guidance
+            </h3>
           </div>
 
           <p className=" mb-4">
@@ -236,34 +236,20 @@ function page() {
             workshop, I feel empowered and equipped to take charge of my
             financial future! "
           </p>
-
-          {/* <div className="grid grid-cols-2 gap-4">
-            {keyPoints.map((point, index) => (
-              <div key={index}>
-                <span className="font-semibold">{point.label}:</span>{" "}
-                {point.value}
-              </div>
-            ))}
-          </div> */}
-
-          <div className="flex flex-row gap-2 justify-center uppercase py-4 w-full">
-            <h3 className="text-lg sm:text-xl  font-semibold   w-fit">
-              - {username},
-            </h3>
-            <h3 className=" text-lg sm:text-xl  font-semibold  w-fit">
-              MarketOnEarth
-            </h3>
+          <div className="flex flex-row gap-2 justify-end uppercase py-4 w-full">
+            <p className="text-lg   font-semibold   w-fit">- {username},</p>
+            <p className=" text-lg   font-semibold  w-fit">MarketOnEarth</p>
           </div>
         </div>
       </section>
-      <section className="sm:p-10 p-4 sm:py-16 pt-5 flex flex-col gap-5 justify-center ">
-        <h2 className="sm:text-5xl text-4xl text-center  font-bold pb-10">
+      <section className="p-4 sm:py-10 pt-5 flex flex-col gap-5 justify-center ">
+        <h2 className="sm:text-4xl text-2xl text-center  font-bold sm:pb-10 pb-3">
           Workshops for Corporates
         </h2>
 
-        <div className=" flex flex-col gap-5  justify-center items-center  ">
-          <div className=" text-left px-10  w-full flex flex-col gap-5">
-            <p className="text-xl">
+        <div className=" flex flex-col gap-6  justify-center items-center  ">
+          <div className=" text-left sm:px-10  w-full flex flex-col gap-5">
+            <p className="sm:text-xl text-lg">
               At Wealth Trust Capital, we understand the pivotal role financial
               well-being plays in corporate success. Our tailored workshops are
               designed to empower your team with the knowledge and skills needed
@@ -293,16 +279,16 @@ function page() {
                 </svg>
               </Button>
             </div>
-            <h2 className="sm:text-5xl text-4xl font-semibold text-center py-10">
+            <h2 className="sm:text-4xl text-2xl font-semibold text-center py-10">
               What Sets Us Apart ?
             </h2>
 
-            <div className="sm:grid sm:grid-cols-4 gap-6 flex flex-col items-center justify-center">
+            <div className="lg:grid lg:grid-cols-4 gap-6 flex flex-col items-center justify-center">
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
-                  <p className="text-2xl font-bold text-center p5">
+                  <h3 className="text-2xl font-bold text-center p-5">
                     Expert Guidance
-                  </p>
+                  </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center py-3">
                   <p className="text-center">
@@ -313,9 +299,9 @@ function page() {
               </div>
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
-                  <p className="text-2xl font-bold text-center p5">
+                  <h3 className="text-2xl font-bold text-center p-5">
                     Customized Content
-                  </p>
+                  </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center py-3">
                   <p className="text-center">
@@ -327,9 +313,9 @@ function page() {
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
                   {" "}
-                  <p className="text-2xl font-bold text-center p-5">
+                  <h3 className="text-2xl font-bold text-center p-5">
                     Interactive Sessions
-                  </p>
+                  </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center py-3">
                   <p className="text-center">
@@ -340,9 +326,9 @@ function page() {
               </div>
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
-                  <p className="text-2xl font-bold text-center p5">
+                  <h3 className="text-2xl font-bold text-center p5">
                     Timely Updates
-                  </p>
+                  </h3>
                 </div>
                 <div className="flex flex-col justify-center items-center py-3">
                   <p className="text-center">

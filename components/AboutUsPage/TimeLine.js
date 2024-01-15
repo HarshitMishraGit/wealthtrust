@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Fade from "react-awesome-reveal";
+import { AiOutlineStock } from "react-icons/ai";
 function TimeLine() {
   const data = [
     {
@@ -37,10 +38,8 @@ function TimeLine() {
 
   return (
     <div>
-      <h1 className="text-center sm:text-5xl text-xl font-bold py-10">
-        Our History
-      </h1>
-      <div className="sm:grid sm:grid-cols-7 gap-6 flex flex-col items-center justify-center px-4">
+      <h2 className="text-center text-4xl  font-bold lg:py-10">Our History</h2>
+      {/* <div className="sm:grid sm:grid-cols-7 gap-6 flex flex-col items-center justify-center px-4">
         {data.map((item, index) => {
           return (
             <div key={index}>
@@ -74,7 +73,30 @@ function TimeLine() {
             </div>
           );
         })}
-      </div>
+      </div> */}
+      <ol className="items-center lg:flex sm:p-10 p-4">
+        {data.map((item, index) => {
+          return (
+            <li className="relative mb-6 lg:mb-0">
+              <div className="flex items-center">
+                <div className="z-10 flex items-center justify-center w-10 h-10 bg-primary rounded-full  shrink-0">
+                  <AiOutlineStock className="text-white" size={25} />
+                </div>
+                <div className="hidden lg:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+              </div>
+              <div className="mt-3 lg:pe-8">
+                {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                  Flowbite Library v1.0.0
+                </h3> */}
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                  {item.year}
+                </time>
+                <p className="text-base font-bold text-black">{item.title}</p>
+              </div>
+            </li>
+          );
+        })}
+      </ol>
     </div>
   );
 }
