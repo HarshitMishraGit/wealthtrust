@@ -70,7 +70,7 @@ function page() {
             Our Values
           </h2>
 
-          <div className="lg:grid lg:grid-cols-4 gap-6 flex flex-col items-start justify-center">
+          <div className="sm:grid lg:grid-cols-4 sm:grid-cols-2  gap-6 flex flex-col items-start justify-center">
             <div className="w-full flex flex-col justify-center items-center">
               <div className="w-56 h-56 rounded-full bg-primary flex justify-center items-center text-white">
                 <p className="text-2xl font-bold text-center">Integrity </p>

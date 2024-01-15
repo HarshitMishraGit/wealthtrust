@@ -313,7 +313,7 @@ function page() {
           </div>
         </div>
       </section>
-      <section className="sm:px-24 p-4  py-10">
+      <section className="sm:px-24 p-4 ">
         <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research</h2>
         <div className="lg:grid lg:grid-cols-4 sm:grid-cols-2 flex flex-col gap-5 py-5">
           {research_articles.map((item, index) => {
@@ -356,13 +356,13 @@ function page() {
           })}
         </div>
       </section>
-      <section className="sm:px-24 p-4  sm:py-10 flex lg:flex-row flex-col">
-        <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center p-10">
+      <section className="sm:px-24 p-4  lg:py-10 flex lg:flex-row flex-col gap-10">
+        <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center lg:p-10">
           <img src="/Equity/gen1.png" alt="" />
           <img src="/Equity/gen2.png" alt="" />
           <img src="/Equity/gen3.png" alt="" />
         </div>
-        <div className="lg:w-1/3 w-full flex flex-col justify-start items-start gap-5 px-5">
+        <div className="lg:w-1/3 w-full flex flex-col justify-start items-start gap-5">
           <h2 className="lg:text-xl text-lg font-bold">
             For Complete Access To Our Investment Research
           </h2>

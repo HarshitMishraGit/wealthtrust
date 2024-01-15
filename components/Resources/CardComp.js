@@ -87,8 +87,8 @@ function CardComp(props) {
   ];
   return (
     <>
-      <div className="mx-auto h-full max-w-sm bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700">
-        <div className="object-cover h-[15rem]">
+      <div className="mx-auto h-full  bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className="object-cover sm:h-[20rem] lg:h-[15rem]">
           <video
             controls
             muted

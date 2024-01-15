@@ -283,7 +283,7 @@ function page() {
               What Sets Us Apart ?
             </h2>
 
-            <div className="lg:grid lg:grid-cols-4 gap-6 flex flex-col items-center justify-center">
+            <div className="sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6 flex flex-col items-center justify-center">
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
                   <h3 className="text-2xl font-bold text-center p-5">
@@ -343,11 +343,11 @@ function page() {
       </section>
 
       <section className="research_team">
-        <p className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
+        <h2 className="text-4xl text-center font-semibold lg:px-10 pt-10 p-4">
           Past Webinars
-        </p>
+        </h2>
         <hr />
-        <div className="lg:grid lg:grid-cols-3 gap-3 sm:grid-cols-2 flex flex-col items-center lg:px-10 p-4 w-full">
+        <div className="lg:grid lg:grid-cols-3 gap-5 sm:grid-cols-2 flex flex-col items-center lg:px-10 p-4 w-full">
           {research_team.map((item, index) => {
             return <CardComp data={item} key={index} />;
           })}
