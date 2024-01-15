@@ -87,7 +87,7 @@ function CardComp(props) {
   ];
   return (
     <>
-      <div className="mx-auto h-full  bg-white border border-gray-200  shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="mx-auto h-full   border   shadow bg-gray-900 border-gray-700">
         <div className="object-cover sm:h-[20rem] lg:h-[15rem]">
           <video
             controls
@@ -101,13 +101,11 @@ function CardComp(props) {
 
         <div className="p-5">
           <a href={link} target="_blank">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight hover:underline  text-gray-900 dark:text-white">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight hover:underline  text-white">
               {title}
             </h5>
           </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            {description}
-          </p>
+          <p className="mb-3 font-normal text-gray-400">{description}</p>
           {/* <a
             href="#"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
