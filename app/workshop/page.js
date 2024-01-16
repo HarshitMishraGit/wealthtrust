@@ -125,45 +125,6 @@ function page() {
           </div>
         </div>
       </div>
-
-      <section className="sm:p-10 p-4 flex flex-col gap-10 justify-center items-center bg-primary text-white">
-        <h2 className="text-4xl  text-center font-bold">
-          How To Participate ?
-        </h2>
-        <p className="sm:text-xl text-lg text-center lg:px-48">
-          If you're interested in attending our workshops, simply fill out the
-          form below. Our team will get in touch with you when the workshop is
-          scheduled in your city.
-        </p>
-        <div className="flex flex-row justify-center items-center">
-          <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
-          <Button
-            onClick={() => setOpenModal(true)}
-            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg   px-4 py-2 text-center "
-          >
-            LET'S TALK
-            <svg
-              className="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </Button>
-        </div>
-      </section>
-      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="text-4xl  text-center font-bold">What To Expect</h2>
-        <div className="sm:text-xl text-lg  p-4 text-center">
-          Our workshops cover a range of topics, including
-          <GalleryComp data={what_to_expect} />
-        </div>
-      </section>
       <section className="flex flex-col  px-10 py-10 bg-primary  justify-center items-center">
         <figure className="max-w-screen-md mx-auto text-center">
           <svg
@@ -197,6 +158,45 @@ function page() {
           </figcaption>
         </figure>
       </section>
+      <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
+        <h2 className="text-4xl  text-center font-bold">What To Expect</h2>
+        <div className="sm:text-xl text-lg  p-4 text-center">
+          Our workshops cover a range of topics, including
+          <GalleryComp data={what_to_expect} />
+        </div>
+      </section>
+      <section className="sm:p-10 p-4 flex flex-col gap-10 justify-center items-center bg-primary text-white">
+        <h2 className="text-4xl  text-center font-bold">
+          How To Participate ?
+        </h2>
+        <p className="sm:text-xl text-lg text-center lg:px-48">
+          If you're interested in attending our workshops, simply fill out the
+          form below. Our team will get in touch with you when the workshop is
+          scheduled in your city.
+        </p>
+        <div className="flex flex-row justify-center items-center">
+          <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
+          <Button
+            onClick={() => setOpenModal(true)}
+            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg   px-4 py-2 text-center "
+          >
+            LET'S TALK
+            <svg
+              className="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Button>
+        </div>
+      </section>
+
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
         <h2 className="text-4xl  text-center font-bold">Why To Attend ?</h2>
         <div className="sm:text-2xl text-lg  p-4">

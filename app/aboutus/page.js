@@ -20,7 +20,7 @@ function page() {
       <div className="h-[50rem] py-10 relative ">
         <div className="w-full h-full ">
           <img
-            src="/AboutUsPage/bg.jpg"
+            src="/AboutUsPage/headerImage.jpg"
             alt=""
             className="object-cover w-full h-full absolute top-0 z-10"
           />

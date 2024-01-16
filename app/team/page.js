@@ -31,7 +31,8 @@ function page() {
       building strategies and recommending long
       term equity investments.`,
       social: {
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/shubham-jha-4706321a0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG9vIMAhtTJaStY1d3aZI%2BQ%3D%3D",
       },
     },
     {
@@ -43,7 +44,8 @@ function page() {
       With expertise in investment analysis and a passion for assisting others, count on Aman to
       provide tailored solutions for your success.`,
       social: {
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/aman-v-849022213?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BxiBxIZaeRASxHoQMJyK4OA%3D%3D",
       },
     },
     // {
@@ -67,7 +69,8 @@ function page() {
       record of building and managing client's portfolios. She is our creative and ambitious young professional
       who will help to steer you towards a prosperous and secure financial future.`,
       social: {
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/nupur-shah-cfp?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdF0bnmCmTgaHuerFzw2C%2Fg%3D%3D",
       },
     },
     {
@@ -80,7 +83,8 @@ function page() {
       commitment lies in prioritizing client satisfaction, fostering strong relationships, and
       delivering personalized solutions.`,
       social: {
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/purvi-dodiya-632604169?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B8aSVzlFySXuaGFylS54gsQ%3D%3D",
       },
     },
   ];
@@ -100,16 +104,17 @@ function page() {
       An absolute asset in true sense of the term!
       `,
       social: {
-        linkedIn: "#",
+        linkedIn:
+          "https://www.linkedin.com/in/shivaji-shinde-3083a9113?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BQYE%2FRO7vTLuzlftJ%2BDMbUQ%3D%3D",
       },
     },
     {
       name: "Gyaan T",
       designation: "Operations Associate",
       imageUrl: "/AboutUsPage/gyaan.png",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cupiditate?`,
+      description: `Meet Gyaan, a dynamic and results-driven Operations Executive at Wealthtrust. With a keen eye for detail and a passion for optimizing processes, Gyaan plays a pivotal role in ensuring the smooth and efficient functioning of operations within the organization. Known for dedication and strategic thinking, Gyaan is committed to driving excellence in financial operations at Wealthtrust.`,
       social: {
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/gyaan-talwar-204b4523a/",
       },
     },
   ];
@@ -119,7 +124,7 @@ function page() {
       <div className="h-[50rem] relative ">
         <div className="w-full h-full ">
           <img
-            src="/AboutUsPage/bg2.jpg"
+            src="/team.jpg"
             alt=""
             className="object-cover w-full h-full absolute top-0 z-10"
           />
@@ -139,7 +144,7 @@ function page() {
       </div>
 
       <div className="flex flex-col sm:flex-row w-full  gap-5 lg:px-10 p-4 py-10">
-        <div className="sm:w-1/3 sm:min-w-96   object-cover w-full  h-[35rem] object-top">
+        <div className="sm:w-1/3 sm:min-w-96   object-cover w-full  h-[35rem] object-top shadow-xl">
           <img
             src="/AboutUsPage/sneha.png"
             alt=""
@@ -154,7 +159,11 @@ function page() {
               <p className="text-blue-500 font-semibold">
                 CEO & Founding Partner
               </p>
-              <Link href={"#"}>
+              <Link
+                href={
+                  "https://www.linkedin.com/in/sneha-jain-59a3bb23?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BeveRTHdASs6Yd%2Fu%2FPK%2FZQw%3D%3D"
+                }
+              >
                 <ImLinkedin className="text-[#0277b5]" size={25} />
               </Link>
             </div>

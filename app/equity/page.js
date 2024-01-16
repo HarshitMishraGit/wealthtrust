@@ -4,7 +4,18 @@ import ContentComp1 from "@/components/HomePage/ContentComp1";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 import ContactFormModal from "@/components/Modals/ContactFormModal";
-
+import {
+  Tabs,
+  Tab,
+  CardBody,
+  Table,
+  TableHeader,
+  TableColumn,
+  TableBody,
+  TableRow,
+  TableCell,
+  getKeyValue,
+} from "@nextui-org/react";
 function page() {
   const content = [
     {
@@ -109,6 +120,252 @@ function page() {
     },
   ];
   const [openModal, setOpenModal] = useState(false);
+  const rows = [
+    {
+      key: "1",
+      rf: "Investors",
+      plm: "0",
+      received: "0",
+      resolved: "0",
+      total_pending: "0",
+      pending: "0",
+      avg: "0",
+    },
+    {
+      key: "1",
+      rf: "SEBI (Scores)",
+      plm: "0",
+      received: "0",
+      resolved: "0",
+      total_pending: "0",
+      pending: "0",
+      avg: "0",
+    },
+    {
+      key: "1",
+      rf: "Others",
+      plm: "0",
+      received: "0",
+      resolved: "0",
+      total_pending: "0",
+      pending: "0",
+      avg: "0",
+    },
+  ];
+  const columns = [
+    {
+      key: "rf",
+      label: "Received from",
+    },
+    {
+      key: "plm",
+      label: "Pending last month",
+    },
+    {
+      key: "received",
+      label: "Received",
+    },
+    {
+      key: "resolved",
+      label: "Resolved",
+    },
+    {
+      key: "total_pending",
+      label: "Total pending",
+    },
+    {
+      key: "pending",
+      label: "Pending >3M",
+    },
+    {
+      key: "avg",
+      label: "Avg resolution time (in days)",
+    },
+  ];
+  const columns2 = [
+    {
+      key: "month",
+      label: "Month",
+    },
+    {
+      key: "cf",
+      label: "Carried Forward",
+    },
+    {
+      key: "received",
+      label: "Received",
+    },
+    {
+      key: "resolved",
+      label: "Resolved",
+    },
+    {
+      key: "pending",
+      label: "Pending",
+    },
+  ];
+  const rows2 = [
+    {
+      key: "1",
+      month: "JAN 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "2",
+      month: "FEB 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "3",
+      month: "MAR 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "4",
+      month: "APR 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "5",
+      month: "MAY 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "6",
+      month: "JUN 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "7",
+      month: "JUL 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "8",
+      month: "AUG 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "9",
+      month: "SEP 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "10",
+      month: "OCT 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "11",
+      month: "NOV 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "12",
+      month: "DEC 2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+  ];
+  const columns3 = [
+    {
+      key: "year",
+      label: "Year",
+    },
+    {
+      key: "cf",
+      label: "Carried Forward",
+    },
+    {
+      key: "received",
+      label: "Received",
+    },
+    {
+      key: "resolved",
+      label: "Resolved",
+    },
+    {
+      key: "pending",
+      label: "Pending",
+    },
+  ];
+  const rows3 = [
+    {
+      key: "1",
+      year: "2024-2023",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "2",
+      year: "2023-2022",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "3",
+      year: "2022-2021",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "4",
+      year: "2021-2020",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+    {
+      key: "5",
+      year: "2020-2019",
+      cf: "0",
+      received: "0",
+      resolved: "0",
+      pending: "0",
+    },
+  ];
 
   return (
     <div>
@@ -180,7 +437,7 @@ function page() {
           })}
         </div>
       </section>
-      <section className="sm:px-24 p-4 bg-black text-white py-10">
+      <section className="sm:px-24 p-4 bg-lightGreen  py-10">
         <h2 className="sm:text-4xl text-2xl font-bold py-10 ">
           Our Approach To Idea Generation
         </h2>
@@ -198,7 +455,7 @@ function page() {
             <img
               src="/Equity/grid.png"
               alt=""
-              className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full"
+              className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
           <div className="flex flex-col gap-5 w-25">
@@ -214,7 +471,7 @@ function page() {
             <img
               src="/Equity/grid.png"
               alt=""
-              className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full"
+              className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
           <div className="flex flex-col gap-5 w-25">
@@ -230,7 +487,7 @@ function page() {
             <img
               src="/Equity/grid.png"
               alt=""
-              className="rotate-90 lg:rotate-0 object-contain w-full h-full"
+              className="rotate-90 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
 
@@ -362,7 +619,7 @@ function page() {
           <img src="/Equity/gen2.png" alt="" />
           <img src="/Equity/gen3.png" alt="" />
         </div>
-        <div className="lg:w-1/3 w-full flex flex-col justify-start items-start gap-5">
+        <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
           <h2 className="lg:text-xl text-lg font-bold">
             For Complete Access To Our Investment Research
           </h2>
@@ -380,7 +637,7 @@ function page() {
               className={`btn btn-primary text-white`}
               // onClick={() => setOpenModal(true)}
             >
-              Join our workshop
+              Subscribe
             </Link>
           </div>
         </div>
@@ -461,29 +718,105 @@ shadow-xl md:px-24 p-4 "
           </Button>
         </form>
       </section> */}
-      <section className="sm:py-10 p-4 sm:px-24 bg-lightGreen">
-        <div className="flex sm:flex-row flex-col justify-center items-center ">
-          <div className="sm:w-1/2 w-full">
+      <section className="sm:py-10 p-4 sm:px-24 bg-lightGreen flex flex-col gap-5">
+        <div className="flex sm:flex-row flex-col justify-center items-center">
+          <div className="sm:w-1/2 w-full flex flex-col justify-center items-start gap-2">
             <p className="text-2xl font-bold">WealthTrust Capital Services</p>
-            {/* <p>
+            <p>
               213,2ND FLOOR, Truf Estate, Shakti Mill Lane, Mahalaxmi, 400011,
               Mumbai, Maharashtra, 400011
-            </p> */}
+            </p>
           </div>
           <div className="flex flex-row gap-10 justify-end sm:w-1/2 w-full ">
-            <Link
-              href="https://pickright-server.s3.amazonaws.com/prod/disclosure//1703053105471_disclosure.pdf"
+            <a
+              download
+              href="/disclouser_2.pdf"
               className="text-xl font-bold text-primary"
             >
               Disclosures
-            </Link>
-            <Link
-              href="https://pickright-server.s3.amazonaws.com/prod/disclosure//1695207184046_investorCharter.pdf"
+            </a>
+            <a
+              download
+              href="/investorCharter.pdf"
               className="text-xl font-bold text-primary"
             >
               Investor Charter
-            </Link>
+            </a>
           </div>
+        </div>
+        <div className="flex flex-col justify-center items-start gap-2">
+          <p className="text-2xl font-bold">Regulatory Disclosure</p>
+          <p>
+            <strong>WealthTrust Capital Services</strong> is a SEBI registered
+            <strong>Research Analyst</strong> (Registration Number:
+            <strong>INH000011149</strong>). SEBI requires <strong>RA</strong> to
+            disclose complaint status on their homepage. Pursuant to the same,
+            please note:
+          </p>
+        </div>
+        <div>
+          <div className="flex w-full flex-col">
+            <Tabs aria-label="Options">
+              <Tab key="Current Month" title="Current Month">
+                <Table>
+                  <TableHeader columns={columns}>
+                    {(column) => (
+                      <TableColumn key={column.key}>{column.label}</TableColumn>
+                    )}
+                  </TableHeader>
+                  <TableBody items={rows}>
+                    {(item) => (
+                      <TableRow key={item.key}>
+                        {(columnKey) => (
+                          <TableCell>{getKeyValue(item, columnKey)}</TableCell>
+                        )}
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </Tab>
+              <Tab key="Monthly" title="Monthly">
+                <Table>
+                  <TableHeader columns={columns2}>
+                    {(column) => (
+                      <TableColumn key={column.key}>{column.label}</TableColumn>
+                    )}
+                  </TableHeader>
+                  <TableBody items={rows2.reverse()}>
+                    {(item) => (
+                      <TableRow key={item.key}>
+                        {(columnKey) => (
+                          <TableCell>{getKeyValue(item, columnKey)}</TableCell>
+                        )}
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </Tab>
+              <Tab key="Annual" title="Annual">
+                <Table aria-label="Example table with dynamic content">
+                  <TableHeader columns={columns3}>
+                    {(column) => (
+                      <TableColumn key={column.key}>{column.label}</TableColumn>
+                    )}
+                  </TableHeader>
+                  <TableBody items={rows3}>
+                    {(item) => (
+                      <TableRow key={item.key}>
+                        {(columnKey) => (
+                          <TableCell>{getKeyValue(item, columnKey)}</TableCell>
+                        )}
+                      </TableRow>
+                    )}
+                  </TableBody>
+                </Table>
+              </Tab>
+            </Tabs>
+          </div>
+        </div>
+        <div>
+          Regulatory Disclosurs data shown above is provided by the respective
+          advisor or analyst on 15 Sep 2023
         </div>
       </section>
     </div>
