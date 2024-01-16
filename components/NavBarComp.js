@@ -33,17 +33,22 @@ function NavBarComp() {
         } top-0 lg:z-50 w-full transition-all duration-500 bg-base-100`}
         id="navBar"
       >
-        <div className=" border-b h-16  hidden lg:grid lg:grid-cols-12 justify-center items-center">
+        <div className=" border-b  hidden lg:grid lg:grid-cols-12 justify-center items-center">
           <div className="w-fit col-span-2">
             <div
               className="flex flex-row space-x-2 pl-10 cursor-pointer items-center"
               onClick={() => router.push("/")}
             >
               {/* <SiteLogo /> */}
-              <div className="text-start text-warningcontent">
-                <p className="text-3xl font-semibold text-base-content">
+              <div className="text-start object-contain h-full ">
+                {/* <p className="text-3xl font-semibold text-base-content">
                   WEALTHTRUST
-                </p>
+                </p> */}
+                <img
+                  src="/logo2.png"
+                  alt=""
+                  className="object-contain w-full h-full "
+                />
               </div>
             </div>
           </div>
@@ -62,7 +67,7 @@ function NavBarComp() {
                 <IoIosArrowDown className="ml-1"></IoIosArrowDown>
                 <div
                   id="dropdownHover1"
-                  className="w-full h-fit -z-10 !absolute right-0 pt-72 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-base-100 divide-y sm:px-10 lg:px-48 mx-auto shadow "
+                  className="w-full h-fit -z-10 !absolute right-0 pt-96 pb-5 transition-all origin-top duration-300 transform scale-y-0 opacity-0 group-hover:opacity-100 group-hover:scale-y-100 bg-base-100 divide-y sm:px-10 lg:px-48 mx-auto shadow "
                 >
                   <div className="w-full h-full grid grid-cols-3  mt-14 divide-x-4">
                     <ul className=" text-start col-start-1 col-span-1 ">
@@ -485,8 +490,15 @@ hover:decoration-action-900"
           onClick={() => router.push("/")}
         >
           {/* <SiteLogo /> */}
-          <div className="text-start text-base-content">
-            <p className="text-xl font-semibold">WEALTHTRUST</p>
+          <div className="text-start object-contain w-32">
+            {/* <p className="text-3xl font-semibold text-base-content">
+              WEALTHTRUST
+            </p> */}
+            <img
+              src="/logo2.png"
+              alt=""
+              className="object-contain w-full h-full "
+            />
           </div>
         </div>
         <div className="flex flex-row space-x-2 items-center">

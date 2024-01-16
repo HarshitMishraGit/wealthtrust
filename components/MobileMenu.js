@@ -11,9 +11,9 @@ function MobileMenu(props) {
   const router = useRouter();
   return (
     <div
-      className={`fixed bg-base-100 py-10 w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
+      className={`fixed bg-base-100 pb-5 w-screen top-0 z-40  transition-all  duration-300  backdrop-blur-lg right-0 ${
         props.show
-          ? "translate-y-12 opacity-100 border-t-2 border-base-content shadow-xl"
+          ? "translate-y-[5rem] opacity-100 border-t-2 border-base-content shadow-xl"
           : `-translate-y-full  opacity-0`
       } `}
     >
@@ -47,7 +47,7 @@ function MobileMenu(props) {
         )}
       </div>
 
-      <div className="flex flex-col space-y-4  pt-20 pl-10 select-none cursor-pointer">
+      <div className="flex flex-col space-y-4   pl-10 select-none cursor-pointer">
         <Link
           className=" text-base-content flex flex-row items-center   w-full font-thin h-10 my-auto"
           href={"/aboutus"}
