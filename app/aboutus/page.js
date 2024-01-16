@@ -194,9 +194,9 @@ function page() {
           </div>
           <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex  gap-3 justify-center items-center p-3">
             <div className="sm:w-[32rem]  w-full bg-white p-5 flex flex-col gap-5 items-center shadow-lg">
-              <h3 className="text-4xl  text-center font-semibold">
+              <h2 className="text-4xl  text-center font-semibold">
                 Meet Our Experts
-              </h3>
+              </h2>
               <p>
                 Get in touch with any one of empanelled experts to onboard you
                 in the journey towards financial empowerment. The cruise will be
@@ -217,7 +217,7 @@ function page() {
         </div>
       </section>
       <section className="pt-5 sm:py-10">
-        <h3 className="text-4xl  text-center font-semibold">Our Offices</h3>
+        <h2 className="text-4xl  text-center font-semibold">Our Offices</h2>
         <div className="flex flex-col lg:flex-row-reverse divide-y-1 gap-10 sm:p-10">
           <div className="lg:w-1/2 w-full shadow-xl rounded-lg  p-5">
             <iframe
@@ -239,7 +239,7 @@ function page() {
               />
             </div>
             <h3 className="text-center font-semibold text-lg py-5">
-              Office Name
+              Office Address
             </h3>
             <p className="text-center">
               Office Number 1, Aikya Signature, Naushir Barucha Marg, Sleater

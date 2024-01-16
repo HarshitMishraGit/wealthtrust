@@ -21,7 +21,7 @@ function FooterComp() {
     {
       imageUrl: "/cert1.jpg",
       title:
-        "CIN- AAF-3245 | GSTIN -27AACFW1937A1ZG | ARN No.-109017 (AMFI Registered Mutual Fund Distributor)",
+        "  WealthTrust Capital Services LLP | CIN- AAF-3245 | GSTIN -27AACFW1937A1ZG | ARN No.-109017 (AMFI Registered Mutual Fund Distributor)",
     },
     {
       imageUrl: "/cert3.jpg",
@@ -174,9 +174,9 @@ function FooterComp() {
         </div> */}
 
         <div className="col-start-1 col-span-5 items-center justify-center text-white border-t border-b  flex flex-col py-5 gap-2">
-          <p className="text-3xl font-semibold text-center">
-            WealthTrust Capital Services LLP
-          </p>
+          {/* <p className="text-3xl font-semibold text-center">
+          
+          </p> */}
           <div className="flex flex-row justify-start w-full">
             <p className="text-sm ">we are well certified -</p>
           </div>
@@ -198,9 +198,9 @@ function FooterComp() {
             Registered Mutual Fund Distributor)
           </p> */}
           <p className="text-sm">
-            Mutual fund investments are subject to market risks. Therefore, read
-            the scheme information and other related documents carefully, before
-            investing. Past performance is not indicative of future returns.
+            Mutual fund investments are subject to market risks. Read the scheme
+            information and other related documents carefully, before investing.
+            Past performance is not indicative of future returns.
           </p>
           {/* <p className="text-sm">
             WealthTrust Capital Services (Proprietorship) – Bank and Financial

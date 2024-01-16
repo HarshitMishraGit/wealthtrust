@@ -33,8 +33,8 @@ function NavBarComp() {
         } top-0 lg:z-50 w-full transition-all duration-500 bg-base-100`}
         id="navBar"
       >
-        <div className="navbar border-b h-11  hidden lg:flex ">
-          <div className="navbar-start">
+        <div className=" border-b h-16  hidden lg:grid lg:grid-cols-12 justify-center items-center">
+          <div className="w-fit col-span-2">
             <div
               className="flex flex-row space-x-2 pl-10 cursor-pointer items-center"
               onClick={() => router.push("/")}
@@ -47,16 +47,16 @@ function NavBarComp() {
               </div>
             </div>
           </div>
-          <div className="navbar-center">
-            <div className="flex flex-row lg:w-[60rem] md:w-[20rem]">
+          <div className=" col-span-8 flex flex-row justify-center items-center w-full">
+            <div className="flex flex-row justify-center items-center gap-5">
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4 h-10 my-auto font-semibold"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content   h-10 my-auto font-semibold min-w-fit"
                 href={"/aboutus"}
               >
                 About Us
               </Link>
               <div
-                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group w-1/4 font-semibold [&>*]:text-base-content text-base-content`}
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit  font-semibold [&>*]:text-base-content text-base-content`}
               >
                 Services
                 <IoIosArrowDown className="ml-1"></IoIosArrowDown>
@@ -216,25 +216,25 @@ hover:decoration-action-900"
                 </div>
               </div>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold text-center"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  h-10 my-auto font-semibold text-center min-w-fit"
                 href={"/team"}
               >
                 Team
               </Link>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold text-center"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content     my-auto font-semibold text-center min-w-fit"
                 href={"/equity"}
               >
                 Investment Research
               </Link>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content w-1/4  h-10 my-auto font-semibold text-center"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content min-w-fit  h-10 my-auto font-semibold text-center"
                 href={"/workshop"}
               >
                 Workshop
               </Link>
               <div
-                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group w-1/4 font-semibold [&>*]:text-base-content text-base-content`}
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit font-semibold [&>*]:text-base-content text-base-content`}
               >
                 Resources
                 <IoIosArrowDown className="ml-1"></IoIosArrowDown>
@@ -389,14 +389,14 @@ hover:decoration-action-900"
                 </div>
               </div>
               <Link
-                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  w-1/4  h-10 my-auto font-semibold"
+                className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  min-w-fit  h-10 my-auto font-semibold"
                 href={"#"}
               >
                 Be An Associate
               </Link>
             </div>
           </div>
-          <div className="navbar-end">
+          <div className=" col-span-2 w-full flex flex-row justify-end p-2">
             {/* <label htmlFor="my-modal-6" className="btn">open modal</label> */}
 
             {/* <ThemeTogglerButton buttonType="toggle" /> */}

@@ -113,7 +113,7 @@ function page() {
   return (
     <div>
       <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
-      <div className="h-[50rem]  relative ">
+      <div className="lg:h-screen h-[32rem]  relative ">
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg.jpg"
@@ -121,14 +121,14 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center gap-3 pt-24">
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center lg:justify-end  gap-3 ">
           {/* <h1 className="text-center text-blue-400 font-bold sm:text-6xl text-3xl">
             Investment Research
           </h1> */}
 
-          <h1 className="sm:text-5xl font-semibold text-2xl text-white  sm:px-24 pt-10 p-4 text-left">
+          <h1 className="sm:text-5xl font-semibold text-2xl text-white  sm:px-24 pb-10 p-5 text-left">
             If we buy the business as a business and not as a stock speculation,
-            then it becomes personal. We want it to be personal.
+            then it becomes personal. <br /> We want it to be personal.
           </h1>
         </div>
       </div>
@@ -260,7 +260,7 @@ function page() {
                 India Equity Research
               </h3>
               <p>
-                ndia Equity Research, includes fundamental research on listed
+                India Equity Research, includes fundamental research on listed
                 Indian equities. The research team covers 5+ sectors and 250+
                 equities.
               </p>
@@ -335,7 +335,7 @@ function page() {
                       neutra, ethical XOXO lumbersexual.
                     </p> */}
                 <Link
-                  className="text-indigo-500 inline-flex items-center mt-3 cursor-pointer"
+                  className="text-indigo-500 inline-flex items-center mt-3 !cursor-pointer"
                   href={item.link}
                 >
                   Learn More
