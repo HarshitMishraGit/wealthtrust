@@ -1,66 +1,89 @@
 import React, { useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-
-import { IoIosArrowBack } from "react-icons/io";
-import { IoIosArrowForward } from "react-icons/io";
+import Carousel from "react-multi-carousel";
+import { isMobile, isTablet, isBrowser } from "react-device-detect";
+import "react-multi-carousel/lib/styles.css";
 function CarouselComp2() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) {
-      emblaApi.scrollPrev();
-    }
-  }, [emblaApi]);
   const data = [
-    { imageUrl: "/HomePage/Carousel/1.jpg" },
-    { imageUrl: "/HomePage/Carousel/2.jpg" },
-    // { imageUrl: "/HomePage/Carousel/1.jpg" },
-    // { imageUrl: "/HomePage/Carousel/1.jpg" },
+    {
+      title:
+        "Shiksha Se Samriddhi: क्या Share Market में आप बिना तैयारी का निवेश करने का सोच रहें है? | CNBC Awaaz",
+      description:
+        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      link: "https://www.youtube.com/watch?v=HWRQtD7rOu0",
+      imageUrl: "HomePage/media/3.jpg",
+    },
+    {
+      title: "Why is the Global Economy nearing recession in 2023?",
+      description:
+        "There has been news about economic slowdown on a global scale. We have expressed our views on the causes and how is it different from the global financial crisis of 2008. We have talked about how investors can prepare themselves for the future.",
+      link: "https://economictimes.indiatimes.com/industry/banking/finance/banking/why-is-the-global-economy-nearing-recession-in-2023/articleshow/97857098.cms",
+      imageUrl: "HomePage/media/1.jpg",
+    },
+    {
+      title: "Planning For Your Retirement",
+      description:
+        "Assume you had 1 crore as retirement corpus and you were to retire by 60. With a 4% rate , and an outflow of 80,000 monthly, you would be able to sustain for only 13 years 5 months. Ideally you should be able to sustain atleast 30 odd years after you...",
+      link: "https://outlookmoney.com/outlook-money-spotlight/planning-for-your-retirement-8740",
+      imageUrl: "HomePage/media/2.png",
+    },
   ];
-  const scrollNext = useCallback(() => {
-    if (emblaApi) {
-      emblaApi.scrollNext();
-    }
-  }, [emblaApi]);
   return (
-    <div className="flex flex-row justify-center items-center relative">
-      <button
-        onClick={scrollPrev}
-        className="absolute z-10 left-5 transition-all duration-300 hover:bg-gray-300 bg-gray-100 bg-opacity-25 hover:bg-opacity-100 rounded-full"
-      >
-        <IoIosArrowBack size={25} className="m-2 text-gray-600" />
-      </button>
-      <div className="embla !p-0 w-full">
-        <div className="embla__viewport " ref={emblaRef}>
-          <div className="embla__container ">
-            {data.map((item, index) => {
-              return (
-                <div
-                  className="w-[20rem] embla__slide h-auto md:h-[100vh]"
-                  key={index}
+    <>
+      <h2 className="mb-4 text-4xl tracking-tight font-bold text-center py-5">
+        Featured In
+      </h2>
+      <div className="flex flex-col lg:grid lg:grid-cols-3 justify-center items-center relative  gap-5 p-5 lg:px-10">
+        {data.map((item) => {
+          return (
+            <div
+              class="min-h-full overflow-hidden bg-lightGreen"
+              key={item.link}
+            >
+              <div
+                href={item.link}
+                className="lg:object-cover  object-contain lg:h-[20rem] h-auto "
+              >
+                <img
+                  // class="rounded-t-lg"
+                  src={item.imageUrl}
+                  alt=""
+                  className="lg:object-cover object-contain  w-full h-full "
+                />
+              </div>
+              <div class="p-5">
+                <a href={item.link}>
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                    {item.title}
+                  </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700">{item.description}</p>
+                <a
+                  href={item.link}
+                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg 0"
                 >
-                  <div className="w-full  cursor-pointer  items-start justify-center h-full object-cover">
-                    <img
-                      src={item.imageUrl}
-                      alt="img"
-                      className="object-cover w-full h-full"
+                  Read more
+                  <svg
+                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          );
+        })}
       </div>
-      <button
-        onClick={scrollNext}
-        className="absolute z-10 right-5 transition-all duration-300 hover:bg-gray-300 bg-gray-100 bg-opacity-25 hover:bg-opacity-100 
-        rounded-full"
-      >
-        <IoIosArrowForward size={25} className="m-2 text-gray-600" />
-      </button>
-    </div>
+    </>
   );
 }
 
