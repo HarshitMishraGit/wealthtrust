@@ -5,7 +5,7 @@ import { IoIosStar } from "react-icons/io";
 import { image } from "@nextui-org/react";
 function CardComp(props) {
   const { title, description, link, vidUrl } = props.data;
-  const { key } = props;
+  const { keyval } = props;
   const data = [
     {
       badgeTitle: "Popular",
@@ -90,7 +90,7 @@ function CardComp(props) {
     <>
       <div
         className="mx-auto h-full   border   shadow bg-gray-900 border-gray-700"
-        key={key}
+        key={keyval}
       >
         <div className="object-cover sm:h-[20rem] lg:h-[15rem]">
           <video

@@ -202,7 +202,7 @@ function page() {
         </p>
         <div className="lg:grid lg:grid-cols-2 gap-7 sm:grid-cols-2 flex flex-col lg:px-10 p-4 w-full">
           {research_team.map((item, index) => {
-            return <ProfileCard user={item} key={index} />;
+            return <ProfileCard user={item} key={index} keyval={index} />;
           })}
         </div>
       </section>
@@ -215,7 +215,7 @@ function page() {
         </p>
         <div className="lg:grid lg:grid-cols-2 gap-7 sm:grid-cols-2 flex flex-col lg:px-10 p-4 w-full">
           {wealth_management_team.map((item, index) => {
-            return <ProfileCard user={item} key={index} />;
+            return <ProfileCard user={item} key={index} keyval={index} />;
           })}
         </div>
       </section>
@@ -226,7 +226,7 @@ function page() {
         </p>
         <div className="lg:grid lg:grid-cols-2 gap-7 sm:grid-cols-2 flex flex-col lg:px-10 p-4 w-full">
           {operation_team.map((item, index) => {
-            return <ProfileCard user={item} key={index} />;
+            return <ProfileCard user={item} key={index} keyval={index} />;
           })}
         </div>
       </section>

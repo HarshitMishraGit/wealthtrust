@@ -3,11 +3,11 @@ import { ImLinkedin } from "react-icons/im";
 import Link from "next/link";
 function ProfileCard(props) {
   const { imageUrl, name, designation, social, description } = props.user;
-  const { key } = props;
+  const { keyval } = props;
   return (
     <div
       className="flex flex-col sm:flex-row w-full  bg-white rounded-lg gap-5 shadow-xl hover:scale-105 cursor-pointer hover:shadow-2xl"
-      key={key}
+      key={keyval}
     >
       <div className="sm:w-1/3 sm:min-w-96   object-cover w-full h-96 sm:h-auto object-top">
         <img

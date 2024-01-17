@@ -285,7 +285,17 @@ hover:decoration-action-900"
                       Resources {">"}
                     </div>
 
-                    <ul className=" pl-6">
+                    <ul className=" pl-6 col-span-2">
+                      <li>
+                        {" "}
+                        <Link
+                          href={"/faqs"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          FAQs
+                        </Link>
+                      </li>
                       <li>
                         {" "}
                         <Link

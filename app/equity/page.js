@@ -665,7 +665,7 @@ function page() {
           investment objectives, risk parameters, management teams, and fees.
         </div>
       </section>
-      <section className="sm:px-24 p-4  py-10 flex lg:flex-row flex-col"></section>
+
       {/* <section className="flex justify-center items-center py-10">
         <form
           action="#"

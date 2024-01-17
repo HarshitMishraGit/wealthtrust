@@ -96,6 +96,7 @@ function page() {
         {content.map((item, index) => (
           <ContentComp1
             key={index}
+            keyval={index}
             badgeTitle={item.badgeTitle}
             title={item.title}
             content={item.content}

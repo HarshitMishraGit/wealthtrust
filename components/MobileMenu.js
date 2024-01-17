@@ -276,6 +276,13 @@ hover:scale-110"
         >
           <li>
             <Link
+              href={"/faqs"}
+              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+hover:scale-110 "
+            >
+              FAQs
+            </Link>
+            <Link
               href={"#"}
               className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110 "
