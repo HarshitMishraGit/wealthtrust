@@ -13,7 +13,7 @@ function ContentComp() {
     {
       badgeTitle: "Your Trust",
       title: "Workshops & Events",
-    content:
+      content:
         "We regularly host workshops and events aimed at educating our clients about the latest trends in wealth management. These events provide an opportunity for our clients to interact with industry experts, gain insights into market trends, and understand the nuances of financial planning. Our workshops cover a wide range of topics, from investment strategies to risk management, and are designed to empower our clients to make informed financial decisions. In addition, we also organize exclusive events that offer our clients the opportunity to network with like-minded individuals and explore potential investment opportunities.",
       imageUrl: "/meet1.jpg",
       reverse: true,

@@ -20,17 +20,14 @@ function Hero() {
           </h1>
 
           <p className=" sm:text-md text-base-content text-left">
-            In the dynamic landscape of financial services,
-            <strong> WealthTrust Capital Services </strong>
-            emerges as a distinguished player, excelling in digital marketing
-            strategies tailored for the finance sector. As a premier Digital
-            Marketing and Financial Consulting firm based in India, our
-            professionals at InvestWisely Capital possess a deep understanding
-            of financial intricacies, specializing in equity, investments, and
-            wealth management. Our success is not only attributed to our
-            marketing prowess but also to our in-depth knowledge of the finance
-            industry, making us a trusted partner for businesses seeking
-            strategic growth in the financial sector.
+            Our comprehensive suite of services, including equity investment,
+            equity research, mutual funds, tax planning, and more, is tailored
+            to guide you towards your financial aspirations. Whether you're
+            looking to build wealth through strategic investments or seeking
+            expert advice on tax planning,{" "}
+            <strong>WealthTrust Capital Services</strong> is your trusted
+            partner on the journey to financial success. Explore our range of
+            services and unlock a path to a secure and prosperous tomorrow.
           </p>
           <div className="flex flex-row items-center gap-4">
             <p

@@ -183,13 +183,12 @@ function FooterComp() {
           <div className="lg:grid py-5 lg:grid-cols-3 flex flex-col gap-4 justify-center items-center">
             {certifications.map((item, index) => {
               return (
-                <>
-                  <Footercard
-                    title={item.title}
-                    key={index}
-                    imageUrl={item.imageUrl}
-                  />
-                </>
+                <Footercard
+                  title={item.title}
+                  keyval={index}
+                  key={index}
+                  imageUrl={item.imageUrl}
+                />
               );
             })}
           </div>

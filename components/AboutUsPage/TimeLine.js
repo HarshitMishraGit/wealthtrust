@@ -77,7 +77,7 @@ function TimeLine() {
       <ol className="items-center lg:flex sm:p-10 p-4">
         {data.map((item, index) => {
           return (
-            <li className="relative mb-6 lg:mb-0">
+            <li className="relative mb-6 lg:mb-0" key={index}>
               <div className="flex items-center">
                 <div className="z-10 flex items-center justify-center w-10 h-10 bg-primary rounded-full  shrink-0">
                   <AiOutlineStock className="text-white" size={25} />

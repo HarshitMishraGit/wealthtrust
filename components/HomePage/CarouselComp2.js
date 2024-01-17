@@ -36,7 +36,7 @@ function CarouselComp2() {
         {data.map((item) => {
           return (
             <div
-              class="min-h-full overflow-hidden bg-lightGreen"
+              className="min-h-full overflow-hidden bg-lightGreen"
               key={item.link}
             >
               <div
@@ -44,26 +44,26 @@ function CarouselComp2() {
                 className="lg:object-cover  object-contain lg:h-[20rem] h-auto "
               >
                 <img
-                  // class="rounded-t-lg"
+                  // className="rounded-t-lg"
                   src={item.imageUrl}
                   alt=""
                   className="lg:object-cover object-contain  w-full h-full "
                 />
               </div>
-              <div class="p-5">
+              <div className="p-5">
                 <a href={item.link}>
-                  <h5 class="mb-2 text-2xl font-bold tracking-tight  ">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight  ">
                     {item.title}
                   </h5>
                 </a>
-                <p class="mb-3 font-normal ">{item.description}</p>
+                <p className="mb-3 font-normal ">{item.description}</p>
                 <a
                   href={item.link}
-                  class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg 0"
+                  className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg 0"
                 >
                   Read more
                   <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -71,9 +71,9 @@ function CarouselComp2() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>

@@ -3,12 +3,15 @@ import React from "react";
 import { Fade, Bounce, Slide } from "react-awesome-reveal";
 // import confetti from "canvas-confetti";
 function ContentComp1(props) {
-  const { badgeTitle, title, content, imageUrl, reverse, blogUrl } = props;
+  const { badgeTitle, title, content, imageUrl, reverse, blogUrl, key } = props;
   const handleRedirect = () => {
     window.open(blogUrl, "_blank");
   };
   return (
-    <section className="min-h-fit lg:p-12 p-4  hero  bg-base-100 overflow-x-hidden">
+    <section
+      className="min-h-fit lg:p-12 p-4  hero  bg-base-100 overflow-x-hidden"
+      key={key}
+    >
       <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:gap-10 flex flex-col space-y-5 items-center justify-center">
         <Slide
           className={`${
