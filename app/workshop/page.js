@@ -88,7 +88,7 @@ function page() {
     { title: "Gain valuable knowledge from industry experts." },
     { title: "Network with like-minded individuals." },
     { title: "Receive personalized advice from our team." },
-    // { title: "Take the first step towards financial success." },
+    { title: "Take the first step towards financial success." },
   ];
   const what_to_expect = [
     { title: "Wealth Management Strategies" },
@@ -100,7 +100,7 @@ function page() {
   const content = [
     {
       badgeTitle: "Your Trust",
-      title: "Saleried Individuals",
+      title: "Salaried Individuals",
       content:
         "In the fast-paced world, the daily grind often leaves little room to ponder the future. As a salaried individual, it's easy to become engrossed in the demands of the present without considering the inevitable reality – one day, you will leave your job. Ensuring a secure and fulfilling future requires meticulous planning, and neglecting your financial well-being can lead to unforeseen challenges. From purchasing a home to providing quality education for your children, and safeguarding your health with comprehensive medical coverage, the puzzle of life's essentials demands attention. At Wealth Trust Capital, we understand the intricate nature of this puzzle, and our workshop is tailored to guide you through the complexities. Because, after all, if you don't look after yourself, who will? Join us on a transformative journey where we unravel the intricacies of financial planning, empowering you to secure a prosperous and worry-free future. Don't just live for today; invest in a tomorrow that you've meticulously crafted. Your financial well-being is the cornerstone of a fulfilling life, and we're here to help you piece it all together. Embrace the power of financial empowerment with Wealth Trust Capital's exclusive workshop – your key to unlocking a secure and successful future.",
       imageUrl: "/Equity/strategy.png",
@@ -108,7 +108,7 @@ function page() {
     },
     {
       badgeTitle: "Your Trust",
-      title: "Wealth Creation ",
+      title: "Wealth Creation and Preservation for Self-Employed",
       content:
         "the journey to financial prosperity extends beyond the immediate demands of running a business. It involves a careful balance between personal and professional needs, with the overarching goal of creating and preserving wealth for not just today, but for the generations that follow. Business owners often find themselves intricately entwined with the success of their enterprises, making it imperative to delineate personal finances from professional assets. Wealth creation is not just about thriving in the present; it's about sowing the seeds for a prosperous future. At Wealth Trust Capital, we understand the unique challenges faced by self-employed individuals in navigating this complex terrain. Our workshop is crafted to provide insights into effective wealth management strategies, emphasizing the importance of multiplying assets for the benefit of future generations. Just as a well-orchestrated symphony requires each instrument to play its part, successful financial planning demands a harmonious balance between current needs and the legacy we wish to leave behind. Join us in this transformative workshop where we delve into the intricacies of wealth creation and preservation. Let Wealth Trust Capital be your guide in orchestrating a symphony of financial success that resonates through generations. Enroll now and ensure a lasting legacy of prosperity for you and those who come after you.",
       imageUrl: "/Equity/update.png",
@@ -121,6 +121,30 @@ function page() {
         "For women navigating the professional landscape, the need for financial empowerment is not just a choice. it's a fundamental necessity. In a world where women are increasingly breaking barriers and achieving remarkable success, We recognizes the unique financial aspirations of women professionals. Our workshop is specially curated to address the distinct challenges faced by women, offering a supportive environment to foster financial independence and success. Beyond the immediate demands of career growth, women often juggle multifaceted responsibilities, from family care to personal development. Wealth creation becomes a strategic imperative, not just for personal fulfillment but also to break free from traditional financial constraints. Our workshop goes beyond conventional financial planning, delving into topics that resonate with the modern woman - from building a robust investment portfolio to ensuring financial security for future endeavours. Join us on this empowering journey where we celebrate the strength and resilience of women professionals. Let Wealth Trust Capital be your ally in realizing your financial dreams, providing the tools and knowledge needed to carve out a path of lasting prosperity. Seize this opportunity to invest in yourself and your future. Enroll in our exclusive workshop now and embark on a journey toward financial empowerment, where your success becomes the cornerstone of a brighter tomorrow",
       imageUrl: "/Equity/comm.png",
       reverse: false,
+    },
+  ];
+  const data = [
+    {
+      title: "Networking Opportunities",
+      description: `Connect with a community of like-minded individuals who share similar financial goals. Our workshops provide a platform for networking, collaboration, and the exchange of valuable experiences.
+      `,
+      imageUrl: "/Workshop/1.jpg",
+    },
+    {
+      title: "Real Success Stories",
+      description: `Hear inspiring stories from individuals who have attended our workshops and transformed their financial outlook. Learn from their experiences and discover practical strategies for achieving financial success.
+      `,
+      imageUrl: "/Workshop/2.jpg",
+    },
+    {
+      title: "Comprehensive Resources",
+      description: `Access exclusive resources and materials to support your ongoing financial journey. From in-depth guides to personalized financial planning tools, we provide the resources you need to thrive.`,
+      imageUrl: "/Workshop/3.jpg",
+    },
+    {
+      title: "Holistic Approach",
+      description: `Whether you're interested in equity investment, tax planning, or other financial services, our workshop takes a holistic approach, ensuring you receive a well-rounded education in all aspects of wealth creation and preservation.`,
+      imageUrl: "/Workshop/4.jpg",
     },
   ];
   const [openModal, setOpenModal] = useState(false);
@@ -186,29 +210,35 @@ function page() {
         </figure>
       </section>
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="text-4xl  text-center font-bold ">What To Expect</h2>
-        <div className="sm:text-xl text-lg  p-4 text-center ">
-          Our workshops cover a range of topics, including
-          {/* <GalleryComp data={what_to_expect} /> */}
-          <div>
-            {content.map((item, index) => (
-              <ContentComp1
-                key={index}
-                keyval={index}
-                badgeTitle={item.badgeTitle}
-                title={item.title}
-                content={item.content}
-                imageUrl={item.imageUrl}
-                reverse={item.reverse}
-                blogUrl={item.blogUrl}
-              />
-            ))}
-          </div>
+        <h2 className="text-4xl  text-center font-bold ">
+          Being Financially Aware will lead you to the journey of financial
+          freedom
+        </h2>
+        <h3 className="text-2xl font-semibold   p-4 text-center ">
+          Our workshops are designed in three distinct ways to address the
+          unique financial needs of individuals with different needs!
+          Participate Today!
+        </h3>
+
+        {/* <GalleryComp data={what_to_expect} /> */}
+        <div>
+          {content.map((item, index) => (
+            <ContentComp1
+              key={index}
+              keyval={index}
+              badgeTitle={item.badgeTitle}
+              title={item.title}
+              content={item.content}
+              imageUrl={item.imageUrl}
+              reverse={item.reverse}
+              blogUrl={item.blogUrl}
+            />
+          ))}
         </div>
       </section>
       <section className="sm:p-10 p-4 flex flex-col gap-10 justify-center items-center bg-primary text-white">
         <h2 className="text-4xl  text-center font-bold">
-          How To Participate ?
+          Want To Participate ?
         </h2>
         <p className="sm:text-xl text-lg text-center lg:px-48">
           If you're interested in attending our workshops, simply fill out the
@@ -237,7 +267,7 @@ function page() {
           </Button>
         </div>
       </section>
-      <section className="sm:px-24 p-4  py-10">
+      {/* <section className="sm:px-24 p-4  py-10">
         <h2 className="text-4xl  font-semibold pb-10 ">
           Our Approach is curated and we develop <i> Simulated Workshops</i> as
           per the audience
@@ -308,11 +338,37 @@ function page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="sm:p-10 p-4 py-10 flex flex-col gap-5 justify-center ">
-        <h2 className="text-4xl  text-center font-bold">Why To Attend ?</h2>
-        <div className="sm:text-2xl text-lg  p-4">
-          <GalleryComp data={why_to_Attend} />
+        <h2 className="text-4xl  text-center font-bold">
+          {" "}
+          Our Approach is curated and we develop <i> Stimulated Workshops</i> as
+          per the audience
+        </h2>
+        <div className="sm:grid sm:grid-cols-2 lg:grid-cols-4 gap-6 flex flex-col items-start justify-center  py-4">
+          {data.map((item, index) => {
+            return (
+              <div
+                className="w-full flex flex-col justify-center items-center"
+                key={index}
+              >
+                <div className=" h-56 object-cover overflow-hidden rounded-lg bg-white my-3 shadow-xl hover:scale-105 cursor-pointer">
+                  <img
+                    src={item.imageUrl}
+                    alt={item.title}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+
+                <div className="flex flex-col justify-center gap-5 items-center py-3">
+                  <h2 className=" text-xl font-semibold  flex justify-center items-center">
+                    {item.title}
+                  </h2>
+                  <p className="text-center">{item.description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
       <section className=" p-2 w-full bg-primary text-white">
@@ -330,7 +386,7 @@ function page() {
           </div>
 
           <p className=" mb-4">
-            " Attending the Wealth Trust Cap workshop was a game-changer! The
+            " Attending the WealthTrust Cap workshop was a game-changer! The
             interactive sessions demystified complex financial concepts, and the
             personalized strategies gave me a clear roadmap for my financial
             goals. Connecting with like-minded individuals and learning from
@@ -381,11 +437,11 @@ function page() {
                 </svg>
               </Button>
             </div>
-            <h2 className="sm:text-4xl text-2xl font-semibold text-center py-10">
+            {/* <h2 className="sm:text-4xl text-2xl font-semibold text-center py-10">
               What Sets Us Apart ?
-            </h2>
+            </h2> */}
 
-            <div className="sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6 flex flex-col items-center justify-center">
+            {/* <div className="sm:grid lg:grid-cols-4 sm:grid-cols-2 gap-6 flex flex-col items-center justify-center">
               <div className="w-full flex flex-col justify-center items-center">
                 <div className="w-56 h-56 rounded-full bg-primary flex flex-row justify-center items-center text-white">
                   <h3 className="text-2xl font-bold text-center p-5">
@@ -439,7 +495,7 @@ function page() {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

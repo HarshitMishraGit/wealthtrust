@@ -18,7 +18,7 @@ function ServicesComp(props) {
       {
         title: "title",
         description: `<p>Portfolio management involves expertly managing a collection of investments to achieve specific financial objectives. At Wealth Trust Capital, we help optimize your portfolio, offering personalized strategies and guidance to enhance returns, minimize risks, and navigate the complexities of the financial markets for sustained wealth growth.</p>
-        <a href="https://www.wealthtrustcap.com/portfolio.php" target="_blank" style="color:blue;">Read more...</a>
+        <a href="https://wealthtrustcap.com/equity/wealth-trust" target="_blank" style="color:blue;">Read more...</a>
         `,
       },
     ],

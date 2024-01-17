@@ -16,7 +16,7 @@ export default function GalleryComp(props) {
       {data.map((item, index) => {
         return (
           <Card
-            className="col-span-12 sm:col-span-6 lg:col-span-4 h-[300px] hover:scale-105 cursor-pointer hover:shadow-xl"
+            className="col-span-12 sm:col-span-6 lg:col-span-3 h-[300px] hover:scale-105 cursor-pointer hover:shadow-xl"
             key={index}
           >
             <CardHeader className="absolute z-10 top-1 flex-col !items-start">

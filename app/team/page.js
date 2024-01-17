@@ -129,7 +129,7 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0  z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-row items-center justify-center gap-3">
+        <div className="absolute top-0  z-20 bg-black bg-opacity-70 w-full h-full pt-24 flex flex-row items-center justify-center gap-3">
           <div className="lg:w-2/3 w-full p-4">
             <h1 className="text-center text-white font-bold text-5xl ">
               Meet Our Team

@@ -570,7 +570,7 @@ function page() {
           </div>
         </div>
       </section>
-      <section className="sm:px-24 p-4 ">
+      {/* <section className="sm:px-24 p-4 ">
         <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research</h2>
         <div className="lg:grid lg:grid-cols-4 sm:grid-cols-2 flex flex-col gap-5 py-5">
           {research_articles.map((item, index) => {
@@ -586,11 +586,7 @@ function page() {
                 <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
                   {item.title}
                 </h2>
-                {/* <p className="text-base leading-relaxed mt-2">
-                      Swag shoivdigoitch literally meditation subway tile tumblr
-                      cold-pressed. Gastropub street art beard dreamcatcher
-                      neutra, ethical XOXO lumbersexual.
-                    </p> */}
+               
                 <Link
                   className="text-indigo-500 inline-flex items-center mt-3 !cursor-pointer"
                   href={item.link}
@@ -612,33 +608,36 @@ function page() {
             );
           })}
         </div>
-      </section>
-      <section className="sm:px-24 p-4  lg:py-10 flex lg:flex-row flex-col gap-10">
-        <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center lg:p-10">
-          <img src="/Equity/gen1.png" alt="" />
-          <img src="/Equity/gen2.png" alt="" />
-          <img src="/Equity/gen3.png" alt="" />
-        </div>
-        <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
-          <h2 className="lg:text-xl text-lg font-bold">
-            For Complete Access To Our Investment Research
-          </h2>
-          <div className="flex flex-row justify-start items-center gap-4">
-            <p
-              // href="/aboutus"
-              onClick={() => setOpenModal(true)}
-              className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
-            >
-              Contact Us
-            </p>
-            <Link
+      </section> */}
+      <section className="sm:px-24 p-4  lg:py-10 ">
+        <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research </h2>
+        <div className="flex lg:flex-row flex-col gap-10">
+          <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center lg:p-10">
+            <img src="/Equity/gen1.png" alt="" />
+            <img src="/Equity/gen2.png" alt="" />
+            <img src="/Equity/gen3.png" alt="" />
+          </div>
+          <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
+            <h2 className="text-2xl  font-bold">
+              For Complete Access To Our Investment Research
+            </h2>
+            <div className="flex flex-row justify-start items-center gap-4">
+              <p
+                // href="/aboutus"
+                onClick={() => setOpenModal(true)}
+                className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
+              >
+                Subscribe Here
+              </p>
+              {/* <Link
               href="https://calendly.com/wealthtrustcapitalservices/30min"
               target="_blank"
               className={`btn btn-primary text-white`}
               // onClick={() => setOpenModal(true)}
             >
               Subscribe
-            </Link>
+            </Link> */}
+            </div>
           </div>
         </div>
       </section>
@@ -816,7 +815,7 @@ shadow-xl md:px-24 p-4 "
         </div>
         <div>
           Regulatory Disclosurs data shown above is provided by the respective
-          advisor or analyst on 15 Sep 2023
+          advisor or analyst on 15 Jan 2024
         </div>
       </section>
     </div>

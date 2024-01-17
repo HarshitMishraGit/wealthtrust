@@ -53,7 +53,7 @@ function NavBarComp() {
             </div>
           </div>
           <div className=" col-span-8 flex flex-row justify-center items-center w-full">
-            <div className="flex flex-row justify-center items-center gap-5">
+            <div className="flex flex-row justify-center items-center gap-5 ">
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content   h-10 my-auto font-semibold min-w-fit"
                 href={"/aboutus"}

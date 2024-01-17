@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Fade, Bounce, Slide } from "react-awesome-reveal";
 // import confetti from "canvas-confetti";
 function ContentComp1(props) {
@@ -8,6 +8,7 @@ function ContentComp1(props) {
   const handleRedirect = () => {
     window.open(blogUrl, "_blank");
   };
+  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <section
       className="min-h-fit lg:p-12 p-4 text-gray-900   overflow-x-hidden "
@@ -31,16 +32,15 @@ function ContentComp1(props) {
         <div className="space-y-2 ">
           {/* <div className="badge badge-accent md:p-3">{badgeTitle}</div> */}
           <h2 className="text-3xl font-bold text-base-content">{title}</h2>
+          <p className="py-6 text-normal ">
+            {isExpanded ? content : `${content.substring(0, 400)}...`}
+          </p>
           <p
-            className="py-6 text-normal "
-            dangerouslySetInnerHTML={{ __html: content }}
-          ></p>
-          {/* <button
             className="btn btn-primary text-white rounded-lg"
-            onClick={handleRedirect}
+            onClick={() => setIsExpanded(!isExpanded)}
           >
-            Read More
-          </button> */}
+            {isExpanded ? "Read Less" : "Read More"}
+          </p>
         </div>
       </div>
     </section>
