@@ -16,6 +16,7 @@ import {
   TableCell,
   getKeyValue,
 } from "@nextui-org/react";
+import LockedResearchComp from "@/components/Equity/LocedResearchComp";
 function page() {
   const content = [
     {
@@ -367,6 +368,28 @@ function page() {
     },
   ];
 
+  const InvestmentResearch = [
+    {
+      imageUrl: "/Equity/InvestmentResearch/1.png",
+    },
+    {
+      imageUrl: "/Equity/InvestmentResearch/2.png",
+    },
+    {
+      imageUrl: "/Equity/InvestmentResearch/3.png",
+    },
+  ];
+  const InvestmentResearch2 = [
+    {
+      imageUrl: "/Equity/InvestmentResearch/4.png",
+    },
+    {
+      imageUrl: "/Equity/InvestmentResearch/5.png",
+    },
+    {
+      imageUrl: "/Equity/InvestmentResearch/6.png",
+    },
+  ];
   return (
     <div>
       <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
@@ -612,10 +635,15 @@ function page() {
       <section className="sm:px-24 p-4  lg:py-10 ">
         <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research </h2>
         <div className="flex lg:flex-row flex-col gap-10">
-          <div className="lg:w-2/3 w-full grid grid-cols-3 gap-3 justify-between items-center lg:p-10">
-            <img src="/Equity/gen1.png" alt="" />
-            <img src="/Equity/gen2.png" alt="" />
-            <img src="/Equity/gen3.png" alt="" />
+          <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
+            <LockedResearchComp
+              data={InvestmentResearch}
+              setOpenModal={setOpenModal}
+            />
+            <LockedResearchComp
+              data={InvestmentResearch2}
+              setOpenModal={setOpenModal}
+            />
           </div>
           <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
             <h2 className="text-2xl  font-bold">
