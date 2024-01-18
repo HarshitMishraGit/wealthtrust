@@ -390,6 +390,28 @@ function page() {
       imageUrl: "/Equity/InvestmentResearch/6.png",
     },
   ];
+  const MutualFundsResearch = [
+    {
+      imageUrl: "/Equity/MutualFunds/1.png",
+    },
+    {
+      imageUrl: "/Equity/MutualFunds/2.png",
+    },
+    {
+      imageUrl: "/Equity/MutualFunds/3.png",
+    },
+  ];
+  const MutualFundsResearch2 = [
+    {
+      imageUrl: "/Equity/MutualFunds/4.png",
+    },
+    {
+      imageUrl: "/Equity/MutualFunds/5.png",
+    },
+    {
+      imageUrl: "/Equity/MutualFunds/6.png",
+    },
+  ];
   return (
     <div>
       <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
@@ -692,7 +714,43 @@ function page() {
           investment objectives, risk parameters, management teams, and fees.
         </div>
       </section>
-
+      <section className="sm:px-24 p-4  lg:py-10 ">
+        <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research </h2>
+        <div className="flex lg:flex-row flex-col gap-10">
+          <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
+            <LockedResearchComp
+              data={MutualFundsResearch}
+              setOpenModal={setOpenModal}
+            />
+            <LockedResearchComp
+              data={MutualFundsResearch2}
+              setOpenModal={setOpenModal}
+            />
+          </div>
+          <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
+            <h2 className="text-2xl  font-bold">
+              For Complete Access To Our Mutual Funds
+            </h2>
+            <div className="flex flex-row justify-start items-center gap-4">
+              <p
+                // href="/aboutus"
+                onClick={() => setOpenModal(true)}
+                className={`btn text-primary border-primary hover:bg-primary hover:text-white bg-transparent`}
+              >
+                Subscribe Here
+              </p>
+              {/* <Link
+              href="https://calendly.com/wealthtrustcapitalservices/30min"
+              target="_blank"
+              className={`btn btn-primary text-white`}
+              // onClick={() => setOpenModal(true)}
+            >
+              Subscribe
+            </Link> */}
+            </div>
+          </div>
+        </div>
+      </section>
       {/* <section className="flex justify-center items-center py-10">
         <form
           action="#"
