@@ -14,18 +14,22 @@ function ContentComp1(props) {
       className="min-h-fit lg:p-12 p-4 text-gray-900   overflow-x-hidden "
       key={keyval}
     >
-      <div className="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:max-w-7xl lg:gap-10 flex flex-col space-y-5 items-center justify-center">
+      <div
+        className={`flex ${
+          reverse ? "lg:flex-row-reverse" : "lg:flex-row"
+        } gap-5 flex-col`}
+      >
         <div
           className={`${
             reverse ? "lg:col-start-1" : "lg:col-start-2"
           } "lg:col-span-1 lg:row-span-1 lg:row-start-1 "`}
         >
-          <div className="object-contain h-[25rem] w-[25rem] rounded-full bg-gray-300 mx-auto">
+          <div className="object-cover h-[35rem] lg:h-[25rem] lg:w-[25rem]  mx-auto !rounded-lg shadow-xl">
             <img
               height={700}
               width={700}
               src={imageUrl}
-              className="w-full h-full object-center  object-contain"
+              className="w-full h-full object-center rounded-lg  object-cover"
             />
           </div>
         </div>
