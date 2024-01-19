@@ -74,9 +74,12 @@ function MobileMenu(props) {
           } transition-all duration-500`}
         >
           <li>
-            <p className="block px-4 py-2 text-sm cursor-pointer ">
+            <Link
+              href={"https://www.wealthtrustcap.com/financefreedom.php"}
+              className="block px-4 py-2 text-sm cursor-pointer "
+            >
               Financial Freedom
-            </p>
+            </Link>
             <ul className=" pl-6 [&>*]:text-xs">
               <li>
                 {" "}
@@ -91,7 +94,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={"#"}
+                  href={"https://www.wealthtrustcap.com/sipcalc.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -110,9 +113,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/mutualfund.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -122,9 +123,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/fixeddeposit.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -134,9 +133,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/realestate.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -146,9 +143,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/portfolio.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -158,9 +153,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/insurance.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -170,9 +163,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/loan.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -182,9 +173,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/privateequity.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -194,9 +183,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/alternative.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -206,9 +193,7 @@ hover:scale-110"
               <li>
                 {" "}
                 <Link
-                  href={
-                    "/web-design-and-development/e-commerce-website-development"
-                  }
+                  href={"https://www.wealthtrustcap.com/taxplan.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
                 >
@@ -219,7 +204,7 @@ hover:scale-110"
                 {" "}
                 <Link
                   href={
-                    "/web-design-and-development/e-commerce-website-development"
+                    "https://cra.kfintech.com/poponline/popverification?AuthID=A3FEA9F3891FC23B4D697F96BB2D2237CDBE755F3A82F83860DDDB565D82F54FE43D232802741DC82070E750520D6045E16443A27E7F63396975C607E5A3C118359A4F8820C26443C84EB3C38B7F8502"
                   }
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110"
@@ -283,11 +268,11 @@ hover:scale-110 "
               FAQs
             </Link>
             <Link
-              href={"#"}
+              href={"https://www.wealthtrustcap.com/blogs.php"}
               className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
 hover:scale-110 "
             >
-              Blog
+              Blogs
             </Link>
 
             <Link
@@ -315,10 +300,10 @@ hover:scale-110"
         </ul>
         <Link
           className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
-          href={"#"}
-          onClick={() => {
-            props?.setshowMobileMenu(false);
-          }}
+          href={"https://www.wealthtrustcap.com/beassociate.php"}
+          // onClick={() => {
+          //   props?.setshowMobileMenu(false);
+          // }}
         >
           Be An Associate
         </Link>

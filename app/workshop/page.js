@@ -245,7 +245,7 @@ function page() {
           form below. Our team will get in touch with you when the workshop is
           scheduled in your city.
         </p>
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center gap-4">
           <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
           <Button
             onClick={() => setOpenModal(true)}
@@ -265,6 +265,14 @@ function page() {
               />
             </svg>
           </Button>
+          <Link
+            href="https://calendly.com/wealthtrustcapitalservices/30min"
+            target="_blank"
+            className="inline-flex items-center text-primary bg-white font-semibold rounded-lg   px-4 py-2 text-center "
+            // onClick={() => setOpenModal(true)}
+          >
+            Join Now
+          </Link>
         </div>
       </section>
       {/* <section className="sm:px-24 p-4  py-10">

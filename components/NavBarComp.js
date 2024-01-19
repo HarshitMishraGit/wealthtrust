@@ -79,7 +79,9 @@ function NavBarComp() {
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/financefreedom.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -89,7 +91,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/sipcalc.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -108,7 +112,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/mutualfund.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -118,7 +124,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/fixeddeposit.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -128,7 +136,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/realestate.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -138,7 +148,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/portfolio.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -148,7 +160,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/insurance.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -167,7 +181,7 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={"https://www.wealthtrustcap.com/loan.php"}
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -177,7 +191,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/privateequity.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -187,7 +203,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/alternative.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -197,7 +215,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://www.wealthtrustcap.com/taxplan.php"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -207,7 +227,9 @@ hover:decoration-action-900"
                           <li>
                             {" "}
                             <Link
-                              href={"#"}
+                              href={
+                                "https://cra.kfintech.com/poponline/popverification?AuthID=A3FEA9F3891FC23B4D697F96BB2D2237CDBE755F3A82F83860DDDB565D82F54FE43D232802741DC82070E750520D6045E16443A27E7F63396975C607E5A3C118359A4F8820C26443C84EB3C38B7F8502"
+                              }
                               className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                             >
@@ -299,11 +321,11 @@ hover:decoration-action-900"
                       <li>
                         {" "}
                         <Link
-                          href={"#"}
+                          href={"https://www.wealthtrustcap.com/blogs.php"}
                           className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
                         >
-                          Blog
+                          Blogs
                         </Link>
                       </li>
                       <li>
@@ -405,7 +427,7 @@ hover:decoration-action-900"
               </div>
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content  min-w-fit  h-10 my-auto font-semibold"
-                href={"#"}
+                href={"https://www.wealthtrustcap.com/beassociate.php"}
               >
                 Be An Associate
               </Link>
@@ -418,59 +440,9 @@ hover:decoration-action-900"
 
             {/* Condition rendering on loggin and logged out */}
 
-            {islogin ? (
-              <>
-                <div className="dropdown dropdown-end bg-base-100 text-base-content ">
-                  <label
-                    tabIndex={0}
-                    className="cursor-pointer flex flex-row justify-center items-center"
-                  >
-                    <div className="avatar">
-                      <div className="w-10 rounded-full">
-                        <Image src={imageUrl} height={500} width={500} />
-                      </div>
-                    </div>
-                  </label>
-
-                  <ul
-                    tabIndex={0}
-                    className="dropdown-content z-[1] menu px-5 pt-5 pb-3 bg-base-100 rounded-box w-64 space-y-3 shadow"
-                  >
-                    <li className="block text-sm">{userName}</li>
-                    <li className="block truncate text-sm font-medium">
-                      {userEmail.substring(0, 6)}***
-                      {userEmail.substring(userEmail.length - 3)}
-                    </li>
-                    <hr />
-                    <Link
-                      className="cursor-pointer hover:opacity-70"
-                      href={"/dashboard"}
-                    >
-                      Dashboard
-                    </Link>
-                    <li className="cursor-pointer hover:opacity-70">
-                      Settings
-                    </li>
-                    <li
-                      className="cursor-pointer hover:opacity-70"
-                      onClick={() => router.push("/add-blog")}
-                    >
-                      Add blog
-                    </li>
-                    <li
-                      className="cursor-pointer hover:opacity-70"
-                      onClick={logout}
-                    >
-                      Sign out
-                    </li>
-                  </ul>
-                </div>
-              </>
-            ) : (
-              <Button className="bg-primary text-white font-semibold">
-                Login
-              </Button>
-            )}
+            <Button className="bg-primary text-white font-semibold">
+              Login
+            </Button>
 
             {/* Condition rendering on loggin and logged out */}
 

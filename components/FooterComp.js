@@ -55,10 +55,21 @@ function FooterComp() {
             <Link className="cursor-pointer " href={"/faqs"}>
               FAQs
             </Link>
-            <div className="cursor-pointer ">Blog</div>
-            <div className="cursor-pointer ">Case Studies</div>
-            <div className="cursor-pointer ">News</div>
-            <div className="cursor-pointer ">Videos</div>
+            <Link
+              href={"https://www.wealthtrustcap.com/blogs.php"}
+              className="cursor-pointer "
+            >
+              Blogs
+            </Link>
+            <Link href={"#"} className="cursor-pointer ">
+              Case Studies
+            </Link>
+            <Link href={"#"} className="cursor-pointer ">
+              News
+            </Link>
+            <Link href={"#"} className="cursor-pointer ">
+              Videos
+            </Link>
           </div>
         </div>
         <div className="col-start-2 row-start-1 ">
