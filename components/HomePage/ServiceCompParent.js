@@ -7,7 +7,7 @@ function ServiceCompParent() {
   const [showMobileMenu, setShowMobileMenu] = useState(0);
 
   return (
-    <div className=" py-10 relative  px-3 " id="Services">
+    <div className=" py-10 relative bg-lightGreen px-3 " id="Services">
       <div className="Content mx-auto overflow-x-hidden lg:px-36  lg:py-0">
         <div className="max-w-screen-xl mb-8 lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-bold text-center ">
@@ -152,7 +152,7 @@ function ServiceCompParent() {
         </div> */}
         <div className="sm:grid  sm:grid-cols-2 flex flex-col gap-6 justify-center items-center overflow-hidden lg:p-5  ">
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
-            <div className="lg:w-1/3 w-full flex flex-row justify-center items-center object-contain">
+            <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
                 src="/HomePage/Services/ir.png"
                 alt="investment research"
@@ -176,7 +176,7 @@ function ServiceCompParent() {
             </div>
           </div>
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
-            <div className="lg:w-1/3 w-full flex flex-row justify-center items-center object-contain">
+            <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
                 src="/HomePage/Services/eq.png"
                 alt="investment research"
@@ -205,7 +205,7 @@ function ServiceCompParent() {
             </div>
           </div>
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
-            <div className="lg:w-1/3 w-full flex flex-row justify-center items-center object-contain">
+            <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
                 src="/HomePage/Services/mf.png"
                 alt="investment research"
@@ -231,7 +231,7 @@ function ServiceCompParent() {
             </div>
           </div>
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
-            <div className="lg:w-1/3 w-full flex flex-row justify-center items-center object-contain">
+            <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
                 src="/HomePage/Services/tp.png"
                 alt="investment research"

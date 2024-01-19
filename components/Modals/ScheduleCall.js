@@ -13,7 +13,12 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 
-export default function ScheduleCall({ openModal, setOpenModal, title }) {
+export default function ScheduleCall({
+  openModal,
+  setOpenModal,
+  title,
+  buttonTitle,
+}) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const Submitref = useRef(null);
   useEffect(() => {
@@ -117,7 +122,7 @@ export default function ScheduleCall({ openModal, setOpenModal, title }) {
                   Close
                 </Button> */}
                 <Button color="primary" onPress={submitForm}>
-                  Schedule
+                  {buttonTitle ? buttonTitle : " Schedule"}
                 </Button>
               </ModalFooter>
             </>

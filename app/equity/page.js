@@ -415,7 +415,12 @@ function page() {
   ];
   return (
     <div>
-      <ScheduleCall openModal={openModal} setOpenModal={setOpenModal} title={"Subscription Form"} />
+      <ScheduleCall
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        title={"Subscription Form"}
+        buttonTitle={"Subscribe"}
+      />
       <div className="lg:h-screen h-[32rem]  relative ">
         <div className="w-full h-full ">
           <img

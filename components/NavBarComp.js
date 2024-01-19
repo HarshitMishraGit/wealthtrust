@@ -52,8 +52,8 @@ function NavBarComp() {
               </div>
             </div>
           </div>
-          <div className=" col-span-8 flex flex-row justify-center items-center w-full">
-            <div className="flex flex-row justify-center items-center gap-5 ">
+          <div className=" col-span-8 flex flex-row justify-center items-center w-full h-full">
+            <div className="flex flex-row justify-center items-center gap-5 h-full">
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content   h-10 my-auto font-semibold min-w-fit"
                 href={"/aboutus"}
@@ -61,7 +61,7 @@ function NavBarComp() {
                 About Us
               </Link>
               <div
-                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit  font-semibold [&>*]:text-base-content text-base-content`}
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit  font-semibold [&>*]:text-base-content text-base-content h-full`}
               >
                 Services
                 <IoIosArrowDown className="ml-1"></IoIosArrowDown>
@@ -239,7 +239,7 @@ hover:decoration-action-900"
                 Workshop
               </Link>
               <div
-                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit font-semibold [&>*]:text-base-content text-base-content`}
+                className={`cursor-pointer  hover:underline hover:underline-offset-8 flex justify-center items-center  hover:decoration-action-900 group min-w-fit font-semibold [&>*]:text-base-content text-base-content h-full`}
               >
                 Resources
                 <IoIosArrowDown className="ml-1"></IoIosArrowDown>
