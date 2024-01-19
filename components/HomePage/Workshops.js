@@ -19,7 +19,7 @@ function Workshops() {
         <div className="flex flex-col w-full lg:w-1/2 gap-4   ">
           <h1 className="mb-5 text-5xl  font-medium text-base-content select-none cursor-pointer text-left">
             Achieve your <span className="text-primary">financial goals</span>{" "}
-            with WealthTrust
+            with WealthTrust Capital Services
           </h1>
 
           <p className=" sm:text-md text-base-content text-left">

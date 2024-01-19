@@ -128,23 +128,23 @@ function page() {
       title: "Networking Opportunities",
       description: `Connect with a community of like-minded individuals who share similar financial goals. Our workshops provide a platform for networking, collaboration, and the exchange of valuable experiences.
       `,
-      imageUrl: "/Workshop/photos/9.jpg",
+      imageUrl: "/Workshop/1.jpg",
     },
     {
       title: "Real Success Stories",
       description: `Hear inspiring stories from individuals who have attended our workshops and transformed their financial outlook. Learn from their experiences and discover practical strategies for achieving financial success.
       `,
-      imageUrl: "/Workshop/photos/8.jpg",
+      imageUrl: "/Workshop/2.webp",
     },
     {
       title: "Comprehensive Resources",
       description: `Access exclusive resources and materials to support your ongoing financial journey. From in-depth guides to personalized financial planning tools, we provide the resources you need to thrive.`,
-      imageUrl: "/Workshop/photos/5.jpg",
+      imageUrl: "/Workshop/3.jpg",
     },
     {
       title: "Holistic Approach",
       description: `Whether you're interested in equity investment, tax planning, or other financial services, our workshop takes a holistic approach, ensuring you receive a well-rounded education in all aspects of wealth creation and preservation.`,
-      imageUrl: "/Workshop/photos/6.jpg",
+      imageUrl: "/Workshop/4.jpg",
     },
   ];
   const [openModal, setOpenModal] = useState(false);
@@ -360,7 +360,7 @@ function page() {
                 className="w-full flex flex-col justify-center items-center"
                 key={index}
               >
-                <div className=" h-[25rem] w-full object-cover overflow-hidden rounded-lg bg-gray-900 my-3 shadow-xl hover:scale-105 cursor-pointer">
+                <div className="h-[15rem] w-full object-cover overflow-hidden rounded-lg bg-gray-900 my-3 shadow-xl hover:scale-105 cursor-pointer">
                   <img
                     src={item.imageUrl}
                     alt={item.title}

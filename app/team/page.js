@@ -135,9 +135,10 @@ function page() {
               Meet Our Team
             </h1>
             <p className=" sm:text-xl text-lg  sm:p-10 p-4 text-center text-white ">
-              The people who work at WealthTrust share the vision and values of
-              our community. We are motivated to create an environment of growth
-              where we can win at life and business together.
+              The people who work at WealthTrust Capital Services share the
+              vision and values of our community. We are motivated to create an
+              environment of growth where we can win at life and business
+              together.
             </p>
           </div>
         </div>

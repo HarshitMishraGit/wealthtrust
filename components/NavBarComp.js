@@ -7,6 +7,12 @@ import { useRouter } from "next/navigation";
 import { Button } from "@nextui-org/button";
 import { IoMdMenu, IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/react";
 function NavBarComp() {
   const [isSticky, setSticky] = useState(false);
   const [islogin, setislogin] = useState(false);
@@ -440,10 +446,33 @@ hover:decoration-action-900"
 
             {/* Condition rendering on loggin and logged out */}
 
-            <Button className="bg-primary text-white font-semibold">
+            {/* <Button className="bg-primary text-white font-semibold">
               Login
-            </Button>
-
+            </Button> */}
+            <Dropdown>
+              <DropdownTrigger>
+                <Button className=" btn bg-primary text-white hover:bg-primary">
+                  {" "}
+                  Login
+                </Button>
+              </DropdownTrigger>
+              <DropdownMenu aria-label="Static Actions">
+                <DropdownItem
+                  key="new"
+                  as={"a"}
+                  href="https://mf.wealthtrustcap.com/client/login.asp?arnid=wealthtrust"
+                >
+                  Client
+                </DropdownItem>
+                <DropdownItem
+                  key="copy"
+                  as={"a"}
+                  href="https://mf.wealthtrustcap.com/broker/login.asp?arnid=wealthtrust"
+                >
+                  Associate
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
             {/* Condition rendering on loggin and logged out */}
 
             <button

@@ -3,7 +3,13 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsArrowBarRight } from "react-icons/bs";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { Button } from "@nextui-org/button";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
 function MobileMenu(props) {
   const [islogin, setislogin] = useState(false);
   const [open, setOpen] = useState(false);
@@ -18,33 +24,40 @@ function MobileMenu(props) {
       } `}
     >
       <div className={`flex flex-row justify-center w-full pt-5`}>
-        {islogin ? (
-          <>
-            <div className="flex flex-col justify-center items-center w-full ">
-              <div className="avatar">
-                <div className="w-12 rounded-full">
-                  <Image src={imageUrl} height={500} width={500} />
-                </div>
-              </div>
-              <div>{userName}</div>
-              <div>
-                {userEmail.substring(0, 6)}***
-                {userEmail.substring(userEmail.length - 3)}
-              </div>
-            </div>
-          </>
-        ) : (
-          <Link
-            className=" btn btn-primary"
-            href={"/"}
-            onClick={() => {
-              props?.setshowMobileMenu(false);
-              props?.showLoginModal();
-            }}
-          >
-            Login
-          </Link>
-        )}
+        {/* <Link
+          className=" btn btn-primary"
+          href={"/"}
+          onClick={() => {
+            props?.setshowMobileMenu(false);
+            props?.showLoginModal();
+          }}
+        >
+          Login
+        </Link> */}
+        <Dropdown>
+          <DropdownTrigger>
+            <Button className=" btn bg-primary text-white hover:bg-primary">
+              {" "}
+              Login
+            </Button>
+          </DropdownTrigger>
+          <DropdownMenu aria-label="Static Actions">
+            <DropdownItem
+              key="new"
+              as={"a"}
+              href="https://mf.wealthtrustcap.com/client/login.asp?arnid=wealthtrust"
+            >
+              Client
+            </DropdownItem>
+            <DropdownItem
+              key="copy"
+              as={"a"}
+              href="https://mf.wealthtrustcap.com/broker/login.asp?arnid=wealthtrust"
+            >
+              Associate
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
       </div>
 
       <div className="flex flex-col space-y-4   pl-10 select-none cursor-pointer">
