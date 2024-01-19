@@ -13,8 +13,8 @@ import { Button, Input, Textarea } from "@nextui-org/react";
 import CompanyContactForm from "@/components/Modals/CompanyContactForm";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 function page() {
-  const avatar = "/AboutUsPage/user.jpg";
-  const username = "John Doe";
+  const avatar = "/Workshop/user.png";
+  const username = "Krishna Verma";
   const description = `Attending the Wealth Trust Cap workshop was a game-changer! The interactive sessions demystified complex financial concepts, and the personalized strategies gave me a clear roadmap for my financial goals. Connecting with like-minded individuals and learning from real success stories made the experience invaluable. Thanks to this workshop, I feel empowered and equipped to take charge of my financial future!`;
   const rating = 5;
   const keyPoints = [
@@ -377,7 +377,7 @@ function page() {
             <img
               src={avatar}
               alt="User Avatar"
-              className="w-20 h-20 rounded-full mr-4"
+              className="w-20 h-20 rounded-full mr-4 filter invert"
             />
 
             <h3 className="text-lg font-bold">
