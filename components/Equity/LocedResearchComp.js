@@ -33,7 +33,7 @@ function LockedResearchComp(props) {
 
   return (
     <>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="h-full">
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} className="lg:h-full">
         <ModalContent>
           {(onClose) => (
             <>

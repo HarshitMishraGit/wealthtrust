@@ -17,6 +17,7 @@ import {
   getKeyValue,
 } from "@nextui-org/react";
 import LockedResearchComp from "@/components/Equity/LocedResearchComp";
+import ScheduleCall from "@/components/Modals/ScheduleCall";
 function page() {
   const content = [
     {
@@ -414,7 +415,7 @@ function page() {
   ];
   return (
     <div>
-      <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
+      <ScheduleCall openModal={openModal} setOpenModal={setOpenModal} title={"Subscription Form"} />
       <div className="lg:h-screen h-[32rem]  relative ">
         <div className="w-full h-full ">
           <img
@@ -655,7 +656,7 @@ function page() {
         </div>
       </section> */}
       <section className="sm:px-24 p-4  lg:py-10 ">
-        <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research </h2>
+        <h2 className="text-4xl  font-semibold pb-10 ">Equity Research </h2>
         <div className="flex lg:flex-row flex-col gap-10">
           <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
             <LockedResearchComp
@@ -715,7 +716,9 @@ function page() {
         </div>
       </section>
       <section className="sm:px-24 p-4  lg:py-10 ">
-        <h2 className="text-4xl  font-semibold pb-10 ">Read Our Research </h2>
+        <h2 className="text-4xl  font-semibold pb-10 ">
+          Mutual Fund Research{" "}
+        </h2>
         <div className="flex lg:flex-row flex-col gap-10">
           <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
             <LockedResearchComp
@@ -729,7 +732,7 @@ function page() {
           </div>
           <div className="lg:w-1/3 w-full flex flex-col justify-center items-start gap-5">
             <h2 className="text-2xl  font-bold">
-              For Complete Access To Our Mutual Funds
+              For Complete Access To Our Mutual Fund Research
             </h2>
             <div className="flex flex-row justify-start items-center gap-4">
               <p
@@ -804,7 +807,7 @@ shadow-xl md:px-24 p-4 "
         </form>
       </section> */}
       <section className="sm:py-10 p-4 sm:px-24 bg-lightGreen flex flex-col gap-5">
-        <div className="flex sm:flex-row flex-col justify-center items-center">
+        <div className="flex sm:flex-row flex-col justify-center items-center gap-4">
           <div className="sm:w-1/2 w-full flex flex-col justify-center items-start gap-2">
             <p className="text-2xl font-bold">WealthTrust Capital Services</p>
             <p>
@@ -812,7 +815,7 @@ shadow-xl md:px-24 p-4 "
               Mumbai, Maharashtra, 400011
             </p>
           </div>
-          <div className="flex flex-row gap-10 justify-end sm:w-1/2 w-full ">
+          <div className="flex flex-row gap-10  lg:justify-end sm:w-1/2 w-full ">
             <a
               download
               href="/disclouser_2.pdf"

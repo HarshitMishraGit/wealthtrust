@@ -52,6 +52,9 @@ function FooterComp() {
         <div className="col-start-1 row-start-1">
           <div className="font-bold text-2xl text-white">Resources</div>
           <div className="flex flex-col gap-5 text-white py-5">
+            <Link className="cursor-pointer " href={"/faqs"}>
+              FAQs
+            </Link>
             <div className="cursor-pointer ">Blog</div>
             <div className="cursor-pointer ">Case Studies</div>
             <div className="cursor-pointer ">News</div>

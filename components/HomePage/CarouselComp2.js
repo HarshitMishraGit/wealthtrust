@@ -8,7 +8,7 @@ function CarouselComp2() {
       title:
         "Shiksha Se Samriddhi: क्या Share Market में आप बिना तैयारी का निवेश करने का सोच रहें है? | CNBC Awaaz",
       description:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "Before diving into the stock market, it's crucial to gather essential information to safeguard your investments. This video provides key insights on what you need to know before venturing into the stock market, helping you avoid potential pitfalls. Stay informed for a secure investment journey!",
       link: "https://www.youtube.com/watch?v=HWRQtD7rOu0",
       imageUrl: "HomePage/media/3.jpg",
     },

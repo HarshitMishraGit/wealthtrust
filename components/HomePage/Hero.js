@@ -11,7 +11,11 @@ function Hero() {
   };
   return (
     <section className=" lg:p-12 p-5 ">
-      <ScheduleCall openModal={openModal} setOpenModal={setOpenModal} />
+      <ScheduleCall
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        title={"Schedule A Call With Our Experts"}
+      />
       <div className="  bg-base-100  flex flex-col-reverse lg:flex-row gap-10  items-center lg:p-6  lg:pt-32 pt-10 ">
         <div className="flex flex-col w-full lg:w-1/2 gap-4   ">
           <h1 className="mb-5 text-5xl  font-medium text-base-content select-none cursor-pointer text-left">

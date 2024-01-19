@@ -13,7 +13,7 @@ import {
   SelectItem,
 } from "@nextui-org/react";
 
-export default function ScheduleCall({ openModal, setOpenModal }) {
+export default function ScheduleCall({ openModal, setOpenModal, title }) {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const Submitref = useRef(null);
   useEffect(() => {
@@ -52,9 +52,7 @@ export default function ScheduleCall({ openModal, setOpenModal }) {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1 text-white">
-                <h3 className="text-2xl font-bold p-3">
-                  Schedule A Call With Our Experts
-                </h3>
+                <h3 className="text-2xl font-bold p-3">{title}</h3>
                 {/* <p className="text-sm font-light">
                   We will get back to you as soon as possible
                 </p> */}
