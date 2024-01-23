@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
 import { Card, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
+import { FaLock } from "react-icons/fa";
 import ContactFormModal from "@/components/Modals/ContactFormModal";
 import {
   Tabs,
@@ -391,6 +392,7 @@ function page() {
       imageUrl: "/Equity/InvestmentResearch/6.png",
     },
   ];
+  const InvestmentResearch3LockedImageUrl = "/Equity/InvestmentResearch/1.png";
   const MutualFundsResearch = [
     {
       imageUrl: "/Equity/MutualFunds/1.png",
@@ -678,13 +680,18 @@ function page() {
       <section className="sm:px-24 p-4  lg:py-10 ">
         <h2 className="text-4xl  font-semibold pb-10 ">Equity Research </h2>
         <div className="flex lg:flex-row flex-col gap-10">
-          <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
+          <div className="lg:w-2/3 w-full grid grid-cols-3  gap-3 justify-between items-center lg:p-10">
             <LockedResearchComp
               data={InvestmentResearch}
               setOpenModal={setOpenModal}
             />
             <LockedResearchComp
               data={InvestmentResearch2}
+              setOpenModal={setOpenModal}
+            />
+            <LockedResearchComp
+              data={InvestmentResearch2}
+              FullYLocked={true}
               setOpenModal={setOpenModal}
             />
           </div>
@@ -740,13 +747,18 @@ function page() {
           Mutual Fund Research{" "}
         </h2>
         <div className="flex lg:flex-row flex-col gap-10">
-          <div className="lg:w-2/3 w-full grid grid-cols-2 gap-3 justify-between items-center lg:p-10">
+          <div className="lg:w-2/3 w-full grid grid-cols-3  gap-3 justify-between items-center lg:p-10">
             <LockedResearchComp
               data={MutualFundsResearch}
               setOpenModal={setOpenModal}
             />
             <LockedResearchComp
               data={MutualFundsResearch2}
+              setOpenModal={setOpenModal}
+            />
+            <LockedResearchComp
+              data={InvestmentResearch2}
+              FullYLocked={true}
               setOpenModal={setOpenModal}
             />
           </div>
