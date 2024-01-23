@@ -56,7 +56,7 @@ function PortfoliCard() {
       <div className="flex flex-col gap-5 lg:w-1/2 p-4">
         <p>About WealthTrust Capital Services</p>
         <h2 className="text-4xl  font-bold">
-          More than 500+ families trusted our services
+          More than 500+ families trust our services
         </h2>
         <p>
           At WealthTrust Capital Services, our commitment to excellence has
