@@ -184,16 +184,16 @@ function page() {
         </div>
       </section> */}
       <section className="pt-5 sm:pt-10">
-        <div className="h-[30rem] relative">
+        <div className="h-[45rem] relative">
           <div className="w-full h-full ">
             <img
-              src="/AboutUsPage/bg.jpg"
+              src="/AboutUsPage/team.jpg"
               alt=""
-              className="object-cover w-full h-full absolute top-0 z-10"
+              className="object-cover  object-top w-full h-full absolute top-0 z-10"
             />
           </div>
-          <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex  gap-3 justify-center items-center p-3">
-            <div className="sm:w-[32rem]  w-full bg-white p-5 flex flex-col gap-5 items-center shadow-lg">
+          <div className="absolute top-0 z-20  bg-black bg-opacity-30 w-full h-full flex  gap-3 justify-center items-end p-3">
+            <div className="sm:w-[32rem]  w-full bg-white p-5 rounded-lg flex flex-col gap-5 items-center shadow-lg">
               <h2 className="text-4xl  text-center font-semibold">
                 Meet Our Experts
               </h2>
@@ -242,7 +242,7 @@ function page() {
               Office Address
             </h3>
             <p className="text-center">
-             Aikya Signature, Naushir Barucha Marg, Sleater Road, Tardeo,
+              Aikya Signature, Naushir Barucha Marg, Sleater Road, Tardeo,
               Mumbai - 400007
             </p>
           </div>

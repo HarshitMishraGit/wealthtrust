@@ -119,7 +119,7 @@ function page() {
       title: "For Women",
       content:
         "For women navigating the professional landscape, the need for financial empowerment is not just a choice. it's a fundamental necessity. In a world where women are increasingly breaking barriers and achieving remarkable success, We recognizes the unique financial aspirations of women professionals. Our workshop is specially curated to address the distinct challenges faced by women, offering a supportive environment to foster financial independence and success. Beyond the immediate demands of career growth, women often juggle multifaceted responsibilities, from family care to personal development. Wealth creation becomes a strategic imperative, not just for personal fulfillment but also to break free from traditional financial constraints. Our workshop goes beyond conventional financial planning, delving into topics that resonate with the modern woman - from building a robust investment portfolio to ensuring financial security for future endeavours. Join us on this empowering journey where we celebrate the strength and resilience of women professionals. Let Wealth Trust Capital be your ally in realizing your financial dreams, providing the tools and knowledge needed to carve out a path of lasting prosperity. Seize this opportunity to invest in yourself and your future. Enroll in our exclusive workshop now and embark on a journey toward financial empowerment, where your success becomes the cornerstone of a brighter tomorrow",
-      imageUrl: "/Workshop/photos/4.jpg",
+      imageUrl: "/Workshop/photos/10.jpg",
       reverse: false,
     },
   ];

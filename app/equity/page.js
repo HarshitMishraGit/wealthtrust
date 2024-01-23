@@ -426,7 +426,7 @@ function page() {
       <div className="lg:h-screen h-[32rem]  relative ">
         <div className="w-full h-full ">
           <img
-            src="/AboutUsPage/bg.jpg"
+            src="/Equity/bg.png"
             alt=""
             className="object-cover w-full h-full absolute top-0 z-10"
           />

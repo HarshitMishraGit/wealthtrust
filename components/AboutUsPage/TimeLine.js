@@ -11,7 +11,7 @@ function TimeLine() {
   const data = [
     {
       year: "2015",
-      title: "Wealth Trust Cap founded",
+      title: "WealthTrust Capital Services founded",
     },
     {
       year: "2016",
@@ -32,7 +32,7 @@ function TimeLine() {
     {
       year: "2023",
       title:
-        "Managing more than 500 families and managing more than 200+crore in assets",
+        "Managing more than 500+ families and managing more than 200+crore in assets",
     },
   ];
 
