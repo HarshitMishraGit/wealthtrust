@@ -71,7 +71,7 @@ function MobileMenu(props) {
           About Us
         </Link>
         <div
-          className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
+          className={`cursor-pointer    hover:underline hover:underline-offset-8 flex  items-center    group text-base-content `}
           onClick={() => setOpen((e) => !e)}
         >
           Services
@@ -99,7 +99,7 @@ function MobileMenu(props) {
                 <Link
                   href={"#"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Invest Early
                 </Link>
@@ -109,26 +109,25 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/sipcalc.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Variety of SIP's
                 </Link>
               </li>
             </ul>
-            <Link
-              href={"/web-design-and-development"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+            <div
+              className="block px-4 py-2  text-sm cursor-pointer 
+ "
             >
               Product and Services
-            </Link>
+            </div>
             <ul className=" pl-6 [&>*]:text-xs">
               <li>
                 {" "}
                 <Link
                   href={"https://www.wealthtrustcap.com/mutualfund.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Mutual Fund
                 </Link>
@@ -138,7 +137,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/fixeddeposit.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Fixed Income Products
                 </Link>
@@ -148,7 +147,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/realestate.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Real Estate Products Services
                 </Link>
@@ -158,7 +157,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/portfolio.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Portfolio Management
                 </Link>
@@ -168,7 +167,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/insurance.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Insurance
                 </Link>
@@ -178,7 +177,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/loan.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Loans
                 </Link>
@@ -188,7 +187,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/privateequity.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Private Equity Solutions
                 </Link>
@@ -198,7 +197,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/alternative.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Alternative Investments
                 </Link>
@@ -208,7 +207,7 @@ hover:scale-110"
                 <Link
                   href={"https://www.wealthtrustcap.com/taxplan.php"}
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   Tax Planning
                 </Link>
@@ -220,7 +219,7 @@ hover:scale-110"
                     "https://cra.kfintech.com/poponline/popverification?AuthID=A3FEA9F3891FC23B4D697F96BB2D2237CDBE755F3A82F83860DDDB565D82F54FE43D232802741DC82070E750520D6045E16443A27E7F63396975C607E5A3C118359A4F8820C26443C84EB3C38B7F8502"
                   }
                   className="block px-4 py-2 text-base-content cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
+ "
                 >
                   National Pension Scheme
                 </Link>
@@ -257,7 +256,7 @@ hover:scale-110"
           Workshop
         </Link>
         <div
-          className={`cursor-pointer hover:pl-9 hover:underline hover:underline-offset-8 flex  items-center  hover:scale-110 group text-base-content `}
+          className={`cursor-pointer    hover:underline hover:underline-offset-8 flex  items-center    group text-base-content `}
           onClick={() => setopen2((e) => !e)}
         >
           Resources
@@ -268,48 +267,45 @@ hover:scale-110"
           ></IoIosArrowDown>
         </div>
         <ul
-          className={`py-2 text-sm text-base-content ${
+          className={`py-2 text-sm text-base-content flex flex-col ${
             open2 ? "block" : "hidden"
           } transition-all duration-500`}
         >
-          <li>
-            <Link
-              href={"/faqs"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110 "
-            >
-              FAQs
-            </Link>
-            <Link
-              href={"https://www.wealthtrustcap.com/blogs.php"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110 "
-            >
-              Blogs
-            </Link>
-
-            <Link
-              href={"#"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
-            >
-              Case Studies
-            </Link>
-            <Link
-              href={"#"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
-            >
-              News
-            </Link>
-            <Link
-              href={"#"}
-              className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
-hover:scale-110"
-            >
-              Videos
-            </Link>
-          </li>
+          <Link
+            href={"https://www.wealthtrustcap.com/blogs.php"}
+            className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+  "
+          >
+            Blogs
+          </Link>
+          <Link
+            href={"#"}
+            className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+ "
+          >
+            Case Studies
+          </Link>
+          <Link
+            href={"#"}
+            className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+ "
+          >
+            News
+          </Link>
+          <Link
+            href={"#"}
+            className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+"
+          >
+            Videos
+          </Link>
+          <Link
+            href={"/faqs"}
+            className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
+  "
+          >
+            FAQs
+          </Link>
         </ul>
         <Link
           className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"

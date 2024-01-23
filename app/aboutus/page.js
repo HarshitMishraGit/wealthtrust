@@ -224,9 +224,9 @@ function page() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2365004956473!2d72.81131627710994!3d18.965159909614236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf465d27a889%3A0x567c17b69e7d49f!2sWealthtrust%20Capital%20Services!5e0!3m2!1sen!2sin!4v1704831149772!5m2!1sen!2sin"
               width="600"
               height="450"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               className="w-full"
             ></iframe>
           </div>
@@ -242,8 +242,8 @@ function page() {
               Office Address
             </h3>
             <p className="text-center">
-              Office Number 1, Aikya Signature, Naushir Barucha Marg, Sleater
-              Road, Tardeo, Mumbai - 400007
+             Aikya Signature, Naushir Barucha Marg, Sleater Road, Tardeo,
+              Mumbai - 400007
             </p>
           </div>
         </div>

@@ -317,16 +317,6 @@ hover:decoration-action-900"
                       <li>
                         {" "}
                         <Link
-                          href={"/faqs"}
-                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
-hover:decoration-action-900"
-                        >
-                          FAQs
-                        </Link>
-                      </li>
-                      <li>
-                        {" "}
-                        <Link
                           href={"https://www.wealthtrustcap.com/blogs.php"}
                           className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
 hover:decoration-action-900"
@@ -362,6 +352,16 @@ hover:decoration-action-900"
 hover:decoration-action-900"
                         >
                           Videos
+                        </Link>
+                      </li>
+                      <li>
+                        {" "}
+                        <Link
+                          href={"/faqs"}
+                          className="block px-4 py-2 text-main cursor-pointer hover:underline hover:underline-offset-8
+hover:decoration-action-900"
+                        >
+                          FAQs
                         </Link>
                       </li>
                     </ul>

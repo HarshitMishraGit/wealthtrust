@@ -32,11 +32,11 @@ function CarouselComp2() {
       <h2 className="mb-4 text-4xl tracking-tight font-bold text-center py-5">
         Featured In
       </h2>
-      <div className="flex flex-col lg:grid lg:grid-cols-3 justify-center items-center relative  gap-5 p-5 lg:px-10">
+      <div className="flex flex-col lg:grid lg:grid-cols-3 justify-center items-center relative  gap-10 p-5 lg:px-24">
         {data.map((item) => {
           return (
             <div
-              className="min-h-full overflow-hidden bg-lightGreen"
+              className="min-h-full overflow-hidden bg-lightGreen rounded-xl shadow-lg"
               key={item.link}
             >
               <div

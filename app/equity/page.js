@@ -816,8 +816,8 @@ shadow-xl md:px-24 p-4 "
           <div className="sm:w-1/2 w-full flex flex-col justify-center items-start gap-2">
             <p className="text-2xl font-bold">WealthTrust Capital Services</p>
             <p>
-              213,2ND FLOOR, Truf Estate, Shakti Mill Lane, Mahalaxmi, 400011,
-              Mumbai, Maharashtra, 400011
+              Aikya Signature, Naushir Barucha Marg, Sleater Road, Tardeo,
+              Mumbai - 400007
             </p>
           </div>
           <div className="flex flex-row gap-10  lg:justify-end sm:w-1/2 w-full ">
