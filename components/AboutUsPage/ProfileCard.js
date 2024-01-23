@@ -28,7 +28,7 @@ function ProfileCard(props) {
               </Link>
             </div>
           </div>
-          <p className="text-sm py-4">{description}</p>
+          <p className="text-sm py-4 hyphens-auto">{description}</p>
         </div>
       </div>
     </div>

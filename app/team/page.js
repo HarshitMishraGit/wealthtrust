@@ -144,16 +144,16 @@ function page() {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row w-full  gap-5 lg:px-10 p-4 py-10">
-        <div className="sm:w-1/3 sm:min-w-96   object-cover w-full  h-[35rem] object-top shadow-xl">
+      <div className="flex flex-col lg:flex-row w-full  gap-5 lg:px-10 p-4 py-10">
+        <div className="lg:w-1/3 lg:min-w-96   object-cover w-full h-[30rem]  lg:h-[25rem] object-top shadow-xl">
           <img
             src="/AboutUsPage/sneha.png"
             alt=""
             height={120}
-            className="object-cover  sm:rounded-l-lg rounded-t-lg sm:rounded-tr-none object-center w-full h-full"
+            className="object-cover  lg:rounded-l-lg rounded-t-lg lg:rounded-tr-none object-top w-full h-full"
           />
         </div>
-        <div className="sm:w-2/3 p-2">
+        <div className="lg:w-2/3 p-2">
           <div className="flex flex-col gap-4 ">
             <div className="flex flex-col gap-2">
               <p className="font-bold text-3xl">Sneha Jain</p>
@@ -168,29 +168,30 @@ function page() {
                 <ImLinkedin className="text-[#0277b5]" size={25} />
               </Link>
             </div>
-
-            <p>
-              Sneha Jain is the Founder & CEO of WealthTrust Capital Services.
-              With a Master's degree in Accounting and Finance from London
-              School of Economics, she has worked with reputed asset management
-              companies like Pramerica Asset Managers Private Limited and HSBC
-              Global Asset Management, India.
-            </p>
-            <p>
-              She is an assertive lady who all through her academic and
-              professional life has had the ability to stay ahead of the
-              competition. Her penchant for analytics and focus on detailing has
-              capitulated her to the position she is in today straddling all
-              aspects of invest game. She has a calm demeanor while interacting
-              with clients, educating audiences at different forums, engaging
-              them in thought provoking discussions and busting a few myths
-              around investment game.{" "}
-            </p>
-            <p>
-              She is optimistic yet has a realistic approach while advising her
-              clientele. You don't ask her what she brings to the table, because
-              she brings the table itself.
-            </p>
+            <div>
+              <p>
+                Sneha Jain is the Founder & CEO of WealthTrust Capital Services.
+                With a Master's degree in Accounting and Finance from London
+                School of Economics, she has worked with reputed asset
+                management companies like Pramerica Asset Managers Private
+                Limited and HSBC Global Asset Management, India.
+              </p>
+              <p>
+                She is an assertive lady who all through her academic and
+                professional life has had the ability to stay ahead of the
+                competition. Her penchant for analytics and focus on detailing
+                has capitulated her to the position she is in today straddling
+                all aspects of invest game. She has a calm demeanor while
+                interacting with clients, educating audiences at different
+                forums, engaging them in thought provoking discussions and
+                busting a few myths around investment game.{" "}
+              </p>
+              <p>
+                She is optimistic yet has a realistic approach while advising
+                her clientele. You don't ask her what she brings to the table,
+                because she brings the table itself.
+              </p>
+            </div>
           </div>
         </div>
       </div>
