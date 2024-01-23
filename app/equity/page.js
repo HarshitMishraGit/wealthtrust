@@ -599,24 +599,39 @@ function page() {
               </p>
             </div>
             <div className="sm:grid sm:grid-cols-3 flex flex-col  gap-5 py-5">
-              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              <Link
+                href={
+                  "https://pickright.in/investment/investpack/64d21c5893e5d927c5e38457"
+                }
+                className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95"
+              >
                 <h3 className=" text-lg font-semibold ">Balance 25</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing
                 </p>
-              </div>
-              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              </Link>
+              <Link
+                href={
+                  "https://pickright.in/investment/investpack/64da0567f196d71fee3f5c5c"
+                }
+                className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95"
+              >
                 <h3 className=" text-lg font-semibold ">Value Multi-Cap</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing
                 </p>
-              </div>
-              <div className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5">
+              </Link>
+              <Link
+                href={
+                  "https://pickright.in/investment/investpack/656d7a800a15190251abddb5"
+                }
+                className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95"
+              >
                 <h3 className=" text-lg font-semibold ">Perpetuus</h3>
                 <p className="text-center">
                   A sector leader approach to diversified investing
                 </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

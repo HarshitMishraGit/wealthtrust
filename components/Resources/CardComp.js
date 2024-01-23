@@ -89,15 +89,15 @@ function CardComp(props) {
   return (
     <>
       <div
-        className="mx-auto h-full   border   shadow bg-gray-900 border-gray-700"
+        className="mx-auto h-full   border   shadow-lg rounded-xl bg-gray-900 border-gray-700"
         key={keyval}
       >
-        <div className="object-cover sm:h-[20rem] lg:h-[15rem]">
+        <div className="object-cover sm:h-[20rem] lg:h-[15rem] ">
           <video
             controls
             muted
             playsInline
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-t-xl"
           >
             <source src={vidUrl} type="video/mp4" />
           </video>

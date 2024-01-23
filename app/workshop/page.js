@@ -513,7 +513,7 @@ function page() {
           Past Webinars
         </h2>
         <hr />
-        <div className="lg:grid lg:grid-cols-3 gap-5 sm:grid-cols-2 flex flex-col items-center lg:px-10 p-4 w-full">
+        <div className="lg:grid lg:grid-cols-3 gap-10 sm:grid-cols-2 flex flex-col items-center lg:px-24 p-4 w-full">
           {research_team.map((item, index) => {
             return <CardComp data={item} key={index} keyval={index} />;
           })}
