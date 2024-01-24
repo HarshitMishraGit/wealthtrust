@@ -124,6 +124,7 @@ function page() {
       <div className="h-[50rem] relative ">
         <div className="w-full h-full ">
           <img
+            fetchPriority="high"
             src="/team.jpg"
             alt="Our Team"
             className="object-cover w-full h-full absolute top-0 z-10"
@@ -147,6 +148,7 @@ function page() {
       <div className="flex flex-col lg:flex-row w-full  gap-5 lg:px-10 p-4 py-10">
         <div className="lg:w-1/3 lg:min-w-96   object-cover w-full h-[30rem]  lg:h-[25rem] object-top shadow-xl">
           <img
+            loading="lazy"
             src="/AboutUsPage/sneha.png"
             alt="CEO & Founder"
             height={120}
@@ -255,6 +257,7 @@ function page() {
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
             <img
+              loading="lazy"
               className="w-6 h-6 rounded-full"
               src="/Workshop/char.webp"
               alt="profile picture"

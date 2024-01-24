@@ -10,6 +10,7 @@ function Footercard(props) {
     >
       <div className="object-contain w-1/12 h-10">
         <img
+          loading="lazy"
           src={imageUrl}
           alt={title}
           className="object-contain w-full h-full rounded-lg"

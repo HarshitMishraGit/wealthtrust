@@ -26,6 +26,7 @@ function ContentComp1(props) {
         >
           <div className="object-cover h-[35rem] lg:h-[25rem] lg:w-[25rem]  mx-auto !rounded-lg shadow-xl">
             <img
+              loading="lazy"
               height={700}
               width={700}
               src={imageUrl}

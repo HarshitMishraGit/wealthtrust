@@ -154,6 +154,7 @@ function ServiceCompParent() {
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
             <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
+                loading="lazy"
                 src="/HomePage/Services/ir.png"
                 alt="investment research"
                 className="object-contain w-full h-full"
@@ -178,6 +179,7 @@ function ServiceCompParent() {
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
             <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
+                loading="lazy"
                 src="/HomePage/Services/eq.png"
                 alt="investment research"
                 className="object-contain w-full h-full"
@@ -207,6 +209,7 @@ function ServiceCompParent() {
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
             <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
+                loading="lazy"
                 src="/HomePage/Services/mf.png"
                 alt="investment research"
                 className="object-contain w-full h-full"
@@ -233,6 +236,7 @@ function ServiceCompParent() {
           <div className="card flex  flex-col gap-2  p-4 hover:scale-105 shadow-lightGreen h-full items-center">
             <div className="w-56 h-56 flex flex-row justify-center items-center object-contain">
               <img
+                loading="lazy"
                 src="/HomePage/Services/tp.png"
                 alt="investment research"
                 className="object-contain w-full h-full"

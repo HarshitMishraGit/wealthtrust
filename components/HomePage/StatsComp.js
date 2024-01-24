@@ -39,7 +39,7 @@ function StatsComp() {
             </p>
           </blockquote>
           {/* <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
-            <img
+            <img loading="lazy"
               className="w-6 h-6 rounded-full"
               src="/Workshop/benj.jpg"
               alt="profile picture"
@@ -58,7 +58,7 @@ function StatsComp() {
       {/* <section className="sm:p-10 p-2 w-full">
         <div className=" p-6  max-w-3xl mx-auto mb-4">
           <div className="flex flex-col justify-center items-center mb-4">
-            <img
+            <img loading="lazy"
               src={avatar}
               alt="User Avatar"
               className="w-20 h-20 rounded-full mr-4"
@@ -103,6 +103,7 @@ function StatsComp() {
           <div className="stat place-items-center">
             <div className="stat-title py-3">
               <img
+                loading="lazy"
                 src="/HomePage/asset.png"
                 alt="Assets"
                 className="w-20 h-20 "
@@ -131,6 +132,7 @@ function StatsComp() {
           <div className="stat place-items-center">
             <div className="stat-title py-3">
               <img
+                loading="lazy"
                 src="/HomePage/experience.png"
                 alt="Experience"
                 className="w-20 h-20"
@@ -159,6 +161,7 @@ function StatsComp() {
           <div className="stat place-items-center">
             <div className="stat-title py-3">
               <img
+                loading="lazy"
                 src="/HomePage/certificate.webp"
                 alt="Years Of Experience"
                 className="w-20 h-20"

@@ -54,6 +54,7 @@ function LockedResearchComp(props) {
                                 key={index}
                               >
                                 <img
+                                  loading="lazy"
                                   src={item.imageUrl}
                                   alt="investment research"
                                   className="object-contain w-full h-full"
@@ -75,6 +76,7 @@ function LockedResearchComp(props) {
                           </div>
                           <div className="w-full h-full object-contain blur-sm ">
                             <img
+                              loading="lazy"
                               src={coverImageUrl}
                               alt="Research"
                               className="object-contain w-full h-full"
@@ -127,6 +129,7 @@ function LockedResearchComp(props) {
                         key={index}
                       >
                         <img
+                          loading="lazy"
                           src={item.imageUrl}
                           alt="investment research"
                           className="object-contain w-full h-full"
@@ -148,6 +151,7 @@ function LockedResearchComp(props) {
                 </div>
                 <div className="w-full h-full object-contain blur-sm ">
                   <img
+                    loading="lazy"
                     src={coverImageUrl}
                     alt="Research"
                     className="object-contain w-full h-full"

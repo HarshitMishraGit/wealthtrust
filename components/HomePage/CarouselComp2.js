@@ -44,6 +44,7 @@ function CarouselComp2() {
                 className="lg:object-cover  object-contain lg:h-[20rem] h-auto "
               >
                 <img
+                  loading="lazy"
                   // className="rounded-t-lg"
                   src={item.imageUrl}
                   alt="Featured In"

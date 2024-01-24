@@ -51,6 +51,7 @@ function NavBarComp() {
                   WEALTHTRUST
                 </p> */}
                 <img
+                  loading="lazy"
                   src="/logo2.png"
                   alt="logo"
                   className="object-contain w-full h-full "
@@ -506,6 +507,7 @@ hover:decoration-action-900"
               WEALTHTRUST
             </p> */}
             <img
+              loading="lazy"
               src="/logo2.png"
               alt="logo"
               className="object-contain w-full h-full "

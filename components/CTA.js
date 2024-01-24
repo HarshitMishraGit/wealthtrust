@@ -11,6 +11,7 @@ function CTA() {
       <section className="bg-lightGreen w-full">
         <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
           <img
+            loading="lazy"
             className="w-full hidden dark:block rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
             src="/HomePage/chart.svg"
             alt="comparison between mutual funds, bank savings and gold"

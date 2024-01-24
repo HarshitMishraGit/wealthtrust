@@ -154,6 +154,7 @@ function page() {
       <div className="h-[50rem] py-10 relative ">
         <div className="w-full h-full ">
           <img
+            fetchPriority="high"
             src="/Workshop/bg.jpg"
             alt="wokshop image"
             className="object-cover w-full h-full absolute top-0 z-10"
@@ -194,6 +195,7 @@ function page() {
           </blockquote>
           <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
             <img
+              loading="lazy"
               className="w-6 h-6 rounded-full"
               src="/Workshop/benj.jpg"
               alt="profile picture"
@@ -362,6 +364,7 @@ function page() {
               >
                 <div className="h-[15rem] w-full object-cover overflow-hidden rounded-lg bg-gray-900 my-3 shadow-xl hover:scale-105 cursor-pointer">
                   <img
+                    loading="lazy"
                     src={item.imageUrl}
                     alt={item.title}
                     className="object-cover object-center w-full h-full"
@@ -383,6 +386,7 @@ function page() {
         <div className=" p-6  max-w-3xl mx-auto ">
           <div className="flex flex-col justify-center items-center mb-4">
             <img
+              loading="lazy"
               src={avatar}
               alt="User Avatar"
               className="w-20 h-20 rounded-full mr-4 filter invert"

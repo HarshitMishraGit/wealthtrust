@@ -126,6 +126,7 @@ function Testimonials() {
               <div className="flex flex-row gap-5 items-center justify-center">
                 <div className="w-10 h-10 object-cover ">
                   <img
+                    loading="lazy"
                     src={item.imageUrl}
                     alt={item.name}
                     className="object-cover w-full h-full rounded-full"

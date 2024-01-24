@@ -101,7 +101,7 @@ function InvestPacks() {
                 <span>{item.badgeTitle}</span>
               </div>
               <figure>
-                <img src={item.imageUrl} alt="car!" />
+                <img loading="lazy" src={item.imageUrl} alt="car!" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">{item.title}</h2>

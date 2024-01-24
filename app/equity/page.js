@@ -426,6 +426,7 @@ function page() {
       <div className="lg:h-screen h-[32rem]  relative ">
         <div className="w-full h-full ">
           <img
+            fetchPriority="high"
             src="/Equity/bg.png"
             alt="Investment Research"
             className="object-cover w-full h-full absolute top-0 z-10"
@@ -473,6 +474,7 @@ function page() {
               >
                 <div className="w-56 h-56 object-cover overflow-hidden rounded-full bg-white my-3 shadow-xl hover:scale-105 cursor-pointer">
                   <img
+                    loading="lazy"
                     src={item.imageUrl}
                     alt={item.title}
                     className="object-cover w-full h-full"
@@ -506,6 +508,7 @@ function page() {
           </div>
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
+              loading="lazy"
               src="/Equity/grid.png"
               alt="filter"
               className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full filter invert"
@@ -522,6 +525,7 @@ function page() {
           </div>
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
+              loading="lazy"
               src="/Equity/grid.png"
               alt="filter"
               className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full filter invert"
@@ -538,6 +542,7 @@ function page() {
           </div>
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
+              loading="lazy"
               src="/Equity/grid.png"
               alt="filter"
               className="rotate-90 lg:rotate-0 object-contain w-full h-full filter invert"
@@ -551,6 +556,7 @@ function page() {
 
             <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
               <img
+                loading="lazy"
                 src="/Equity/fin.png"
                 alt="Portfolio Construction"
                 className="rotate-90 lg:rotate-0 object-contain w-full h-full"
@@ -645,7 +651,7 @@ function page() {
             return (
               <div className="p-4" key={index}>
                 <div className="rounded-lg h-64 overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     alt="content"
                     className="object-cover object-center h-full w-full"
                     src="https://dummyimage.com/1203x503"

@@ -20,6 +20,7 @@ function page() {
       <div className="h-[50rem] py-10 relative ">
         <div className="w-full h-full ">
           <img
+            fetchPriority="high"
             src="/AboutUsPage/headerImage.jpg"
             alt="About Us"
             className="object-cover w-full h-full absolute top-0 z-10"
@@ -187,6 +188,7 @@ function page() {
         <div className="h-[45rem] relative">
           <div className="w-full h-full ">
             <img
+              loading="lazy"
               src="/AboutUsPage/team.jpg"
               alt="Team Image"
               className="object-cover  object-top w-full h-full absolute top-0 z-10"
@@ -233,6 +235,7 @@ function page() {
           <div className="lg:w-1/2 w-full shadow-xl rounded-lg p-5">
             <div className="w-full h-[20rem] object-contain ">
               <img
+                loading="lazy"
                 src="/AboutUsPage/building.png"
                 alt="Office Building"
                 className="object-contain w-full h-full object-top"

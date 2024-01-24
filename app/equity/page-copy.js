@@ -73,6 +73,7 @@ function page() {
       <div className="h-[50rem]  relative ">
         <div className="w-full h-full ">
           <img
+            loading="lazy"
             src="/AboutUsPage/bg.jpg"
             alt="Investment Research"
             className="object-cover w-full h-full absolute top-0 z-10"

@@ -178,7 +178,7 @@ function FooterComp() {
             <p> Mobile App</p>
           </div>
           <div className="w-32  h-[5rem]  object-contain flex flex-col justify-start items-center cursor-pointer">
-            <img
+            <img loading="lazy"
               src="/media-player.png"
               alt=""
               className="object-contain w-full h-full"

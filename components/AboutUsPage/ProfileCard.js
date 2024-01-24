@@ -11,6 +11,7 @@ function ProfileCard(props) {
     >
       <div className="sm:w-1/3 sm:min-w-96   object-cover w-full h-96 sm:h-auto object-top">
         <img
+          loading="lazy"
           src={imageUrl}
           alt={name}
           height={100}
