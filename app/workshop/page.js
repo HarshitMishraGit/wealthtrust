@@ -103,7 +103,7 @@ function page() {
       title: "Salaried Individuals",
       content:
         "In the fast-paced world, the daily grind often leaves little room to ponder the future. As a salaried individual, it's easy to become engrossed in the demands of the present without considering the inevitable reality – one day, you will leave your job. Ensuring a secure and fulfilling future requires meticulous planning, and neglecting your financial well-being can lead to unforeseen challenges. From purchasing a home to providing quality education for your children, and safeguarding your health with comprehensive medical coverage, the puzzle of life's essentials demands attention. At Wealth Trust Capital, we understand the intricate nature of this puzzle, and our workshop is tailored to guide you through the complexities. Because, after all, if you don't look after yourself, who will? Join us on a transformative journey where we unravel the intricacies of financial planning, empowering you to secure a prosperous and worry-free future. Don't just live for today; invest in a tomorrow that you've meticulously crafted. Your financial well-being is the cornerstone of a fulfilling life, and we're here to help you piece it all together. Embrace the power of financial empowerment with Wealth Trust Capital's exclusive workshop – your key to unlocking a secure and successful future.",
-      imageUrl: "/Workshop/photos/1.jpg",
+      imageUrl: "/Workshop/photos/5.jpg",
       reverse: false,
     },
     {
@@ -154,12 +154,12 @@ function page() {
       <div className="h-[50rem] py-10 relative ">
         <div className="w-full h-full ">
           <img
-            src="/AboutUsPage/bg.jpg"
+            src="/Workshop/bg.jpg"
             alt=""
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full pt-24 flex flex-row items-center gap-3 justify-center">
+        <div className="absolute top-0 z-20 bg-black bg-opacity-75 w-full h-full pt-24 flex flex-row items-center gap-3 justify-center">
           <div className="lg:w-2/3 w-full p-4">
             <h1 className="text-center text-white font-bold text-5xl ">
               Investor Awareness <br />
