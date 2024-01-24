@@ -76,7 +76,7 @@ function LockedResearchComp(props) {
                           <div className="w-full h-full object-contain blur-sm ">
                             <img
                               src={coverImageUrl}
-                              alt=""
+                              alt="Research"
                               className="object-contain w-full h-full"
                             />
                           </div>
@@ -149,7 +149,7 @@ function LockedResearchComp(props) {
                 <div className="w-full h-full object-contain blur-sm ">
                   <img
                     src={coverImageUrl}
-                    alt=""
+                    alt="Research"
                     className="object-contain w-full h-full"
                   />
                 </div>

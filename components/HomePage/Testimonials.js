@@ -127,7 +127,7 @@ function Testimonials() {
                 <div className="w-10 h-10 object-cover ">
                   <img
                     src={item.imageUrl}
-                    alt=""
+                    alt={item.name}
                     className="object-cover w-full h-full rounded-full"
                   />
                 </div>

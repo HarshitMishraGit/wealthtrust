@@ -74,7 +74,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/bg.jpg"
-            alt=""
+            alt="Investment Research"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>

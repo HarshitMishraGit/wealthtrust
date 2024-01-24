@@ -21,7 +21,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             src="/AboutUsPage/headerImage.jpg"
-            alt=""
+            alt="About Us"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
@@ -188,7 +188,7 @@ function page() {
           <div className="w-full h-full ">
             <img
               src="/AboutUsPage/team.jpg"
-              alt=""
+              alt="Team Image"
               className="object-cover  object-top w-full h-full absolute top-0 z-10"
             />
           </div>
@@ -234,7 +234,7 @@ function page() {
             <div className="w-full h-[20rem] object-contain ">
               <img
                 src="/AboutUsPage/building.png"
-                alt=""
+                alt="Office Building"
                 className="object-contain w-full h-full object-top"
               />
             </div>

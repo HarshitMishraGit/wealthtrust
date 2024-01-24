@@ -125,7 +125,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             src="/team.jpg"
-            alt=""
+            alt="Our Team"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
@@ -148,7 +148,7 @@ function page() {
         <div className="lg:w-1/3 lg:min-w-96   object-cover w-full h-[30rem]  lg:h-[25rem] object-top shadow-xl">
           <img
             src="/AboutUsPage/sneha.png"
-            alt=""
+            alt="CEO & Founder"
             height={120}
             className="object-cover  lg:rounded-l-lg rounded-t-lg lg:rounded-tr-none object-top w-full h-full"
           />

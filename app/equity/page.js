@@ -427,7 +427,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             src="/Equity/bg.png"
-            alt=""
+            alt="Investment Research"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
@@ -507,7 +507,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               src="/Equity/grid.png"
-              alt=""
+              alt="filter"
               className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
@@ -523,7 +523,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               src="/Equity/grid.png"
-              alt=""
+              alt="filter"
               className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
@@ -539,7 +539,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               src="/Equity/grid.png"
-              alt=""
+              alt="filter"
               className="rotate-90 lg:rotate-0 object-contain w-full h-full filter invert"
             />
           </div>
@@ -552,7 +552,7 @@ function page() {
             <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
               <img
                 src="/Equity/fin.png"
-                alt=""
+                alt="Portfolio Construction"
                 className="rotate-90 lg:rotate-0 object-contain w-full h-full"
               />
             </div>

@@ -46,7 +46,7 @@ function CarouselComp2() {
                 <img
                   // className="rounded-t-lg"
                   src={item.imageUrl}
-                  alt=""
+                  alt="Featured In"
                   className="lg:object-cover object-contain  w-full h-full "
                 />
               </div>

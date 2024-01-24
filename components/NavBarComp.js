@@ -52,7 +52,7 @@ function NavBarComp() {
                 </p> */}
                 <img
                   src="/logo2.png"
-                  alt=""
+                  alt="logo"
                   className="object-contain w-full h-full "
                 />
               </div>
@@ -507,7 +507,7 @@ hover:decoration-action-900"
             </p> */}
             <img
               src="/logo2.png"
-              alt=""
+              alt="logo"
               className="object-contain w-full h-full "
             />
           </div>

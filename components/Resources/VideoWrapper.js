@@ -101,7 +101,7 @@ function VideoWrapper(props) {
           <img
             className="rounded-t-lg"
             src={imageUrl ? imageUrl : "/HomePage/invest_1.webp"}
-            alt=""
+            alt="video"
           />
         </a>
         <div className="p-5">

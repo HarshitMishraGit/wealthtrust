@@ -155,7 +155,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             src="/Workshop/bg.jpg"
-            alt=""
+            alt="wokshop image"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
