@@ -432,7 +432,7 @@ function page() {
             className="object-cover w-full h-full absolute top-0 z-10"
           />
         </div>
-        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-center lg:justify-end  gap-3 ">
+        <div className="absolute top-0 z-20 bg-black bg-opacity-50 w-full h-full flex flex-col justify-end  gap-3 ">
           {/* <h1 className="text-center text-blue-400 font-bold sm:text-6xl text-3xl">
             Investment Research
           </h1> */}

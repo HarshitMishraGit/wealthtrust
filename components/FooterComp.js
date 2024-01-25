@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
+import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -34,6 +34,13 @@ function FooterComp() {
         "WealthTrust Capital Services (Partnership Firm) - SEBI Registered Research Analyst - INH000011149 - GSTIN - 27AADFW8285G1Z0",
     },
   ];
+  const [year, Setyear] = useState();
+  useEffect(() => {
+    let date = new Date();
+    let year = date.getFullYear();
+    Setyear(year);
+  }, []);
+
   return (
     <>
       <footer className="bg-gray-900 min-h-screen flex flex-col gap-3 sm:grid sm:grid-cols-5  w-full sm:pt-24 pt-10 px-6 lg:px-10">
@@ -90,14 +97,28 @@ function FooterComp() {
                 <FaPhoneAlt size={15} className="text-white" />
                 <p> Phone</p>
               </div>
-              <p className="text-sm">+91 98 190 39 345</p>
+              <div>
+                <Link
+                  className="text-sm hover:underline"
+                  href={"tel:+919819039345"}
+                >
+                  +91 98 190 39 345
+                </Link>
+              </div>
             </section>
             <section>
               <div className=" inline-flex gap-2 items-center">
                 <MdEmail size={15} className="text-white" />
                 <p> Email</p>
               </div>
-              <p className="text-sm">enquiry@wealthtrustcap.com</p>
+              <div>
+                <Link
+                  className="text-sm hover:underline"
+                  href={"mailto:enquiry@wealthtrustcap.com"}
+                >
+                  enquiry@wealthtrustcap.com
+                </Link>
+              </div>
             </section>
             <section>
               <div className=" inline-flex gap-2 items-center">
@@ -105,10 +126,36 @@ function FooterComp() {
                 <p> Follow Us on </p>
               </div>
               <div className="flex flex-row gap-5 py-1">
-                <FaYoutube size={25} />
-                <FaFacebook size={25} />
-                <FaLinkedin size={25} />
-                <FaInstagram size={25} />
+                <Link
+                  href={"https://twitter.com/WealthTrustCap"}
+                  target="_blank"
+                >
+                  {" "}
+                  <FaTwitter size={25} />
+                </Link>
+                <Link
+                  href={"https://www.facebook.com/wealthtrustcap"}
+                  target="_blank"
+                >
+                  {" "}
+                  <FaFacebook size={25} />
+                </Link>
+                <Link
+                  href={
+                    "https://www.linkedin.com/company/wealthtrust-capital-services/"
+                  }
+                  target="_blank"
+                >
+                  {" "}
+                  <FaLinkedin size={25} />
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/wealthtrustcapital/"}
+                  target="_blank"
+                >
+                  {" "}
+                  <FaInstagram size={25} />
+                </Link>
               </div>
             </section>
           </div>
@@ -225,8 +272,14 @@ function FooterComp() {
           </p> */}
         </div>
         <div className="col-start-1 col-span-5 items-center justify-center text-white text-center py-2">
-          © 2022 WealthTrustCap. All Rights Reserved | Design by{" "}
-          <Link href={"https://marketonearth.com"}>marketOnEarth</Link>
+          © {year} WealthTrustCap. All Rights Reserved | Design by{" "}
+          <Link
+            href={"https://marketonearth.com"}
+            target="_blank"
+            className="underline"
+          >
+            marketOnEarth
+          </Link>
         </div>
       </footer>
     </>
