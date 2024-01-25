@@ -285,19 +285,23 @@ function page() {
 
         <div className=" flex sm:flex-row-reverse gap-5 flex-col-reverse justify-center items-center  ">
           <form
-            action="#"
+            method="POST"
+            action="/JoinTeam.php"
             className="flex flex-col gap-2 max-w-lg rounded-lg bg-base-300 sm:w-1/2 w-full 
 shadow-xl p-4"
+            encType="multipart/form-data"
           >
             <Input
               type="text"
               label="Name"
+              name="name"
               placeholder="Enter Your name"
               isRequired
             />
             <Input
               type="text"
               label="Phone No"
+              name="phone"
               placeholder="Enter Your Mobile"
               pattern="[0-9]{10}"
               isRequired
@@ -305,19 +309,22 @@ shadow-xl p-4"
             <Input
               type="email"
               label="Email"
+              name="email"
               placeholder="Enter Your email"
               isRequired
             />
             <Textarea
               label="Description"
+              name="description"
               placeholder="Enter your description"
               className=""
               isRequired
               // labelPlacement="outside"
             />
-            <Input type="file" isRequired />
+            <Input type="file" isRequired name="file" />
             <Button
               type="submit"
+              name="joinTeam"
               // onClick={() => setOpenModal(true)}
               className="inline-flex items-center text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
             >

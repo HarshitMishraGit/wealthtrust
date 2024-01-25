@@ -42,10 +42,15 @@ export default function CompanyContactForm({ openModal, setOpenModal }) {
                 </p>
               </ModalHeader>
               <ModalBody>
-                <form action="#" className="flex flex-col gap-4  ">
+                <form
+                  method="POST"
+                  action="/ContactUs"
+                  className="flex flex-col gap-4  "
+                >
                   <Input
                     type="text"
                     label="Name"
+                    name="name"
                     placeholder="Enter Your name"
                     isRequired
                   />
@@ -53,6 +58,7 @@ export default function CompanyContactForm({ openModal, setOpenModal }) {
                   <Input
                     type="text"
                     label="Phone No"
+                    name="phone"
                     placeholder="Enter Your Mobile"
                     pattern="[0-9]{10}"
                     isRequired
@@ -60,6 +66,7 @@ export default function CompanyContactForm({ openModal, setOpenModal }) {
                   <Input
                     type="email"
                     label="Email"
+                    name="email"
                     placeholder="Enter Your email"
                     isRequired
                   />
@@ -67,18 +74,21 @@ export default function CompanyContactForm({ openModal, setOpenModal }) {
                   <Input
                     type="text"
                     label="Company Name"
+                    name="companyName"
                     placeholder="Enter the company name"
                     isRequired
                   />
                   <Input
                     type="number"
                     label="Company Size"
+                    name="companySize"
                     placeholder="Enter the company size"
                     min={0}
                     isRequired
                   />
                   <Textarea
                     label="Description"
+                    name="description"
                     placeholder="Enter your description"
                     className=""
                     isRequired
@@ -87,6 +97,7 @@ export default function CompanyContactForm({ openModal, setOpenModal }) {
                   <Button
                     type="submit"
                     ref={Submitref}
+                    name="workshopForCompany"
                     // onClick={() => setOpenModal(true)}
                     className=" items-center hidden text-white bg-primary font-semibold rounded-lg  text-lg px-10 py-7 text-center "
                   >

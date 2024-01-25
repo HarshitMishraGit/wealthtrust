@@ -44,16 +44,22 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
                 </p>
               </ModalHeader>
               <ModalBody>
-                <form action="#" className="flex flex-col gap-2">
+                <form
+                  method="POST"
+                  action="/ContactUs"
+                  className="flex flex-col gap-2"
+                >
                   <Input
                     type="text"
                     label="Name"
+                    name="name"
                     placeholder="Enter Your name"
                     isRequired
                   />
                   <Input
                     type="text"
                     label="Phone No"
+                    name="phone"
                     placeholder="Enter Your Mobile"
                     pattern="[0-9]{10}"
                     isRequired
@@ -61,23 +67,31 @@ export default function ContactFormModal({ openModal, setOpenModal }) {
                   <Input
                     type="email"
                     label="Email"
+                    name="email"
                     placeholder="Enter Your email"
                     isRequired
                   />
                   <Input
                     type="text"
                     label="Location"
+                    name="location"
                     placeholder="Enter Your city name"
                     isRequired
                   />
                   <Textarea
                     label="Description"
+                    name="description"
                     placeholder="Enter your description"
                     className=""
                     isRequired
                     // labelPlacement="outside"
                   />
-                  <Input type="submit" ref={Submitref} className="hidden" />
+                  <Input
+                    type="submit"
+                    ref={Submitref}
+                    className="hidden"
+                    name="contactForm"
+                  />
                 </form>
               </ModalBody>
               <ModalFooter>

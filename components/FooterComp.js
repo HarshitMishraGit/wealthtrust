@@ -49,10 +49,10 @@ function FooterComp() {
             Get Monthly Market Outlook From WTCS
           </div>
 
-          <form action="#" className="">
+          <form method="POST" action="/MonthlyOutlook.php" className="">
             <div className="flex flex-col gap-4 ">
-              <Input type="email" label="Email" />
-              <Button className="w-fit">Subscribe</Button>
+              <Input type="email" label="Email" name="email" />
+              <Button className="w-fit" name="monthlyOutlook">Subscribe</Button>
             </div>
           </form>
         </div>
