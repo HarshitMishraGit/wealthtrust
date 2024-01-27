@@ -234,7 +234,7 @@ function page() {
           })}
         </div>
       </section>
-      <section className="md:pt-10 pt-5 h-[20rem]  bg-primary w-full   flex flex-col justify-center gap-3">
+      <section className="md:pt-10 py-5 bg-primary w-full min-h-fit   flex flex-col justify-center gap-3">
         {/* <h1 className="text-center text-white font-bold sm:text-5xl text-4xl">
           Want To Join Our Team ?
         </h1> */}

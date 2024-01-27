@@ -52,7 +52,9 @@ function FooterComp() {
           <form method="POST" action="/MonthlyOutlook.php" className="">
             <div className="flex flex-col gap-4 ">
               <Input type="email" label="Email" name="email" />
-              <Button className="w-fit" name="monthlyOutlook">Subscribe</Button>
+              <Button className="w-fit" name="monthlyOutlook">
+                Subscribe
+              </Button>
             </div>
           </form>
         </div>
@@ -155,6 +157,15 @@ function FooterComp() {
                 >
                   {" "}
                   <FaInstagram size={25} />
+                </Link>
+                <Link
+                  href={
+                    "https://youtube.com/@wealthtrustcapitalservices8059?si=SOKC-xcN06-w20AG"
+                  }
+                  target="_blank"
+                >
+                  {" "}
+                  <FaYoutube size={25} />
                 </Link>
               </div>
             </section>
