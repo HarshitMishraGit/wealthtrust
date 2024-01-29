@@ -278,13 +278,13 @@ function MobileMenu(props) {
           >
             Blogs
           </Link>
-          <Link
+          {/* <Link
             href={"#"}
             className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
  "
           >
             Case Studies
-          </Link>
+          </Link> */}
           <Link
             href={"#"}
             className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8

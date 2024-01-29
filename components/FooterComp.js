@@ -70,9 +70,9 @@ function FooterComp() {
             >
               Blogs
             </Link>
-            <Link href={"#"} className="cursor-pointer ">
+            {/* <Link href={"#"} className="cursor-pointer ">
               Case Studies
-            </Link>
+            </Link> */}
             <Link href={"#"} className="cursor-pointer ">
               Market Outlook
             </Link>
