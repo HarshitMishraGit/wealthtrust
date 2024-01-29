@@ -74,9 +74,9 @@ function FooterComp() {
               Case Studies
             </Link>
             <Link href={"#"} className="cursor-pointer ">
-              News
+              Market Outlook
             </Link>
-            <Link href={"#"} className="cursor-pointer ">
+            <Link href={"https://www.wealthtrustcap.com/media.php"} className="cursor-pointer ">
               Videos
             </Link>
           </div>

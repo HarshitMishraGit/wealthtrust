@@ -940,10 +940,7 @@ shadow-xl md:px-24 p-4 "
             </Tabs>
           </div>
         </div>
-        <div>
-          Regulatory Disclosurs data shown above is provided by the respective
-          advisor or analyst on 15 Jan 2024
-        </div>
+        <div>Regulatory Disclosures data shown above is provided monthly.</div>
       </section>
     </div>
   );

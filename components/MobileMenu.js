@@ -290,10 +290,10 @@ function MobileMenu(props) {
             className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
  "
           >
-            News
+            Market Outlook
           </Link>
           <Link
-            href={"#"}
+            href={"https://www.wealthtrustcap.com/media.php"}
             className="block px-4 py-2  text-sm cursor-pointer hover:underline hover:underline-offset-8
 "
           >
