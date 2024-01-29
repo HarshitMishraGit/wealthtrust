@@ -243,8 +243,19 @@ function ServiceCompParent() {
               />
             </div>
             <div className="lg-w-1/2 w-full flex flex-col gap-1 justify-center items-start">
-              <h2 className="font-bold text-xl">
-                Tax planning / insurance planning
+              <h2 className="font-bold text-xl inline-flex">
+                <Link
+                  href={"https://www.wealthtrustcap.com/taxplan.php"}
+                  className="hover:underline"
+                >
+                  Tax planning
+                </Link>
+                <Link
+                  href={"https://www.wealthtrustcap.com/insurance.php"}
+                  className="hover:underline"
+                >
+                  / Insurance planning
+                </Link>
               </h2>
               <p>
                 WealthTrust Capital Services excels in strategic tax planning,
