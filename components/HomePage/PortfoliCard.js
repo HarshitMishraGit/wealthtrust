@@ -77,13 +77,22 @@ function PortfoliCard() {
           the necessary regelialia. It is a paradisematic country, in which
           roasted parts of sentences fly into your mouth.
         </p> */}
-        <Button
-          as={"a"}
-          className="w-fit bg-primary text-white"
-          href="/aboutus"
-        >
-          LEARN MORE
-        </Button>
+        <div className="inline-flex gap-3">
+          <Button
+            as={"a"}
+            className="w-fit bg-primary text-white"
+            href="/aboutus"
+          >
+            LEARN MORE
+          </Button>
+          <Button
+            as={"a"}
+            className="w-fit border-2  border-primary bg-transparent hover:bg-primary hover:text-white text-primary"
+            href="https://www.wealthtrustcap.com/pancheck.php"
+          >
+            INVEST NOW
+          </Button>
+        </div>
       </div>
     </div>
   );
