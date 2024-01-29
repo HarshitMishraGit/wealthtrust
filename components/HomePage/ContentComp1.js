@@ -38,7 +38,7 @@ function ContentComp1(props) {
           {/* <div className="badge badge-accent md:p-3">{badgeTitle}</div> */}
           <h2 className="text-3xl font-bold text-base-content">{title}</h2>
           <p className="py-6 text-normal ">
-            {isExpanded ? content : `${content.substring(0, 400)}...`}
+            {isExpanded ? content : `${content.substring(0, 1000)}...`}
           </p>
           <p
             className="btn btn-primary text-white rounded-lg"

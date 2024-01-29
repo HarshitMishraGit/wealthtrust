@@ -333,9 +333,8 @@ shadow-xl p-4"
           </form>
           <p className="text-2xl text-left px-10 sm:w-1/2 w-full border-l-4 border-l-primary ">
             We're always on the lookout for exceptional talent. Feel free to
-            express your interest in joining our team by filling out the form
-            below, and we'll keep your information on file for future
-            opportunities.
+            express your interest in joining our team by filling out the form,
+            and we'll keep your information on file for future opportunities.
           </p>
         </div>
       </section>
