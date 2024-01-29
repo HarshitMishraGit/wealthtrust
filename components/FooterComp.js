@@ -73,7 +73,7 @@ function FooterComp() {
             {/* <Link href={"#"} className="cursor-pointer ">
               Case Studies
             </Link> */}
-            <Link href={"#"} className="cursor-pointer ">
+            <Link href={"/monthlyoutlook.php"} className="cursor-pointer ">
               Market Outlook
             </Link>
             <Link href={"https://www.wealthtrustcap.com/media.php"} className="cursor-pointer ">
