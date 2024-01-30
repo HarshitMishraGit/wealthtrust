@@ -12,6 +12,7 @@ import { HiLightBulb } from "react-icons/hi";
 import { Button, Input, Textarea } from "@nextui-org/react";
 import CompanyContactForm from "@/components/Modals/CompanyContactForm";
 import ContentComp1 from "@/components/HomePage/ContentComp1";
+import WorkShopTestimonials from "@/components/Workshop/WorkShopTestimonials";
 function page() {
   const avatar = "/Workshop/user.png";
   const username = "Krishna Verma";
@@ -382,8 +383,8 @@ function page() {
           })}
         </div>
       </section>
-      <section className=" p-2 w-full bg-primary text-white">
-        <div className=" p-6  max-w-3xl mx-auto ">
+      <section className=" p-2 w-full bg-primary">
+        {/* <div className=" p-6  max-w-3xl mx-auto ">
           <div className="flex flex-col justify-center items-center mb-4">
             <img
               loading="lazy"
@@ -410,7 +411,8 @@ function page() {
             <p className="text-lg   font-semibold   w-fit">- {username},</p>
             <p className=" text-lg   font-semibold  w-fit">MarketOnEarth</p>
           </div>
-        </div>
+        </div> */}
+        <WorkShopTestimonials />
       </section>
       <section className="p-4 sm:py-10 pt-5 flex flex-col gap-5 justify-center ">
         <h2 className="sm:text-4xl text-2xl text-center  font-bold sm:pb-10 pb-3">
