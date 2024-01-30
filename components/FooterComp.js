@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGooglePlay, FaAppStoreIos } from "react-icons/fa";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -81,6 +81,29 @@ function FooterComp() {
               className="cursor-pointer "
             >
               Videos
+            </Link>
+          </div>
+          <div className="py-2 font-semibold text-white">
+            <h3>Download our app</h3>
+          </div>
+          <div className="flex flex-row justify-start  w-full items-center gap-5 text-white">
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.dipl.wtcs.app"
+              target="_blank"
+            >
+              <FaGooglePlay
+                size={30}
+                className="hover:scale-105 cursor-pointer"
+              />
+            </Link>
+            <Link
+              href="https://apps.apple.com/in/app/fincorp-online/id1384110071"
+              target="_blank"
+            >
+              <FaAppStoreIos
+                size={33}
+                className="hover:scale-105 cursor-pointer"
+              />
             </Link>
           </div>
         </div>
@@ -175,57 +198,59 @@ function FooterComp() {
           </div>
         </div>
         <div className="col-start-3 row-start-1 justify-center sm:px-4 text-white">
-          <div className="font-bold text-2xl ">Calculators</div>
-          <div className="flex flex-col gap-2 py-4 ">
-            <div
-              className="cursor-pointer"
-              onClick={() => {
-                openLinkInPopup(
-                  "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/lumpsum.asp"
-                );
-              }}
-            >
-              Lumpsum Calculator
-            </div>
-            <div
-              className="cursor-pointer"
-              onClick={() => {
-                openLinkInPopup(
-                  "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/Sip%20Simple/sip.html"
-                );
-              }}
-            >
-              SIP(Classic)
-            </div>
-            <div
-              className="cursor-pointer"
-              onClick={() => {
-                openLinkInPopup(
-                  "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/SIP%20Calculator/sipcalc.asp"
-                );
-              }}
-            >
-              SIP(Advanced)
-            </div>
-            <div
-              className="cursor-pointer"
-              onClick={() => {
-                openLinkInPopup(
-                  "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/childfuture.asp"
-                );
-              }}
-            >
-              Education Calculator
-            </div>
-            <div
-              className="cursor-pointer"
-              onClick={() => {
-                openLinkInPopup(
-                  "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/retirement.asp"
-                );
-              }}
-            >
-              Retirement Calculator
+          <div>
+            <div className="font-bold text-2xl ">Calculators</div>
+            <div className="flex flex-col gap-2 py-4 ">
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  openLinkInPopup(
+                    "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/lumpsum.asp"
+                  );
+                }}
+              >
+                Lumpsum Calculator
+              </div>
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  openLinkInPopup(
+                    "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/Sip%20Simple/sip.html"
+                  );
+                }}
+              >
+                SIP(Classic)
+              </div>
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  openLinkInPopup(
+                    "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/SIP%20Calculator/sipcalc.asp"
+                  );
+                }}
+              >
+                SIP(Advanced)
+              </div>
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  openLinkInPopup(
+                    "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/childfuture.asp"
+                  );
+                }}
+              >
+                Education Calculator
+              </div>
+              <div
+                className="cursor-pointer"
+                onClick={() => {
+                  openLinkInPopup(
+                    "https://www.dataaccurate.in/FincorpOnline-Latest/calculators/retirement.asp"
+                  );
+                }}
+              >
+                Retirement Calculator
+              </div>
             </div>
           </div>
         </div>
