@@ -856,14 +856,14 @@ shadow-xl md:px-24 p-4 "
           <div className="flex flex-row gap-10  lg:justify-end sm:w-1/2 w-full ">
             <a
               download
-              href="/disclouser_2.pdf"
+              href="/Resources/disclosure_2.pdf"
               className="text-xl font-bold text-primary"
             >
               Disclosures
             </a>
             <a
               download
-              href="/investorCharter.pdf"
+              href="/Resources/investorCharter.pdf"
               className="text-xl font-bold text-primary"
             >
               Investor Charter

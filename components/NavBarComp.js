@@ -52,7 +52,7 @@ function NavBarComp() {
                 </p> */}
                 <img
                   loading="lazy"
-                  src="/logo2.png"
+                  src="/Resources/logo2.png"
                   alt="logo"
                   className="object-contain w-full h-full "
                 />

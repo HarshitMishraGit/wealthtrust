@@ -125,7 +125,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             fetchPriority="high"
-            src="/team.jpg"
+            src="/Resources/team.jpg"
             alt="Our Team"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
