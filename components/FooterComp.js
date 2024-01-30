@@ -19,17 +19,17 @@ function FooterComp() {
   };
   const certifications = [
     {
-      imageUrl: "/cert1.jpg",
+      imageUrl: "/Resources/cert1.jpg",
       title:
         "  WealthTrust Capital Services LLP | CIN- AAF-3245 | GSTIN -27AACFW1937A1ZG | ARN No.-109017 (AMFI Registered Mutual Fund Distributor)",
     },
     {
-      imageUrl: "/cert3.jpg",
+      imageUrl: "/Resources/cert3.jpg",
       title:
         "WealthTrust Capital Services (Proprietorship) - Bank and Financial Institution DSA",
     },
     {
-      imageUrl: "/cert2.png",
+      imageUrl: "/Resources/cert2.png",
       title:
         "WealthTrust Capital Services (Partnership Firm) - SEBI Registered Research Analyst - INH000011149 - GSTIN - 27AADFW8285G1Z0",
     },
@@ -76,7 +76,10 @@ function FooterComp() {
             <Link href={"/monthlyoutlook.php"} className="cursor-pointer ">
               Market Outlook
             </Link>
-            <Link href={"https://www.wealthtrustcap.com/media.php"} className="cursor-pointer ">
+            <Link
+              href={"https://www.wealthtrustcap.com/media.php"}
+              className="cursor-pointer "
+            >
               Videos
             </Link>
           </div>

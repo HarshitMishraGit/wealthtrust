@@ -3,10 +3,6 @@ import "./globals.css";
 import NavBarComp from "@/components/NavBarComp";
 import { Providers } from "./Providers";
 import FooterComp from "@/components/FooterComp";
-// const inter = Inter({ subsets: ["latin"] });
-const lora = Lora({ subsets: ["latin"] });
-const Playfair = Playfair_Display({ subsets: ["latin"] });
-const poppins = Poppins({ subsets: ["latin"], weight: "300" });
 export const metadata = {
   title: "WealthTrust Capital Services",
   description:
