@@ -13,9 +13,10 @@ function CTA() {
           <img
             loading="lazy"
             className="w-full hidden dark:block rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
-            src="/HomePage/chart.svg"
+            src="https://datawrapper.dwcdn.net/RzmTJ/full.png"
             alt="comparison between mutual funds, bank savings and gold"
           />
+
           <div className="mt-4 md:mt-0">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black ">
               Let's grow together with WealthTrust Capital Services .

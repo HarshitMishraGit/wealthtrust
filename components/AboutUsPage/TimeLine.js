@@ -19,7 +19,7 @@ function TimeLine() {
     },
     {
       year: "2017",
-      title: "Recognized as most asset classes boutique wealth management firm",
+      title: "Became a full service boutique wealth management firm",
     },
     {
       year: "2020",
