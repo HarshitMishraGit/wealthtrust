@@ -266,7 +266,7 @@ function ServiceCompParent() {
                 focus on optimizing financial positions, they help clients
                 retain more of their hard-earned wealth.{" "}
                 <Link
-                  href={"https://www.wealthtrustcap.com/taxplan.php"}
+                  href={"https://www.wealthtrustcap.com/insurance.php"}
                   className="underline text-blue-600"
                 >
                   Read more...
