@@ -239,7 +239,7 @@ function MobileMenu(props) {
         </Link>
         <Link
           className=" text-base-content flex flex-row items-center  w-full font-thin h-10 my-auto"
-          href={"/equity"}
+          href={"/investment-research"}
           onClick={() => {
             props?.setshowMobileMenu(false);
           }}

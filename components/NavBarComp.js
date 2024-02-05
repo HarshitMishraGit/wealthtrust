@@ -257,7 +257,7 @@ hover:decoration-action-900"
               </Link>
               <Link
                 className="hover:scale-110  transition-all duration-300 flex flex-row items-center justify-center text-base-content     my-auto font-semibold text-center min-w-fit"
-                href={"/equity"}
+                href={"/investment-research"}
               >
                 Investment Research
               </Link>
@@ -508,7 +508,7 @@ hover:decoration-action-900"
             </p> */}
             <img
               loading="lazy"
-              src="/logo2.png"
+              src="/Resources/logo2.png"
               alt="logo"
               className="object-contain w-full h-full "
             />

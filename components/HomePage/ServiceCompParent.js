@@ -170,7 +170,10 @@ function ServiceCompParent() {
                 analyses and recommendations to empower you with the knowledge
                 needed to make informed investment choices and navigate the
                 dynamic stock market landscape effectively.{" "}
-                <Link href={"/equity"} className="underline text-blue-600">
+                <Link
+                  href={"/investment-research"}
+                  className="underline text-blue-600"
+                >
                   Read more...
                 </Link>
               </p>
