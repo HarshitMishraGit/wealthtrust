@@ -26,7 +26,7 @@ function page() {
       title: "Expert Analysis",
       content:
         "Our seasoned team of financial analysts combines industry knowledge, market research, and cutting-edge technology to deliver expert analysis that goes beyond the numbers. We aim to provide you with a clear understanding of market trends, potential risks, and lucrative opportunities.",
-      imageUrl: "/Equity/expert.png",
+      imageUrl: "/Investment-Research-assets/expert.png",
       reverse: false,
     },
     {
@@ -34,7 +34,7 @@ function page() {
       title: "In-Depth Research",
       content:
         "Our commitment to in-depth research sets us apart. Whether you're a seasoned investor or just starting, our research covers a spectrum of industries and companies, ensuring you have the information needed to make well-informed investment choices.",
-      imageUrl: "/Equity/research.png",
+      imageUrl: "/Investment-Research-assets/research.png",
       reverse: true,
     },
     {
@@ -42,7 +42,7 @@ function page() {
       title: "Tailored Investment Strategies",
       content:
         "We recognize that every investor is unique. That's why our equity research services extend beyond generic advice. We tailor investment strategies to align with your financial goals, risk tolerance, and market preferences.",
-      imageUrl: "/Equity/strategy.png",
+      imageUrl: "/Investment-Research-assets/strategy.png",
       reverse: false,
     },
     {
@@ -50,7 +50,7 @@ function page() {
       title: "Timely Market Updates",
       content:
         "In the fast-paced world of finance, staying ahead is key. Our timely market updates keep you informed about significant events, economic indicators, and emerging trends, enabling you to adapt your investment strategy proactively.",
-      imageUrl: "/Equity/update.png",
+      imageUrl: "/Investment-Research-assets/update.png",
       reverse: true,
     },
     {
@@ -58,7 +58,7 @@ function page() {
       title: "Transparent Communication",
       content:
         "Transparent communication is the cornerstone of our client relationships. We provide clear, jargon-free reports and insights, ensuring you understand the rationale behind our recommendations.",
-      imageUrl: "/Equity/comm.png",
+      imageUrl: "/Investment-Research-assets/comm.png",
       reverse: false,
     },
   ];
@@ -68,20 +68,20 @@ function page() {
       description: `We're not just building for today; we're
         crafting a future that stands the test of
         time.`,
-      imageUrl: "/Equity/sustainability.png",
+      imageUrl: "/Investment-Research-assets/sustainability.png",
     },
     {
       title: "Profitability",
       description: `Turning a profit is great but doing it with a meaningful impact is even better. We
        believe in investments that make both
        cents and sense.`,
-      imageUrl: "/Equity/profitability.png",
+      imageUrl: "/Investment-Research-assets/profitability.png",
     },
     {
       title: "Crystal Clear Finances",
       description: `No muddy waters here. We navigate the markets with a keen eye on clean accounts,
         ensuring transparency every step of the way`,
-      imageUrl: "/Equity/clear.png",
+      imageUrl: "/Investment-Research-assets/clear.png",
     },
     {
       title: "Leadership is our MOAT",
@@ -89,7 +89,7 @@ function page() {
         fortress of business is the single best thing
         any investor can do. We enable our
         investors to do just that.`,
-      imageUrl: "/Equity/leadership.png",
+      imageUrl: "/Investment-Research-assets/leadership.png",
     },
   ];
   const research_articles = [
@@ -98,28 +98,28 @@ function page() {
       Market Outlook 2024
       `,
       link: "#",
-      imageUrl: "/Equity/fin.png",
+      imageUrl: "/Investment-Research-assets/fin.png",
     },
     {
       title: `Wealth Management &
       Market Outlook 2024
       `,
       link: "#",
-      imageUrl: "/Equity/fin.png",
+      imageUrl: "/Investment-Research-assets/fin.png",
     },
     {
       title: `Wealth Management &
       Market Outlook 2024
       `,
       link: "#",
-      imageUrl: "/Equity/fin.png",
+      imageUrl: "/Investment-Research-assets/fin.png",
     },
     {
       title: `Wealth Management &
       Market Outlook 2024
       `,
       link: "#",
-      imageUrl: "/Equity/fin.png",
+      imageUrl: "/Investment-Research-assets/fin.png",
     },
   ];
   const [openModal, setOpenModal] = useState(false);
@@ -372,47 +372,48 @@ function page() {
 
   const InvestmentResearch = [
     {
-      imageUrl: "/Equity/InvestmentResearch/1.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/1.png",
     },
     {
-      imageUrl: "/Equity/InvestmentResearch/2.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/2.png",
     },
     {
-      imageUrl: "/Equity/InvestmentResearch/3.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/3.png",
     },
   ];
   const InvestmentResearch2 = [
     {
-      imageUrl: "/Equity/InvestmentResearch/4.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/4.png",
     },
     {
-      imageUrl: "/Equity/InvestmentResearch/5.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/5.png",
     },
     {
-      imageUrl: "/Equity/InvestmentResearch/6.png",
+      imageUrl: "/Investment-Research-assets/InvestmentResearch/6.png",
     },
   ];
-  const InvestmentResearch3LockedImageUrl = "/Equity/InvestmentResearch/1.png";
+  const InvestmentResearch3LockedImageUrl =
+    "/Investment-Research-assets/InvestmentResearch/1.png";
   const MutualFundsResearch = [
     {
-      imageUrl: "/Equity/MutualFunds/1.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/1.png",
     },
     {
-      imageUrl: "/Equity/MutualFunds/2.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/2.png",
     },
     {
-      imageUrl: "/Equity/MutualFunds/3.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/3.png",
     },
   ];
   const MutualFundsResearch2 = [
     {
-      imageUrl: "/Equity/MutualFunds/4.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/4.png",
     },
     {
-      imageUrl: "/Equity/MutualFunds/5.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/5.png",
     },
     {
-      imageUrl: "/Equity/MutualFunds/6.png",
+      imageUrl: "/Investment-Research-assets/MutualFunds/6.png",
     },
   ];
   return (
@@ -427,7 +428,7 @@ function page() {
         <div className="w-full h-full ">
           <img
             fetchPriority="high"
-            src="/Equity/bg.png"
+            src="/Investment-Research-assets/bg.png"
             alt="Investment Research"
             className="object-cover w-full h-full absolute top-0 z-10"
           />
@@ -509,7 +510,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               loading="lazy"
-              src="/Equity/grid.png"
+              src="/Investment-Research-assets/grid.png"
               alt="filter"
               className="rotate-90 opacity-40 lg:rotate-0 object-contain w-full h-full filter invert"
             />
@@ -526,7 +527,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               loading="lazy"
-              src="/Equity/grid.png"
+              src="/Investment-Research-assets/grid.png"
               alt="filter"
               className="rotate-90 opacity-75 lg:rotate-0 object-contain w-full h-full filter invert"
             />
@@ -543,7 +544,7 @@ function page() {
           <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
             <img
               loading="lazy"
-              src="/Equity/grid.png"
+              src="/Investment-Research-assets/grid.png"
               alt="filter"
               className="rotate-90 lg:rotate-0 object-contain w-full h-full filter invert"
             />
@@ -557,7 +558,7 @@ function page() {
             <div className="w-full h-32 lg:w-auto lg:h-auto object-contain">
               <img
                 loading="lazy"
-                src="/Equity/fin.png"
+                src="/Investment-Research-assets/fin.png"
                 alt="Portfolio Construction"
                 className="rotate-90 lg:rotate-0 object-contain w-full h-full"
               />
