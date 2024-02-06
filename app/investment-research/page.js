@@ -606,7 +606,7 @@ function page() {
                 recommended portfolio for a straightforward approach.
               </p>
             </div>
-            <div className="sm:grid sm:grid-cols-3 flex flex-col  gap-5 py-5">
+            <div className="sm:grid sm:grid-cols-3 sm:grid-rows-2 flex flex-col  gap-5 py-5">
               <Link
                 href={
                   "https://pickright.in/investment/investpack/64d21c5893e5d927c5e38457"
@@ -636,6 +636,24 @@ function page() {
                 <h3 className=" text-lg font-semibold ">Perpetuus</h3>
                 <p className="text-center">
                   A flexicap,multi strategy approach to investing
+                </p>
+              </Link>
+              <Link
+                href={"https://pickright.page.link/D7k5d86pAmPfS3V76"}
+                className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-300"
+              >
+                <h3 className=" text-lg font-semibold ">TrendBlend</h3>
+                <p className="text-center">
+                  Momentum investing between sectors and marketcaps
+                </p>
+              </Link>
+              <Link
+                href={"https://pickright.page.link/PPxyVMVwvy3wxqt59"}
+                className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-300"
+              >
+                <h3 className=" text-lg font-semibold ">Inflation Resistant</h3>
+                <p className="text-center">
+                  A multi asset pack including Gold, Bonds, Equity and Reits
                 </p>
               </Link>
             </div>
