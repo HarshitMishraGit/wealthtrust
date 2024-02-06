@@ -2,6 +2,7 @@
 import { Button } from "@nextui-org/button";
 import React, { useState } from "react";
 import ContactFormModal from "./Modals/ContactFormModal";
+import CarouselComp3 from "./HomePage/CarouselComp3";
 
 function CTA() {
   const [openModal, setOpenModal] = useState(false);
@@ -9,15 +10,15 @@ function CTA() {
     <>
       <ContactFormModal openModal={openModal} setOpenModal={setOpenModal} />
       <section className="bg-lightGreen w-full">
-        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-          <img
+        <div className="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 flex flex-col  lg:grid lg:grid-cols-2 sm:py-16 lg:px-6">
+          {/* <img
             loading="lazy"
             className="w-full hidden dark:block rounded-lg shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
             src="https://datawrapper.dwcdn.net/RzmTJ/full.png"
             alt="comparison between mutual funds, bank savings and gold"
-          />
-
-          <div className="mt-4 md:mt-0">
+          /> */}
+          <CarouselComp3 />
+          <div className="mt-4 md:mt-0 ">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-black ">
               Let's grow together with WealthTrust Capital Services .
             </h2>

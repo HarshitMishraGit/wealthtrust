@@ -625,9 +625,7 @@ function page() {
                 className="bg-primary text-white rounded-lg flex flex-col justify-center items-center py-10 px-5 hover:scale-105 hover:shadow-xl active:scale-95 transition-all duration-300"
               >
                 <h3 className=" text-lg font-semibold ">Value Multi-Cap</h3>
-                <p className="text-center">
-                  A sector leader approach to diversified investing
-                </p>
+                <p className="text-center">Growth based investing</p>
               </Link>
               <Link
                 href={
@@ -637,7 +635,7 @@ function page() {
               >
                 <h3 className=" text-lg font-semibold ">Perpetuus</h3>
                 <p className="text-center">
-                  A sector leader approach to diversified investing
+                  A flexicap,multi strategy approach to investing
                 </p>
               </Link>
             </div>
